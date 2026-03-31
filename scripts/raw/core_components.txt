@@ -1,0 +1,162 @@
+# ── BRIDGES ──────────────────────────────────────────────────────────────────
+# Columns: Name | Mass | Pilot | ShipOps | Electronics | Navigation | Officers | Armor | Shield | JumpCost | Cost
+# intCount=9
+
+# SECTION type=bridge subtype=scout size=small
+Scout Bridge          100  4 2 3 3 3 0 0 0   $50.0k
+Scout Bridge 2        100  5 3 4 4 3 0 1 0   $50.0k
+Scout Bridge 3        100  6 3 4 4 3 1 2 1   $100.0k
+Scout Bridge 4        100  7 4 5 5 3 3 3 3   $100.0k
+Scout-Stealth Bridge 5 100  7 4 8 6 3 3 3 3  $1.0m
+Scout-Skirmish Bridge 5 100  8 4 6 6 3 4 4 4  $1.0m
+Scout-Hauler Bridge 5 -100  8 4 5 8 3 2 2 -5  $1.0m
+Scout-Vanguard Bridge 5 100  6 5 8 6 3 2 2 2  $1.0m
+
+# SECTION type=bridge subtype=standard size=medium
+Bridge            300  5 3 4 5 1 0 0 0  $20.0k
+Bridge 2          300  6 3 5 5 1 0 0 0  $20.0k
+Bridge 3          300  6 4 5 6 1 1 0 0  $50.0k
+Bridge 4          300  7 4 5 7 1 1 0 0  $200.0k
+Jyeeta Hivemind   300  5 3 4 5 1 0 0 0  $20.0k
+Battle Bridge     250  6 3 4 6 1 2 0 4  $85.0k
+Battle Bridge 2   250  8 4 5 8 1 2 0 3  $100.0k
+Battle Bridge 3   250  9 4 6 8 1 2 0 4  $220.0k
+Battle Bridge 4   250  9 4 6 8 1 2 0 4  $220.0k
+
+# SECTION type=bridge subtype=capital size=large
+# WARNING: wiki shows same data as standard Bridge — flagged as likely copy error, used as placeholder
+Bridge            300  5 3 4 5 1 0 0 0  $20.0k
+Bridge 2          300  6 3 5 5 1 0 0 0  $20.0k
+Bridge 3          300  6 4 5 6 1 1 0 0  $50.0k
+Bridge 4          300  7 4 5 7 1 1 0 0  $200.0k
+Jyeeta Hivemind   300  5 3 4 5 1 0 0 0  $20.0k
+Battle Bridge     250  6 3 4 6 1 2 0 4  $85.0k
+Battle Bridge 2   250  8 4 5 8 1 2 0 3  $100.0k
+Battle Bridge 3   250  9 4 6 8 1 2 0 4  $220.0k
+Battle Bridge 4   250  9 4 6 8 1 2 0 4  $220.0k
+
+# ── VOID ENGINES ─────────────────────────────────────────────────────────────
+# Columns: Name | Mass | Pilot | ShipOps | Electronics | Navigation | Speed | Agility | FuelPerAU | FuelPerCombat | ReactorPoints | SafetyRating | Shielding | Cost
+# intCount=12
+
+# SECTION type=engine massClass=2400 size=large
+M2400 Void Engine: Balanced    200  7 6 6 2 27 27 3 8 3 12 3  $30.0k
+M2400 Void Engine: Longhaul    200  6 6 7 2 27 27 2 8 3 15 4  $30.0k
+M2400 Void Engine: Traveler    200  6 6 6 2 30 27 3 8 3 6 4   $30.0k
+M2400 Void Engine: Chaser      200  7 6 6 2 27 30 2 8 2 10 3  $30.0k
+M2400 Void Engine: Warhammer   200  6 6 6 2 27 28 4 9 3 7 3   $30.0k
+M2400 Void Engine: Behemoth    200  8 6 6 2 29 27 4 9 3 7 7   $1.2m
+M2400 Void Engine: Dual-Field  100  7 6 6 2 27 27 3 8 3 12 3  $130.0k
+
+# SECTION type=engine massClass=3400 size=large
+M3400 Void Engine: Traveler    400  7 7 9 2 29 24 3 8 3 8 3   $50.0k
+M3400 Void Engine: Chaser      400  9 7 7 2 24 29 3 8 2 8 2   $50.0k
+M3400 Void Engine: Balanced    400  8 8 7 2 24 24 3 8 3 12 2  $50.0k
+M3400 Void Engine: Longhaul    400  7 9 7 2 23 23 2 8 3 15 3  $50.0k
+M3400 Void Engine: Warhammer   450  7 9 7 2 24 26 4 9 3 7 2   $50.0k
+M3400 Void Engine: Behemoth    450  8 9 7 2 27 24 4 9 3 7 8   $1.7m
+M3400 Void Engine: Dual-Field  200  8 8 7 2 24 24 3 8 3 12 2  $150.0k
+
+# SECTION type=engine massClass=5000 size=large
+M5000 Void Engine: Traveler    700  8 10 6 0 23 16 4 8 4 8 2  $75.0k
+M5000 Void Engine: Balanced    700  9 9 6 0 19 19 3 8 4 10 0  $75.0k
+M5000 Void Engine: Chaser      700  10 8 6 0 18 22 3 8 3 8 0  $75.0k
+M5000 Void Engine: Longhaul    700  9 9 6 0 20 18 2 8 4 11 0  $75.0k
+M5000 Void Engine: Warhammer   750  9 9 7 1 19 20 5 9 4 6 1   $75.0k
+M5000 Void Engine: Behemoth    750  9 9 7 3 21 19 5 9 4 6 9   $2.3m
+M5000 Void Engine: Dual-Field  450  9 9 6 0 19 19 3 8 4 10 0  $175.0k
+
+# SECTION type=engine massClass=6000 size=large
+M6000 Void Engine: Longhaul    1100  10 11 7 0 15 15 3 8 4 11 0  $100.0k
+M6000 Void Engine: Balanced    1100  11 9 8 0 15 15 4 8 4 10 0  $100.0k
+M6000 Void Engine: Traveler    1100  11 9 8 0 19 13 4 8 4 8 0  $100.0k
+M6000 Void Engine: Chaser      1100  11 9 8 0 13 18 3 8 3 7 0  $100.0k
+M6000 Void Engine: Warhammer   1100  11 9 8 1 15 16 5 9 4 6 1  $100.0k
+M6000 Void Engine: Behemoth    1100  11 9 8 3 17 14 5 9 4 6 10  $2.6m
+M6000 Void Engine: Dual-Field  775   11 9 8 0 15 15 4 8 4 10 0  $200.0k
+
+# SECTION type=engine massClass=7000 size=large
+M7000 Void Engine: Chaser      1300  10 9 10 0 10 14 4 8 3 7 0  $100.0k
+M7000 Void Engine: Traveler    1300  12 11 9 0 15 9 5 8 4 8 0   $100.0k
+M7000 Void Engine: Balanced    1300  11 9 8 0 12 12 5 8 4 9 0   $100.0k
+M7000 Void Engine: Longhaul    1300  12 10 9 0 12 11 4 8 4 10 0  $100.0k
+M7000 Void Engine: Warhammer   1300  12 10 10 1 12 13 6 10 4 6 1  $100.0k
+M7000 Void Engine: Behemoth    1300  12 10 10 3 14 11 6 10 4 6 11  $2.8m
+M7000 Void Engine: Dual-Field  960   11 9 8 0 12 12 5 8 4 9 0   $200.0k
+
+# SECTION type=engine massClass=8000 size=large
+M8000 Void Engine: Balanced    1500  14 12 11 0 9 9 5 8 4 9 0   $100.0k
+M8000 Void Engine: Longhaul    1500  15 14 12 0 10 6 4 8 4 9 0  $100.0k
+M8000 Void Engine: Traveler    1500  14 13 9 0 15 8 6 8 4 7 0   $100.0k
+M8000 Void Engine: Chaser      1500  16 12 11 0 10 12 5 8 3 6 0  $100.0k
+M8000 Void Engine: Warhammer   1500  14 12 12 2 9 11 6 10 4 5 1  $100.0k
+M8000 Void Engine: Behemoth    1500  14 12 12 4 12 9 6 11 4 5 12  $4.8m
+M8000 Void Engine: Dual-Field  1020  14 12 11 0 9 9 5 8 4 9 0   $200.0k
+
+# SECTION type=engine massClass=9000 size=large
+M9000 Void Engine: Longhaul    1750  15 15 10 0 10 6 4 8 4 9 0  $100.0k
+M9000 Void Engine: Traveler    1750  14 16 11 0 15 8 6 8 4 6 0  $100.0k
+M9000 Void Engine: Chaser      1750  15 14 10 0 10 10 5 8 3 6 0  $100.0k
+M9000 Void Engine: Balanced    1750  13 13 10 0 9 9 5 8 4 8 0   $100.0k
+M9000 Void Engine: Warhammer   1750  16 12 12 2 9 10 6 10 4 4 1  $100.0k
+M9000 Void Engine: Behemoth    1750  16 12 12 4 11 9 6 11 4 4 13  $6.1m
+M9000 Void Engine: Dual-Field  1100  14 12 10 0 9 9 5 8 4 8 0   $500.0k
+
+# ── HYPERWARP DRIVES ──────────────────────────────────────────────────────────
+# Columns: Name | Mass | Pilot | Electronics | Navigation | Armor | Shield | JumpCost | Cost
+# intCount=7
+
+# SECTION type=hyperwarp massClass=2400 size=medium
+Basic Hyperwarp Drive      200  0 2 6 0 1 14  $20.0k
+Longhaul Hyperwarp Drive   200  0 3 8 0 1 10  $20.0k
+Kickstarter Hyperwarp Drive 200  0 3 7 1 2 12  $20.0k
+Combat Hyperwarp Drive     190  2 3 7 1 4 18  $35.0k
+Warhammer Hyperwarp Drive  190  6 5 7 4 6 24  $95.0k
+Performance Hyperwarp Drive 190  0 5 7 0 0 24  $95.0k
+
+# SECTION type=hyperwarp massClass=3400 size=medium
+Basic Hyperwarp Drive      225  0 3 10 0 2 18  $20.0k
+Longhaul Hyperwarp Drive   225  0 3 12 0 1 14  $20.0k
+Kickstarter Hyperwarp Drive 225  0 4 11 1 1 16  $20.0k
+Combat Hyperwarp Drive     215  2 3 10 1 3 20  $35.0k
+Warhammer Hyperwarp Drive  215  6 5 8 4 6 26  $95.0k
+Performance Hyperwarp Drive 215  0 5 8 0 0 26  $95.0k
+
+# SECTION type=hyperwarp massClass=5000 size=medium
+Basic Hyperwarp Drive      225  0 3 12 0 0 22  $20.0k
+Longhaul Hyperwarp Drive   225  0 4 14 0 0 18  $20.0k
+Kickstarter Hyperwarp Drive 225  0 4 13 1 0 20  $20.0k
+Combat Hyperwarp Drive     215  3 2 12 2 3 25  $35.0k
+Warhammer Hyperwarp Drive  215  7 6 8 6 5 31  $95.0k
+Performance Hyperwarp Drive 215  0 6 8 0 0 31  $95.0k
+
+# SECTION type=hyperwarp massClass=6000 size=medium
+Basic Hyperwarp Drive      300  0 6 14 0 0 26  $20.0k
+Longhaul Hyperwarp Drive   300  0 4 17 0 0 22  $20.0k
+Kickstarter Hyperwarp Drive 300  0 5 15 0 0 24  $20.0k
+Combat Hyperwarp Drive     290  3 5 14 2 2 29  $45.0k
+Warhammer Hyperwarp Drive  290  7 7 10 6 5 35  $95.0k
+Performance Hyperwarp Drive 290  0 7 10 0 0 35  $95.0k
+
+# SECTION type=hyperwarp massClass=7000 size=large
+Basic Hyperwarp Drive      500  0 5 15 0 0 28  $30.0k
+Longhaul Hyperwarp Drive   500  0 7 18 0 0 25  $30.0k
+Kickstarter Hyperwarp Drive 500  0 6 16 1 1 26  $30.0k
+Combat Hyperwarp Drive     480  4 4 15 3 2 32  $45.0k
+Warhammer Hyperwarp Drive  480  8 7 11 7 4 38  $95.0k
+Performance Hyperwarp Drive 480  0 7 11 0 0 38  $95.0k
+
+# SECTION type=hyperwarp massClass=8000 size=large
+Basic Hyperwarp Drive      550  0 8 18 0 0 32  $30.0k
+Longhaul Hyperwarp Drive   550  0 7 20 0 0 28  $30.0k
+Kickstarter Hyperwarp Drive 550  0 10 17 0 0 30  $30.0k
+Combat Hyperwarp Drive     525  4 7 17 3 1 36  $85.0k
+Warhammer Hyperwarp Drive  525  8 8 13 7 4 42  $185.0k
+Performance Hyperwarp Drive 525  0 8 13 0 0 42  $185.0k
+
+# SECTION type=hyperwarp massClass=9000 size=large
+Basic Hyperwarp Drive      750  0 10 19 0 0 36  $30.0k
+Longhaul Hyperwarp Drive   750  0 8 21 0 0 30  $30.0k
+Combat Hyperwarp Drive     725  4 8 19 3 1 40  $85.0k
+Warhammer Hyperwarp Drive  725  8 9 15 7 3 50  $185.0k
+Performance Hyperwarp Drive 725  0 9 15 0 0 50  $185.0k

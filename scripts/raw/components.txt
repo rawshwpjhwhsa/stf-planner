@@ -1,0 +1,394 @@
+Ship comp cargo	Jyeeta Cargo	Small banner 51	Large	625	+0	+2	+0	+0	+0	25	0	0	+0	+0	+0	+0	0	0	0
+Ship comp cargo	Jyeeta Cargo II	Small banner 51	Large	625	+0	+2	+0	+0	+0	35	0	0	+1	+0	+0	+0	0	0	0
+Ship comp weaponslocker	Jyeeta Deathpit	Small banner 51	Small	175	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters	Jyeeta Booster	Small banner 51	Small	125	+0	+1	+0	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp defensive	Jyeeta Hull Plate	Small banner 51	Medium	325	+0	+2	+0	+2	+0	0	0	0	+0	+6	+1	+0	0	0	0
+Ship comp cargo	Cargo Hold 1	None	Large	625	+0	+2	+0	+0	+0	25	0	0	+0	+0	+0	+40	0	0	0
+Ship comp cargo	Cargo Hold 2	None	Large	625	+0	+2	+0	+0	+0	35	0	0	+0	+0	+0	+50	0	0	0
+Ship comp cargo	Cargo Hold 3	None	Large	625	+0	+4	+0	+0	+0	40	0	0	+0	+0	+0	+60	0	0	0
+Ship comp cargo	Storage Hold	None	Medium	325	+0	+3	+0	+0	+0	25	0	0	+0	+0	+0	+0	0	0	0
+Ship comp cargo	Armored Storage	None	Medium	325	+0	+3	+0	+0	+0	10	0	0	+1	+1	+1	+0	0	0	0
+Ship comp cargo	Cargo-Fuel Storage	None	Medium	325	+0	+3	+0	+0	+0	15	0	0	+0	+0	+0	+15	0	0	0
+Ship comp cargo	Cargo Hold 4	None	Large	625	+0	+4	+0	+0	+0	45	0	0	+0	+0	+0	+70	0	0	0
+Ship comp cargo	Cargo Hold 5	Small banner 7	Large	625	+0	+4	+0	+0	+0	50	0	0	+0	+0	+2	+75	0	0	0
+Ship comp cargo	Armored Cargo Hold 4	Small banner 4	Large	625	+0	+4	+0	+0	+0	40	0	0	+3	+1	+3	+65	0	0	0
+Ship comp cargo	Fuel-Cargo Hold 4	Small banner 1	Large	625	+0	+4	+0	+0	+0	35	0	0	+0	+0	+0	+95	0	0	0
+Ship comp cargo	Hauler Hold	Small banner 5	Large	625	+0	+5	+0	+0	+0	65	0	0	+0	+3	+2	+40	0	0	0
+Ship comp cargo	Fuel-Cargo Hold 5	Small banner 1	Large	625	+0	+5	+0	+0	+0	35	0	0	+0	+0	+0	+120	0	0	0
+Ship comp cargo	Cargo Hold 6	None	Large	625	+0	+6	+0	+0	+0	60	0	0	+0	+0	+2	+75	0	0	0
+Ship comp cargo	Cargo Hold 7	None	Large	625	+0	+6	+0	+0	+0	70	0	0	+0	+0	+2	+75	0	0	0
+Ship comp cargo	Cargo Hold 8	None	Large	625	+0	+7	+0	+0	+0	80	0	0	+0	+0	+2	+80	0	0	0
+Ship comp cargo	Armored Cargo Hold 5	Small banner 7	Large	625	+0	+4	+0	+0	+0	50	0	0	+5	+0	+2	+75	0	0	0
+Ship comp cargo	Armored Cargo Hold 6	None	Large	625	+0	+6	+0	+0	+0	60	0	0	+6	+0	+2	+75	0	0	0
+Ship comp cargo	Storage Cache	None	Small	125	+0	+1	+0	+0	+0	10	0	0	+0	+0	+0	+0	0	0	0
+Ship comp cargo	Cargo-Fuel Pod	None	Small	120	+0	+1	+0	+0	+0	5	0	0	+0	+0	+0	+10	0	0	0
+Ship comp weapon torps	Hellfire Torpedo	None	Small	110	+0	+2	+4	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon torps	Torpedo Mk-Alpha	None	Medium	325	+0	+1	+5	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon torps	Firestorm Torpedo	None	Small	110	+0	+2	+6	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon torps	Void-Lance Torpedo	None	Medium	325	+0	+3	+7	+3	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon torps	Inferno Torpedo	None	Small	110	+0	+2	+11	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon torps	Torpedo MK2-Alpha	None	Medium	325	+0	+3	+13	+3	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon torps	Torpedo Dual-Laced Array	None	Small	110	+0	+3	+13	+3	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon torps	Firewave Torpedo	None	Small	110	+0	+2	+15	+4	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon torps	Warpdart	Small banner 51	Small	110	+0	+2	+4	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon torps	Cadonya Buster Array	Small banner 2	Large	600	+0	+6	+16	+6	+0	0	0	0	+0	+0	+4	+0	0	0	0
+Ship comp weapon autocannon	Valiant Autocannon	None	Small	100	+0	+1	+4	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon autocannon	M90 Barrel-Cannon	None	Medium	300	+0	+2	+6	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon autocannon	M92 Barrel-Cannon	None	Small	100	+0	+2	+5	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon autocannon	M94 Barrel-Cannon	None	Medium	300	+0	+2	+7	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon autocannon	Dual-Linked Autocannon	None	Small	100	+0	+2	+6	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon autocannon	Vanguard Autocannon	None	Small	100	+0	+3	+9	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon autocannon	Lionheart Cannon	None	Small	100	+0	+3	+10	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon autocannon	M95 Tracer Cannon	None	Small	100	+0	+3	+12	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon autocannon	Jyeeta Cannon	Small banner 51	Small	100	+0	+1	+4	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon autocannon	M101 Tracker Cannon	None	Small	100	+0	+3	+11	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon autocannon	M115 Twin Autocannon	None	Small	100	+0	+3	+11	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon gdriver	Vengence Gravcannon	None	Medium	325	+0	+1	+5	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon gdriver	Retaliation Gravcannon	None	Medium	350	+0	+2	+5	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon gdriver	JUK Gravity Array	None	Medium	350	+0	+2	+6	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon gdriver	JUK Gravcannon	None	Medium	350	+0	+2	+8	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon gdriver	JUK-22 Gravcannon	None	Medium	350	+0	+2	+9	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon gdriver	JUK-24 Gravcannon	None	Medium	350	+0	+3	+10	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon gdriver	Retribution Gravcannon	None	Large	600	+0	+3	+13	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon gdriver	Coronation Gravcannon	None	Large	600	+0	+2	+15	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon gdriver	Ruut 82 Gravcannon	None	Large	600	+0	+2	+8	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon gdriver	Ruut 84 Gravcannon	None	Large	600	+0	+2	+12	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon gdriver	Horrorcaster	Small banner 51	Large	625	+0	+3	+9	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon lance	Phoenix Lance	None	Small	150	+0	+2	+4	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon lance	Starshot Lance Array	None	Medium	350	+0	+2	+5	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon lance	HX-Cycle Lance	None	Small	150	+0	+2	+5	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon lance	HX-2 Lance	None	Small	150	+0	+2	+7	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon lance	Starfall Lance Array	None	Medium	350	+0	+2	+9	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon lance	Cloudstrike Lance	None	Small	150	+0	+3	+9	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon lance	Thunder XK3 Lance Array	None	Medium	350	+0	+3	+10	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon lance	Void-Thunder Lance	None	Small	150	+0	+3	+12	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon lance	Hazuk Duo-Arc	Small banner 6	Medium	350	+0	+4	+13	+3	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon lance	Cerulean Tri-Arc	Small banner 2	Medium	350	+0	+4	+13	+3	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon lance	Direwarp Lance	Small banner 51	Small	150	+0	+2	+4	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon missiles	Ares Missile System	None	Medium	300	+0	+1	+4	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon missiles	Hydra Missile Array	None	Small	125	+0	+2	+4	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon missiles	Arratech Missile Pod	None	Small	125	+0	+2	+6	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon missiles	Aramech Missile Pod	None	Small	125	+0	+2	+8	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon missiles	Dracos Missile Array	None	Small	125	+0	+2	+9	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon missiles	Dracos X2 Missile Battery	None	Small	125	+0	+2	+11	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon missiles	Aramech X2 Missile Battery	None	Small	125	+0	+2	+12	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon missiles	Valkri Missile Pods	None	Small	125	+0	+2	+13	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon missiles	Vector Missile System	None	Medium	300	+0	+3	+7	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon missiles	Dual-Linked Vector Missile	None	Medium	300	+0	+3	+10	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon missiles	Goliath Missile Battery	None	Medium	300	+0	+3	+12	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon missiles	Gargoyle Missile Battery	None	Small	125	+0	+2	+12	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp defensive	Jyeeta Defense Matrix	Small banner 51	Medium	325	+0	+0	+0	+0	+0	0	0	0	+8	+2	+2	+0	0	0	0
+Ship comp weapon plasmacannon	Imperator PC-1	None	Small	100	+0	+1	+4	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	Stalwart PC-1	None	Small	100	+0	+2	+5	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	Imperator Plasma Artillery	None	Medium	300	+0	+2	+6	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	Commander PC-1	None	Small	100	+0	+2	+7	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	MK Plasma Ordnance	None	Medium	300	+0	+2	+9	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	X2 Plasma Battery	None	Small	100	+0	+3	+9	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	Commander Plasma Artillery	None	Medium	300	+0	+3	+11	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	Azmath Plasma Ordnance	None	Medium	300	+0	+3	+12	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	Obliterator PK-1	None	Large	550	+0	+2	+9	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	Obliterator PK-2	None	Large	550	+0	+3	+11	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	Obliterator PKX-3	None	Large	550	+0	+4	+11	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	Interceder PCX-5	None	Large	550	+0	+3	+12	+3	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	Interceder PCX-1	None	Large	550	+0	+2	+9	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon plasmacannon	Jyeeta Plasma II	Small banner 51	Small	100	+0	+1	+4	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp defensive	Jyeeta Reinforced Hull	Small banner 51	Medium	-225	+0	+2	+0	+1	+0	0	0	0	+0	+0	+-2	+0	0	0	0
+Ship comp weapon railgun	Light Railgun	None	Small	125	+0	+2	+3	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Archangel Railgun	None	Medium	300	+0	+2	+5	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Helios Railgun	None	Medium	300	+0	+3	+6	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Helios X Railgun	None	Medium	310	+0	+3	+6	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Archangel Dual-R Railgun	None	Medium	300	+0	+3	+6	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Elomag Railgun	None	Medium	300	+0	+4	+9	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Helios X2 Railgun Array	None	Medium	300	+0	+4	+9	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Tri Helical Rail X3	None	Medium	300	+0	+4	+10	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Lightspear Railgun	None	Small	125	+0	+2	+4	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Blazelight Railgun	None	Small	125	+0	+2	+6	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Radiance Railgun	None	Small	125	+0	+3	+8	+3	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Jyeeta Railgun	Small banner 51	Medium	300	+0	+2	+5	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Demon-X Heavy Rail	None	Medium	300	+0	+5	+11	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weapon railgun	Demon-X Fast Rail	None	Medium	300	+0	+4	+10	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Barracks 1	None	Medium	275	+0	+0	+0	+0	+0	0	12	0	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Barracks 2	None	Medium	275	+0	+0	+0	+0	+0	0	18	0	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Barracks 3	None	Medium	275	+0	+0	+0	+0	+0	0	24	0	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Barracks 4	None	Medium	275	+0	+0	+0	+0	+0	0	30	0	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Barracks 5	None	Medium	275	+0	+0	+0	+0	+0	0	36	0	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Barracks 6	None	Large	600	+0	+0	+0	+0	+0	0	42	0	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Barracks 7	None	Large	600	+0	+0	+0	+0	+0	0	48	0	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Barracks 8	None	Large	600	+0	+0	+0	+0	+0	0	54	0	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Reinforced Barracks 3	None	Medium	275	+0	+0	+0	+0	+0	0	24	0	+3	+3	+2	+0	0	0	0
+Ship comp barracks	Reinforced Barracks 4	None	Medium	275	+0	+0	+0	+0	+0	0	30	0	+3	+3	+3	+0	0	0	0
+Ship comp barracks	Reinforced Barracks 5	None	Medium	275	+0	+0	+0	+0	+0	0	36	0	+2	+2	+3	+0	0	0	0
+Ship comp barracks	Reinforced Barracks 6	None	Large	600	+0	+0	+0	+0	+0	0	42	0	+4	+2	+3	+0	0	0	0
+Ship comp barracks	Reinforced Barracks 8	None	Large	600	+0	+0	+0	+0	+0	0	54	0	+3	+2	+4	+0	0	0	0
+Ship comp barracks	Shielded Barracks 3	None	Medium	275	+0	+0	+0	+0	+0	0	24	0	+0	+4	+2	+0	0	0	0
+Ship comp barracks	Shielded Barracks 4	Small banner 2	Medium	275	+0	+0	+0	+0	+0	0	30	0	+0	+5	+3	+0	0	0	0
+Ship comp barracks	Shielded Barracks 5	None	Medium	275	+0	+0	+0	+0	+0	0	36	0	+0	+4	+5	+0	0	0	0
+Ship comp barracks	Shielded Barracks 6	None	Large	600	+0	+0	+0	+0	+0	0	42	0	+0	+5	+5	+0	0	0	0
+Ship comp barracks	Battle Barracks 3	None	Medium	275	+0	+0	+0	+0	+0	0	24	0	+1	+1	+5	+0	0	0	0
+Ship comp barracks	Battle Barracks 4	None	Medium	275	+0	+0	+0	+0	+0	0	30	0	+1	+2	+6	+0	0	0	0
+Ship comp barracks	Compact Barracks	None	Small	100	+0	+0	+0	+0	+0	0	6	0	+1	+1	+0	+0	0	0	0
+Ship comp barracks	Jyeeta Drone Pod	Small banner 51	Small	75	+0	+0	+0	+0	+0	0	0	1	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Jyeeta Xeno Hive	Small banner 51	Medium	275	+0	+0	+0	+0	+0	0	36	0	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Jyeeta Xeno Hive II	Small banner 51	Medium	275	+0	+0	+0	+0	+0	0	42	0	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Jyeeta Xeno Hive III	Small banner 51	Medium	275	+0	+0	+0	+0	+0	0	63	0	+0	+0	+0	+0	0	0	0
+Ship comp barracks	Squad Barracks	None	Medium	150	+0	+0	+0	+0	+0	0	6	1	+0	+0	+1	+0	0	0	0
+Ship comp cabin	Officer Cabin	None	Small	75	+0	+0	+0	+0	+0	0	0	1	+0	+0	+0	+0	0	0	0
+Ship comp cabin	Reinforced Officer Cabin	None	Small	75	+0	+0	+0	+0	+0	0	0	1	+1	+1	+1	+0	0	0	0
+Ship comp cabin	Officer Suites	None	Medium	225	+0	+0	+0	+0	+0	0	0	2	+0	+0	+0	+0	0	0	0
+Ship comp cabin	Shielded Officer Suites	None	Medium	225	+0	+0	+0	+0	+0	0	0	2	+0	+2	+0	+0	0	0	0
+Ship comp cabin	Armored Officer Suites	Small banner 9	Medium	225	+0	+0	+0	+0	+0	0	0	2	+2	+0	+0	+0	0	0	0
+Ship comp cabin	Navigation Annex	Small banner 8	Medium	150	+1	+2	+0	+0	+6	0	0	1	+0	+0	+-10	+0	0	0	0
+Ship comp cabin	Engineering Annex	Small banner 9	Medium	150	+0	+4	+0	+4	+0	0	0	1	+0	+0	+0	+0	0	0	0
+Ship comp cabin	Warden's Annex	Small banner 6	Medium	150	+0	+4	+0	+0	+0	0	0	1	+1	+1	+0	+0	0	1	2
+Ship comp cabin	Tactician's Annex	Small banner 4	Medium	150	+0	+2	+0	+4	+0	0	0	1	+0	+0	+0	+0	0	0	0
+Ship comp medical	Jyeeta Healing Pool	Small banner 51	Medium	325	+0	+2	+0	+2	+0	0	0	0	+0	+0	+0	+0	0	0	6
+Ship comp weaponslocker	Weapons Locker A1	None	Small	175	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weaponslocker	Weapons Locker A2	None	Small	175	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weaponslocker	Weapons Locker A3	None	Small	175	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weaponslocker	Weapons Locker A4	None	Small	175	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weaponslocker	Weapons Locker A5	None	Small	175	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp weaponslocker	Weapons Locker A6	None	Small	125	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp sensor	Sensor Array 1	None	Small	50	+0	+0	+0	+4	+2	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp sensor	Sensor Array 2	None	Small	50	+0	+0	+0	+5	+2	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp sensor	Sensor Array 3	None	Small	50	+0	+0	+0	+5	+3	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp sensor	Sensor Array 4	None	Small	50	+0	+0	+0	+6	+3	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp sensor	Sensor Array 5	None	Small	50	+0	+0	+0	+6	+4	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp defensive	Sig Dampener 1	None	Small	125	+0	+1	+0	+2	+2	0	0	0	+0	+0	+-1	+0	0	0	0
+Ship comp defensive	Sig Dampener 2	None	Small	125	+0	+1	+0	+3	+2	0	0	0	+0	+0	+-1	+0	0	0	0
+Ship comp defensive	Sig Dampener 3	None	Small	125	+0	+1	+0	+4	+2	0	0	0	+0	+0	+-1	+0	0	0	0
+Ship comp defensive	Sig Veil Field	Small banner 3	Small	100	+0	+2	+0	+5	+2	0	0	0	+0	+0	+-1	+0	0	0	0
+Ship comp defensive	Sig Concealment Field	None	Medium	300	+0	+3	+0	+4	+4	0	0	0	+0	+0	+-4	+0	0	0	0
+Ship comp barracks	Luxury Cabin	None	Medium	325	+0	+3	+0	+0	+0	0	0	0	+1	+1	+0	+0	1	0	0
+Ship comp barracks	Passenger Cabin	None	Small	125	+0	+2	+0	+0	+0	0	0	0	+0	+0	+0	+0	1	0	0
+Ship comp barracks	Luxury Suites	None	Large	500	+0	+4	+0	+0	+0	0	0	0	+0	+2	+4	+0	3	0	0
+Ship comp barracks	Passenger Suites	None	Medium	325	+0	+3	+0	+0	+0	0	0	0	+0	+0	+5	+0	2	0	0
+Ship comp barracks	Grand Lux Suites	Small banner 1	Large	520	+0	+5	+0	+0	+0	0	0	0	+0	+2	+6	+0	3	0	0
+Ship comp barracks	Reinforced Passenger Cabin	None	Small	125	+0	+3	+0	+0	+0	0	0	0	+1	+0	+2	+0	1	0	0
+Ship comp barracks	Shielded Passenger Cabin	None	Small	125	+0	+2	+0	+1	+0	0	0	0	+0	+1	+2	+0	1	0	0
+Ship comp barracks	Prison Cell	None	Small	125	+0	+2	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	1	0
+Ship comp barracks	Prison Cellblock	None	Medium	325	+0	+3	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	3	0
+Ship comp barracks	Interrogation Chamber	Small banner 6	Medium	300	+0	+4	+0	+0	+0	0	0	0	+0	+2	+5	+0	0	1	0
+Ship comp barracks	Interrogation Ward	Small banner 6	Large	500	+0	+4	+0	+0	+0	0	0	0	+0	+4	+8	+0	0	4	0
+Ship comp barracks	Reinforced Prison Cell	None	Small	125	+0	+3	+0	+0	+0	0	0	0	+1	+0	+2	+0	0	1	0
+Ship comp barracks	Shielded Prison Cell	None	Small	125	+0	+2	+0	+1	+0	0	0	0	+0	+1	+2	+0	0	1	0
+Ship comp barracks	Prison Ward	None	Large	500	+0	+4	+0	+0	+0	0	0	0	+0	+2	+4	+0	0	4	0
+Ship comp fuel	Fuel Tank 1	None	Medium	325	+0	+1	+0	+2	+0	0	0	0	+0	+0	+0	+40	0	0	0
+Ship comp fuel	Fuel Tank 2	None	Medium	325	+0	+2	+0	+2	+0	0	0	0	+0	+0	+0	+48	0	0	0
+Ship comp fuel	Fuel Tank 3	None	Medium	325	+0	+3	+0	+3	+0	0	0	0	+0	+0	+0	+56	0	0	0
+Ship comp fuel	Fuel Tank 4	None	Medium	325	+0	+3	+0	+4	+0	0	0	0	+0	+0	+0	+84	0	0	0
+Ship comp fuel	Fuel Tank 5	None	Medium	325	+0	+3	+0	+4	+0	0	0	0	+0	+0	+0	+105	0	0	0
+Ship comp fuel	Fuel Tank 6	None	Medium	325	+0	+3	+0	+4	+0	0	0	0	+0	+0	+0	+130	0	0	0
+Ship comp fuel	Fuel Tank 7	None	Medium	325	+0	+3	+0	+4	+0	0	0	0	+0	+0	+0	+160	0	0	0
+Ship comp fuel	Small Fuel Tank 1	None	Small	125	+0	+1	+0	+1	+0	0	0	0	+0	+0	+0	+20	0	0	0
+Ship comp fuel	Small Fuel Tank 2	None	Small	125	+0	+2	+0	+1	+0	0	0	0	+0	+0	+0	+26	0	0	0
+Ship comp fuel	Small Fuel Tank 3	None	Small	125	+0	+2	+0	+2	+0	0	0	0	+0	+0	+0	+32	0	0	0
+Ship comp fuel	Small Fuel Tank 4	None	Small	125	+0	+3	+0	+2	+0	0	0	0	+0	+0	+0	+38	0	0	0
+Ship comp fuel	Large Fuel Tank 1	None	Large	620	+0	+1	+0	+2	+0	0	0	0	+0	+0	+0	+75	0	0	0
+Ship comp fuel	Large Fuel Tank 2	None	Large	620	+0	+2	+0	+3	+0	0	0	0	+0	+0	+0	+95	0	0	0
+Ship comp fuel	Large Fuel Tank 3	None	Large	620	+0	+3	+0	+3	+0	0	0	0	+0	+0	+0	+135	0	0	0
+Ship comp fuel	Large Fuel Tank 4	None	Large	620	+0	+3	+0	+4	+0	0	0	0	+0	+0	+0	+160	0	0	0
+Ship comp fuel	Reinforced Fuel Tank	Small banner 8	Medium	325	+2	+3	+0	+2	+0	0	0	0	+2	+0	+2	+64	0	0	0
+Ship comp fuel	Reinforced Fuel Pod	Small banner 8	Small	110	+0	+2	+0	+0	+0	0	0	0	+2	+0	+1	+32	0	0	0
+Ship comp fuel	Fuel Helix Coil 2	None	Medium	300	+0	+4	+0	+1	+2	0	0	0	+0	+0	+-2	+10	0	0	0
+Ship comp fuel	Fuel Helix Coil 3	None	Medium	300	+0	+5	+0	+1	+2	0	0	0	+0	+0	+-2	+14	0	0	0
+Ship comp fuel	Fuel Helix Coil 4	Small banner 9	Medium	300	+0	+6	+0	+2	+3	0	0	0	+0	+0	+-4	+18	0	0	0
+Ship comp fuel	Fuel Helix Coil 5	Small banner 9	Medium	300	+0	+8	+0	+2	+4	0	0	0	+0	+0	+-6	+22	0	0	0
+Ship comp fuelscoop	Water-Fuel Reclamation 1	None	Medium	325	+0	+5	+0	+2	+2	0	0	0	+0	+0	+-5	+18	0	0	0
+Ship comp fuelscoop	Water-Fuel Reclamation 2	Small banner 5	Medium	325	+0	+6	+0	+3	+2	0	0	0	+0	+0	+-12	+32	0	0	0
+Ship comp fuelscoop	Water-Fuel Reclamation 3	Small banner 5	Medium	325	+0	+6	+0	+4	+4	0	0	0	+0	+0	+-14	+40	0	0	0
+Ship comp fuelscoop	Water-Fuel Reclamation 4	Small banner 5	Medium	325	+0	+6	+0	+6	+4	0	0	0	+0	+0	+-16	+48	0	0	0
+Ship comp fuelscoop	Water-Fuel Reclamation 5	Small banner 5	Medium	325	+0	+6	+0	+6	+4	0	0	0	+0	+0	+-18	+56	0	0	0
+Ship comp fuelscoop	Water-Fuel Reclamation 6	Small banner 5	Medium	325	+0	+6	+0	+6	+4	0	0	0	+0	+0	+-20	+64	0	0	0
+Ship comp fuelscoop	Orbital Fuel Scoop 1	None	Medium	275	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+10	0	0	0
+Ship comp fuelscoop	Orbital Fuel Scoop 2	None	Medium	275	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+20	0	0	0
+Ship comp fuelscoop	Orbital Fuel Scoop 3	None	Medium	275	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+25	0	0	0
+Ship comp fuelscoop	Orbital Fuel Scoop 4	Small banner 4	Medium	275	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+30	0	0	0
+Ship comp fuelscoop	Orbital Fuel Scoop 5	Small banner 4	Medium	275	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+40	0	0	0
+Ship comp extractor	Extraction Drill	None	Medium	300	+0	+0	+0	+0	+0	10	0	0	+0	+0	+0	+0	0	0	0
+Ship comp extractor	Harvester Bay	None	Medium	300	+0	+0	+0	+0	+0	15	0	0	+0	+0	+1	+10	0	0	0
+Ship comp extractor	Resource Processor	Small banner 5	Medium	300	+0	+0	+0	+0	+0	20	0	0	+0	+0	+2	+15	0	0	0
+Ship comp extractor	Javat Mechi-Reaper	Small banner 5	Large	500	+0	+0	+0	+0	+0	25	0	0	+0	+0	+3	+20	0	0	0
+Ship comp seals	Matchweave EVA Suits	None	Small	100	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	1
+Ship comp exocrawler	L-Support Rover	None	Medium	300	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+15	0	0	0
+Ship comp exocrawler	Hyperion Exo-Suits	Small banner 6	Medium	300	+0	+0	+0	+0	+0	0	0	0	+0	+1	+0	+0	0	0	1
+Ship comp exocrawler	Exo-Crawler	None	Large	500	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+25	0	0	0
+Ship comp seals	EVA Airlock	None	Small	125	+0	+0	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	1
+Ship comp seals	Weather Seals	None	Medium	300	+0	+0	+0	+0	+0	0	0	0	+1	+0	+0	+0	0	0	0
+Ship comp seals	Radiation Seals	None	Medium	300	+0	+0	+0	+0	+0	0	0	0	+1	+1	+0	+0	0	0	0
+Ship comp seals	Mesa Radiate-Seal	Small banner 8	Medium	300	+0	+0	+0	+0	+0	0	0	0	+1	+2	+0	+0	0	0	0
+Ship comp intel bonus	Surface Scanner	None	Small	125	+0	+0	+0	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp intel bonus	Wide-Arc Scanner	None	Small	125	+0	+0	+0	+1	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp intel bonus	Depth Scanner Omega	Small banner 3	Small	125	+0	+0	+0	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp intel bonus	Depth Scanner Omega-X	Small banner 3	Medium	300	+0	+0	+0	+4	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp seals	Magnamech Plating	None	Small	100	+0	+0	+0	+0	+0	0	0	0	+1	+2	+2	+0	0	0	0
+Ship comp seals	Centurion Radiation Array	None	Small	100	+0	+0	+0	+0	+0	0	0	0	+1	+2	+4	+0	0	0	0
+Ship comp seals	Ferrochromium Plating	None	Small	100	+0	+0	+0	+0	+0	0	0	0	+1	+2	+8	+0	0	0	0
+Ship comp seals	Ferrochromium Plating II	None	Small	100	+0	+0	+0	+0	+0	0	0	0	+5	+4	+6	+0	0	0	0
+Ship comp seals	Duranium Coating	None	Medium	275	+0	+0	+0	+0	+0	0	0	0	+2	+2	+0	+0	0	0	0
+Ship comp seals	Ferrochromium Coating	None	Medium	275	+0	+0	+0	+0	+0	0	0	0	+2	+2	+0	+0	0	0	0
+Ship comp seals	Iridlaentine Weave-Coating	None	Medium	275	+0	+0	+0	+0	+0	0	0	0	+2	+2	+0	+0	0	0	0
+Ship comp seals	Duranium Coating II	None	Medium	275	+0	+0	+0	+0	+0	0	0	0	+4	+3	+0	+0	0	0	0
+Ship comp seals	Duranium Coating III	None	Medium	275	+0	+0	+0	+0	+0	0	0	0	+6	+4	+0	+0	0	0	0
+Ship comp intel bonus	Oni-Signal Array	None	Small	100	+0	+0	+0	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp intel bonus	Dual-Arc Signal Array	None	Small	100	+0	+0	+0	+3	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp intel bonus	Triple-Arc Signal Array	None	Small	100	+0	+0	+0	+4	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp intel bonus	Multi-Signal Array	Small banner 3	Medium	250	+0	+0	+0	+5	+0	0	0	0	+0	+2	+0	+0	0	0	0
+Ship comp seals	EVA Deck 1	None	Medium	275	+0	+0	+0	+1	+0	0	0	0	+0	+0	+0	+5	0	0	1
+Ship comp seals	EVA Deck 2	None	Medium	275	+0	+1	+0	+1	+0	0	0	0	+0	+1	+0	+10	0	0	2
+Ship comp seals	EVA Deck 3	None	Medium	275	+0	+1	+0	+2	+0	0	0	0	+0	+1	+0	+15	0	0	2
+Ship comp seals	EVA Deck 4	Small banner 1	Medium	275	+0	+2	+0	+2	+0	0	0	0	+0	+2	+0	+20	0	0	3
+Ship comp extractor	Salvage Bay 1	None	Large	500	+0	+0	+0	+1	+0	10	0	0	+0	+0	+0	+5	0	0	0
+Ship comp extractor	Salvage Bay 2	None	Large	500	+0	+0	+0	+1	+0	15	0	0	+0	+0	+0	+10	0	0	0
+Ship comp extractor	Salvage Bay 3	None	Large	500	+0	+0	+0	+1	+0	20	0	0	+0	+0	+0	+15	0	0	0
+Ship comp extractor	Salvage Bay 4	Small banner 4	Large	500	+0	+0	+0	+1	+0	25	0	0	+0	+0	+0	+20	0	0	0
+Ship comp extractor	Salvage Bay 5	Small banner 4	Large	500	+0	+3	+0	+2	+0	30	0	0	+0	+0	+0	+25	0	0	0
+Ship comp extractor	Armored Salvage Bay 5	Small banner 4	Large	500	+0	+4	+0	+2	+0	15	0	0	+5	+0	+2	+15	0	0	0
+Ship comp extractor	Salvage Bay 6	Small banner 4	Large	500	+0	+4	+0	+3	+0	40	0	0	+6	+0	+8	+40	0	0	0
+Ship comp medical	Reinforced Medical Chamber	None	Small	125	+0	+2	+0	+1	+0	0	0	0	+1	+0	+2	+0	0	0	2
+Ship comp medical	Basic Medical Bay	None	Medium	325	+0	+2	+0	+2	+0	0	0	0	+0	+0	+0	+0	0	0	4
+Ship comp medical	Shielded Medical Chamber	None	Small	125	+0	+3	+0	+3	+0	0	0	0	+0	+1	+2	+0	0	0	2
+Ship comp medical	Medical Bay	None	Medium	325	+0	+4	+0	+2	+0	0	0	0	+0	+0	+0	+0	0	0	5
+Ship comp medical	Advanced Medical Ward	None	Large	650	+0	+5	+0	+3	+0	0	0	0	+0	+0	+0	+0	0	0	9
+Ship comp medical	Combat Medical Ward	None	Large	650	+0	+5	+0	+3	+0	0	0	0	+2	+2	+5	+0	0	0	8
+Ship comp medical	Reinforced Medical Ward	None	Large	650	+0	+5	+0	+3	+0	0	0	0	+4	+0	+5	+0	0	0	8
+Ship comp medical	Advanced Medical Bay	None	Medium	325	+0	+3	+0	+4	+0	0	0	0	+0	+1	+0	+0	0	0	6
+Ship comp medical	Medical Clinic	None	Large	650	+0	+6	+0	+2	+0	0	0	1	+0	+0	+5	+0	0	0	8
+Ship comp medical	Advanced Medical Clinic	None	Large	600	+0	+6	+0	+3	+0	0	0	1	+0	+0	+5	+0	0	0	9
+Ship comp medical	Combat Medical Clinic	None	Medium	325	+0	+3	+0	+2	+0	0	0	1	+0	+1	+5	+0	0	0	6
+Ship comp medical	Plague Ward	None	Medium	275	+0	+3	+0	+0	+0	0	0	0	+0	+2	+0	+0	0	1	7
+Ship comp medical	Advanced Medical Chamber	None	Small	125	+0	+3	+0	+3	+0	0	0	0	+0	+0	+0	+0	0	0	3
+Ship comp msasredux	Mass Dampener 1	None	Small	-150	+0	+1	+0	+0	+0	0	0	0	+0	+0	+2	+0	0	0	0
+Ship comp msasredux	Mass Dampener 2	None	Small	-180	+0	+2	+0	+0	+1	0	0	0	+0	+0	+4	+0	0	0	0
+Ship comp msasredux	Mass Dampener 3	None	Small	-210	+0	+3	+0	+0	+2	0	0	0	+0	+0	+5	+0	0	0	0
+Ship comp msasredux	Mass Dampener 4	None	Small	-240	+0	+3	+0	+0	+2	0	0	0	+0	+0	+6	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 1	None	Medium	-300	+0	+2	+0	+0	+1	0	0	0	+0	+0	+5	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 2	None	Medium	-330	+0	+3	+0	+0	+1	0	0	0	+0	+0	+7	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 3	None	Medium	-360	+0	+4	+0	+0	+2	0	0	0	+0	+0	+8	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 4	None	Medium	-400	+0	+5	+0	+0	+3	0	0	0	+0	+0	+9	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 5	Small banner 1	Medium	-460	+0	+6	+0	+0	+4	0	0	0	+0	+1	+12	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 6	Small banner 1	Medium	-540	+0	+6	+0	+0	+5	0	0	0	+0	+2	+13	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 5	Small banner 2	Medium	-460	+0	+6	+0	+0	+4	0	0	0	+0	+1	+12	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 6	Small banner 2	Medium	-540	+0	+6	+0	+0	+5	0	0	0	+0	+2	+13	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 5	Small banner 3	Medium	-460	+0	+6	+0	+0	+4	0	0	0	+0	+1	+12	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 6	Small banner 3	Medium	-540	+0	+6	+0	+0	+5	0	0	0	+0	+2	+13	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 5	Small banner 4	Medium	-460	+0	+6	+0	+0	+4	0	0	0	+0	+1	+12	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 6	Small banner 4	Medium	-540	+0	+6	+0	+0	+5	0	0	0	+0	+2	+13	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 5	Small banner 5	Medium	-460	+0	+6	+0	+0	+4	0	0	0	+0	+1	+12	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 6	Small banner 5	Medium	-540	+0	+6	+0	+0	+5	0	0	0	+0	+2	+13	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 5	Small banner 6	Medium	-460	+0	+6	+0	+0	+4	0	0	0	+0	+1	+12	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 6	Small banner 6	Medium	-540	+0	+6	+0	+0	+5	0	0	0	+0	+2	+13	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 5	Small banner 7	Medium	-460	+0	+6	+0	+0	+4	0	0	0	+0	+1	+12	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 6	Small banner 7	Medium	-540	+0	+6	+0	+0	+5	0	0	0	+0	+2	+13	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 5	Small banner 8	Medium	-460	+0	+6	+0	+0	+4	0	0	0	+0	+1	+12	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 6	Small banner 8	Medium	-540	+0	+6	+0	+0	+5	0	0	0	+0	+2	+13	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 5	Small banner 9	Medium	-460	+0	+6	+0	+0	+4	0	0	0	+0	+1	+12	+0	0	0	0
+Ship comp msasredux	Adv. Mass Dampener 6	Small banner 9	Medium	-540	+0	+6	+0	+0	+5	0	0	0	+0	+2	+13	+0	0	0	0
+Ship comp msasredux	Mass Modulator 1	None	Small	-100	+2	+0	+0	+0	+0	0	0	0	+0	+0	+1	+0	0	0	0
+Ship comp msasredux	Mass Modulator 2	None	Small	-125	+2	+0	+0	+1	+0	0	0	0	+0	+0	+2	+0	0	0	0
+Ship comp msasredux	Mass Modulator 3	None	Small	-150	+3	+0	+0	+1	+0	0	0	0	+0	+0	+3	+0	0	0	0
+Ship comp msasredux	Mass Modulator 4	None	Small	-165	+3	+0	+0	+2	+0	0	0	0	+0	+0	+5	+0	0	0	0
+Ship comp msasredux	Mass Reducer 1	None	Medium	-225	+0	+1	+0	+1	+0	0	0	0	+0	+0	+2	+0	0	0	0
+Ship comp msasredux	Mass Reducer 2	None	Medium	-240	+0	+2	+0	+2	+0	0	0	0	+0	+0	+3	+0	0	0	0
+Ship comp msasredux	Mass Reducer 3	None	Medium	-260	+0	+2	+0	+3	+0	0	0	0	+0	+0	+4	+0	0	0	0
+Ship comp msasredux	Mass Reducer 4	None	Medium	-280	+0	+2	+0	+4	+0	0	0	0	+0	+0	+5	+0	0	0	0
+Ship comp msasredux	Hawk Mass Reducer 4	Small banner 8	Medium	-300	+5	+1	+0	+0	+0	0	0	0	+2	+0	+4	+0	0	0	0
+Ship comp msasredux	Lion Mass Reducer 4	Small banner 4	Medium	-300	+0	+1	+0	+5	+0	0	0	0	+0	+2	+4	+0	0	0	0
+Ship comp intel bonus	Quad-Goltha Scanner	Small banner 1	Medium	225	+0	+2	+0	+5	+0	0	0	0	+0	+1	+1	+0	0	0	0
+Ship comp intel bonus	Redlight Goltha Scanner	Small banner 3	Medium	225	+0	+2	+0	+6	+0	0	0	0	+0	+1	+1	+0	0	0	0
+Ship comp intel bonus	Redlance Goltha Scanner	Small banner 3	Medium	225	+0	+2	+0	+3	+4	0	0	0	+0	+1	+1	+0	0	0	0
+Ship comp armor	Armored Bulkheads 1	None	Small	150	+0	+0	+0	+0	+0	0	0	0	+2	+1	+3	+0	0	0	0
+Ship comp armor	Armored Bulkheads 2	None	Small	150	+0	+0	+0	+0	+0	0	0	0	+2	+2	+5	+0	0	0	0
+Ship comp armor	Armored Bulkheads 3	None	Small	150	+0	+0	+0	+0	+0	0	0	0	+3	+3	+7	+0	0	0	0
+Ship comp armor	Armored Bulkheads 4	None	Small	150	+0	+0	+0	+0	+0	0	0	0	+4	+3	+8	+0	0	0	0
+Ship comp armor	Armored Bulkheads 5	Small banner 9	Small	150	+0	+0	+0	+0	+0	0	0	0	+5	+4	+8	+0	0	0	0
+Ship comp defensive	Deflector Array 1	None	Medium	350	+0	+2	+0	+2	+0	0	0	0	+0	+6	+1	+0	0	0	0
+Ship comp defensive	Deflector Array 2	None	Medium	350	+0	+2	+0	+3	+0	0	0	0	+0	+8	+3	+0	0	0	0
+Ship comp defensive	Deflector Array 3	None	Medium	350	+0	+3	+0	+3	+0	0	0	0	+0	+9	+5	+0	0	0	0
+Ship comp defensive	Deflector Array 4	None	Medium	350	+0	+3	+0	+4	+0	0	0	0	+0	+11	+7	+0	0	0	0
+Ship comp defensive	Deflector Array 5	None	Medium	350	+0	+6	+0	+8	+0	0	0	0	+0	+16	+21	+0	0	0	0
+Ship comp defensive	Deflector Array 6	None	Medium	350	+0	+9	+0	+10	+0	0	0	0	+0	+20	+32	+0	0	0	0
+Ship comp shield	Reinforced Structures 1	None	Medium	325	+0	+0	+0	+0	+0	0	0	0	+6	+2	+3	+0	0	0	0
+Ship comp shield	Reinforced Structures 2	None	Medium	325	+0	+0	+0	+0	+0	0	0	0	+7	+3	+5	+0	0	0	0
+Ship comp shield	Reinforced Structures 3	None	Medium	325	+0	+0	+0	+0	+0	0	0	0	+8	+3	+7	+0	0	0	0
+Ship comp shield	Reinforced Structures 4	None	Medium	325	+0	+0	+0	+0	+0	0	0	0	+9	+4	+8	+0	0	0	0
+Ship comp shield	Reinforced Structures 5	Small banner 9	Medium	325	+0	+0	+0	+0	+0	0	0	0	+10	+5	+12	+0	0	0	0
+Ship comp defensive	Battle Prow 1	None	Large	650	+0	+1	+0	+3	+0	0	0	0	+10	+0	+9	+0	0	0	0
+Ship comp defensive	Battle Prow 2	None	Large	650	+0	+1	+0	+4	+0	0	0	0	+12	+0	+9	+0	0	0	0
+Ship comp defensive	Battle Prow 3	None	Large	650	+0	+1	+0	+5	+0	0	0	0	+14	+0	+10	+0	0	0	0
+Ship comp defensive	Battle Prow 4	Small banner 2	Large	635	+0	+1	+0	+4	+0	0	0	0	+15	+2	+9	+0	0	0	0
+Ship comp defensive	Battle Prow 5	Small banner 2	Large	635	+0	+2	+0	+5	+1	0	0	0	+16	+3	+12	+0	0	0	0
+Ship comp shield	Hull Plating 1	None	Large	600	+0	+2	+0	+2	+0	0	0	0	+0	+10	+5	+0	0	0	0
+Ship comp shield	Hull Plating 2	None	Large	600	+0	+2	+0	+3	+0	0	0	0	+0	+12	+7	+0	0	0	0
+Ship comp shield	Hull Plating 3	None	Large	600	+0	+2	+0	+4	+0	0	0	0	+0	+14	+8	+0	0	0	0
+Ship comp shield	Hull Plating 4	Small banner 5	Large	605	+0	+2	+0	+5	+0	0	0	0	+2	+15	+9	+0	0	0	0
+Ship comp shield	Hull Plating 5	Small banner 5	Large	605	+0	+2	+0	+6	+0	0	0	0	+3	+16	+10	+0	0	0	0
+Ship comp spikes	Reactor Spike Module 1	None	Small	100	+0	+1	+0	+2	+0	0	0	0	+0	+0	+-2	+5	0	0	0
+Ship comp spikes	Reactor Spike Module 2	None	Small	100	+0	+2	+0	+3	+0	0	0	0	+0	+0	+-4	+15	0	0	0
+Ship comp spikes	Reactor Spike Module 3	None	Small	100	+0	+2	+0	+4	+0	0	0	0	+0	+0	+-5	+25	0	0	0
+Ship comp spikes	Reactor Spike Module 4	None	Small	100	+0	+3	+0	+4	+0	0	0	0	+0	+0	+-6	+35	0	0	0
+Ship comp boosters pilot	Pilot Assist Module 1	None	Small	125	+4	+2	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters pilot	Pilot Assist Module 2	None	Small	125	+5	+2	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters pilot	Pilot Assist Module 3	None	Small	125	+6	+3	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters pilot	Pilot Assist Module 4	None	Small	125	+7	+3	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters nav	Nav Assist Module 1	None	Small	125	+0	+0	+0	+2	+4	0	0	0	+0	+0	+-2	+0	0	0	0
+Ship comp boosters nav	Nav Assist Module 2	None	Small	125	+0	+0	+0	+3	+5	0	0	0	+0	+0	+-2	+0	0	0	0
+Ship comp boosters nav	Nav Assist Module 3	None	Small	125	+0	+0	+0	+3	+6	0	0	0	+0	+0	+-3	+0	0	0	0
+Ship comp boosters nav	Nav Assist Module 4	None	Small	125	+0	+0	+0	+4	+7	0	0	0	+0	+0	+-3	+0	0	0	0
+Ship comp boosters pilot	Defense Pattern Matrix 1	None	Small	125	+2	+2	+0	+2	+0	0	0	0	+0	+0	+2	+0	0	0	0
+Ship comp boosters pilot	Defense Pattern Matrix 2	None	Small	125	+2	+2	+0	+3	+0	0	0	0	+0	+0	+2	+0	0	0	0
+Ship comp boosters pilot	Defense Pattern Matrix 3	None	Small	125	+3	+3	+0	+3	+0	0	0	0	+0	+0	+3	+0	0	0	0
+Ship comp boosters pilot	Defense Pattern Matrix 4	Small banner 5	Small	125	+3	+3	+0	+4	+0	0	0	0	+0	+0	+4	+0	0	0	0
+Ship comp boosters	Peak Velocity Matrix 1	None	Medium	350	+2	+2	+0	+2	+0	0	0	0	+0	+0	+2	+0	0	0	0
+Ship comp boosters	Peak Velocity Matrix 2	None	Medium	350	+3	+4	+0	+2	+0	0	0	0	+0	+0	+3	+0	0	0	0
+Ship comp boosters	Peak Velocity Matrix 3	None	Medium	350	+4	+6	+0	+2	+0	0	0	0	+0	+0	+4	+0	0	0	0
+Ship comp boosters	Peak Velocity Matrix 4	Small banner 3	Medium	350	+6	+6	+0	+3	+0	0	0	0	+0	+0	+5	+0	0	0	0
+Ship comp boosters	Radi-Pulse Booster 1	None	Small	125	+0	+2	+0	+2	+0	0	0	0	+1	+0	+2	+0	0	0	0
+Ship comp boosters	Void-Pulse Booster 1	None	Small	125	+0	+2	+0	+2	+0	0	0	0	+1	+0	+2	+0	0	0	0
+Ship comp boosters	Radi-Pulse Booster 2	None	Small	125	+0	+3	+0	+4	+0	0	0	0	+2	+0	+2	+0	0	0	0
+Ship comp boosters	Void-Pulse Booster 2	None	Small	125	+0	+3	+0	+4	+0	0	0	0	+2	+0	+2	+0	0	0	0
+Ship comp boosters	Radi-Pulse Booster 3	None	Small	125	+0	+4	+0	+6	+0	0	0	0	+3	+0	+3	+0	0	0	0
+Ship comp boosters	Void-Pulse Booster 3	None	Small	125	+0	+4	+0	+6	+0	0	0	0	+3	+0	+3	+0	0	0	0
+Ship comp boosters nav	ECCM Screen Matrix 1	None	Small	125	+0	+4	+0	+0	+2	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters nav	ECCM Screen Matrix 2	None	Small	125	+0	+4	+0	+0	+2	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters nav	ECCM Screen Matrix 3	None	Small	125	+0	+4	+0	+0	+3	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters nav	ECCM Screen Matrix 4	Small banner 1	Small	125	+0	+4	+0	+0	+4	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters nav	ECCM Screen Matrix 5	Small banner 1	Small	125	+0	+4	+0	+0	+5	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters nav	ECCM Screen Matrix 6	Small banner 1	Small	125	+0	+4	+0	+0	+5	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp defensive	C-Tak Interceptor System 1	None	Small	100	+2	+0	+0	+0	+2	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp defensive	C-Tak Interceptor System 2	None	Small	100	+2	+0	+0	+0	+2	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp defensive	C-Tak Interceptor System 3	None	Small	100	+3	+0	+0	+0	+3	0	0	0	+0	+1	+0	+0	0	0	0
+Ship comp defensive	C-Tak Interceptor System 4	Small banner 9	Small	100	+3	+0	+0	+0	+4	0	0	0	+0	+2	+0	+0	0	0	0
+Ship comp boosters aggro	Boarding Assault System 1	None	Small	150	+2	+4	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Boarding Assault System 2	None	Small	150	+2	+4	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Boarding Assault System 3	None	Small	150	+3	+3	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Boarding Assault System 4	Small banner 6	Small	150	+3	+3	+0	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Targeting Matrix 1	None	Small	125	+0	+0	+4	+2	+0	0	0	0	+0	+0	+2	+0	0	0	0
+Ship comp boosters aggro	Targeting Matrix 2	None	Small	125	+0	+0	+4	+2	+0	0	0	0	+0	+0	+2	+0	0	0	0
+Ship comp boosters aggro	Targeting Matrix 3	None	Small	125	+0	+0	+5	+2	+0	0	0	0	+0	+0	+3	+0	0	0	0
+Ship comp boosters aggro	Targeting Matrix 4	Small banner 7	Small	125	+0	+0	+5	+3	+0	0	0	0	+0	+0	+4	+0	0	0	0
+Ship comp boosters aggro	Targetlock Matrix 5	Small banner 2	Small	100	+0	+0	+6	+6	+0	0	0	0	+0	+0	+3	+0	0	0	0
+Ship comp boosters aggro	Interlocking Sensor Matrix 1	None	Small	125	+0	+0	+2	+3	+0	0	0	0	+0	+0	+2	+0	0	0	0
+Ship comp boosters aggro	Interlocking Sensor Matrix 2	None	Small	125	+0	+0	+2	+3	+0	0	0	0	+0	+0	+2	+0	0	0	0
+Ship comp boosters aggro	Interlocking Sensor Matrix 3	None	Small	125	+0	+0	+3	+3	+0	0	0	0	+0	+0	+3	+0	0	0	0
+Ship comp boosters aggro	Interlocking Sensor Matrix 4	Small banner 2	Small	125	+0	+0	+3	+4	+0	0	0	0	+0	+0	+4	+0	0	0	0
+Ship comp boosters aggro	Interlocking Sensor Matrix 5	Small banner 4	Small	125	+0	+0	+5	+5	+0	0	0	0	+0	+0	+3	+0	0	0	0
+Ship comp boosters aggro	Interlock Matrix 5	Small banner 4	Small	100	+0	+0	+4	+6	+0	0	0	0	+0	+0	+3	+0	0	0	0
+Ship comp boosters aggro	Interlocking Sensor Matrix 6	Small banner 4	Small	125	+0	+0	+5	+5	+0	0	0	0	+0	+0	+3	+0	0	0	0
+Ship comp boosters aggro	Interlocking Sensor Matrix 7	None	Small	125	+0	+0	+5	+6	+0	0	0	0	+0	+0	+5	+0	0	0	0
+Ship comp boosters aggro	Railtrak Guidance Matrix 1	None	Small	100	+3	+0	+4	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Railtrak Guidance Matrix 2	None	Small	100	+3	+0	+4	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Railtrak Guidance Matrix 3	None	Small	100	+4	+0	+4	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Railtrak Guidance Matrix 4	Small banner 6	Small	100	+5	+0	+5	+0	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp fighterbay	Hangar Bay	None	Medium	300	+0	+2	+0	+1	+0	0	0	0	+0	+0	+4	+15	0	0	0
+Ship comp fighterbay	Shielded Hangar Bay	None	Medium	300	+0	+3	+0	+2	+0	0	0	0	+0	+2	+6	+10	0	0	0
+Ship comp fighterbay	Reinforced Hangar Bay	None	Medium	300	+0	+3	+0	+2	+0	0	0	0	+2	+0	+6	+10	0	0	0
+Ship comp fighterbay	Reactive Hangar Bay	None	Medium	300	+0	+4	+0	+1	+0	0	0	0	+0	+0	+6	+12	0	0	0
+Ship comp fighterbay	Fidelis Hangar Bay	Small banner 4	Medium	300	+0	+4	+0	+1	+0	0	0	0	+0	+0	+6	+12	0	0	0
+Ship comp fighterbay	Advanced Hangar Bay	None	Medium	300	+0	+4	+0	+2	+0	0	0	0	+0	+0	+10	+20	0	0	0
+Ship comp boosters aggro	Joint Precision Launch System 1	None	Small	125	+0	+2	+0	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Joint Precision Launch System 2	None	Small	125	+0	+3	+0	+3	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Joint Precision Launch System 3	Small banner 8	Small	125	+0	+4	+0	+4	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Quturaan Phase Inflector 1	None	Medium	250	+0	+2	+2	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Katteduun Phase Inflector 2	None	Medium	250	+0	+3	+3	+2	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Quturaan Phase Inflector 3	Small banner 3	Medium	250	+0	+4	+5	+4	+0	0	0	0	+0	+0	+0	+0	0	0	0
+Ship comp boosters aggro	Katteduun Phase Inflector 4	Small banner 4	Medium	250	+0	+4	+5	+4	+0	0	0	0	+0	+0	+0	+0	0	0	0

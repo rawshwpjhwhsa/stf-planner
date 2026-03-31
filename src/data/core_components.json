@@ -1,0 +1,2302 @@
+[
+  {
+    "name": "Scout Bridge",
+    "type": "bridge",
+    "subtype": "scout",
+    "size": "small",
+    "mass": 100,
+    "skills": {
+      "pilot": 4,
+      "shipOps": 2,
+      "electronics": 3,
+      "navigation": 3
+    },
+    "officers": 3,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 50000
+  },
+  {
+    "name": "Scout Bridge 2",
+    "type": "bridge",
+    "subtype": "scout",
+    "size": "small",
+    "mass": 100,
+    "skills": {
+      "pilot": 5,
+      "shipOps": 3,
+      "electronics": 4,
+      "navigation": 4
+    },
+    "officers": 3,
+    "armor": 0,
+    "shield": 1,
+    "jumpCost": 0,
+    "cost": 50000
+  },
+  {
+    "name": "Scout Bridge 3",
+    "type": "bridge",
+    "subtype": "scout",
+    "size": "small",
+    "mass": 100,
+    "skills": {
+      "pilot": 6,
+      "shipOps": 3,
+      "electronics": 4,
+      "navigation": 4
+    },
+    "officers": 3,
+    "armor": 1,
+    "shield": 2,
+    "jumpCost": 1,
+    "cost": 100000
+  },
+  {
+    "name": "Scout Bridge 4",
+    "type": "bridge",
+    "subtype": "scout",
+    "size": "small",
+    "mass": 100,
+    "skills": {
+      "pilot": 7,
+      "shipOps": 4,
+      "electronics": 5,
+      "navigation": 5
+    },
+    "officers": 3,
+    "armor": 3,
+    "shield": 3,
+    "jumpCost": 3,
+    "cost": 100000
+  },
+  {
+    "name": "Scout-Stealth Bridge 5",
+    "type": "bridge",
+    "subtype": "scout",
+    "size": "small",
+    "mass": 100,
+    "skills": {
+      "pilot": 7,
+      "shipOps": 4,
+      "electronics": 8,
+      "navigation": 6
+    },
+    "officers": 3,
+    "armor": 3,
+    "shield": 3,
+    "jumpCost": 3,
+    "cost": 1000000
+  },
+  {
+    "name": "Scout-Skirmish Bridge 5",
+    "type": "bridge",
+    "subtype": "scout",
+    "size": "small",
+    "mass": 100,
+    "skills": {
+      "pilot": 8,
+      "shipOps": 4,
+      "electronics": 6,
+      "navigation": 6
+    },
+    "officers": 3,
+    "armor": 4,
+    "shield": 4,
+    "jumpCost": 4,
+    "cost": 1000000
+  },
+  {
+    "name": "Scout-Hauler Bridge 5",
+    "type": "bridge",
+    "subtype": "scout",
+    "size": "small",
+    "mass": -100,
+    "skills": {
+      "pilot": 8,
+      "shipOps": 4,
+      "electronics": 5,
+      "navigation": 8
+    },
+    "officers": 3,
+    "armor": 2,
+    "shield": 2,
+    "jumpCost": -5,
+    "cost": 1000000
+  },
+  {
+    "name": "Scout-Vanguard Bridge 5",
+    "type": "bridge",
+    "subtype": "scout",
+    "size": "small",
+    "mass": 100,
+    "skills": {
+      "pilot": 6,
+      "shipOps": 5,
+      "electronics": 8,
+      "navigation": 6
+    },
+    "officers": 3,
+    "armor": 2,
+    "shield": 2,
+    "jumpCost": 2,
+    "cost": 1000000
+  },
+  {
+    "name": "Bridge",
+    "type": "bridge",
+    "subtype": "standard",
+    "size": "medium",
+    "mass": 300,
+    "skills": {
+      "pilot": 5,
+      "shipOps": 3,
+      "electronics": 4,
+      "navigation": 5
+    },
+    "officers": 1,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 20000
+  },
+  {
+    "name": "Bridge 2",
+    "type": "bridge",
+    "subtype": "standard",
+    "size": "medium",
+    "mass": 300,
+    "skills": {
+      "pilot": 6,
+      "shipOps": 3,
+      "electronics": 5,
+      "navigation": 5
+    },
+    "officers": 1,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 20000
+  },
+  {
+    "name": "Bridge 3",
+    "type": "bridge",
+    "subtype": "standard",
+    "size": "medium",
+    "mass": 300,
+    "skills": {
+      "pilot": 6,
+      "shipOps": 4,
+      "electronics": 5,
+      "navigation": 6
+    },
+    "officers": 1,
+    "armor": 1,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 50000
+  },
+  {
+    "name": "Bridge 4",
+    "type": "bridge",
+    "subtype": "standard",
+    "size": "medium",
+    "mass": 300,
+    "skills": {
+      "pilot": 7,
+      "shipOps": 4,
+      "electronics": 5,
+      "navigation": 7
+    },
+    "officers": 1,
+    "armor": 1,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 200000
+  },
+  {
+    "name": "Jyeeta Hivemind",
+    "type": "bridge",
+    "subtype": "standard",
+    "size": "medium",
+    "mass": 300,
+    "skills": {
+      "pilot": 5,
+      "shipOps": 3,
+      "electronics": 4,
+      "navigation": 5
+    },
+    "officers": 1,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 20000
+  },
+  {
+    "name": "Battle Bridge",
+    "type": "bridge",
+    "subtype": "standard",
+    "size": "medium",
+    "mass": 250,
+    "skills": {
+      "pilot": 6,
+      "shipOps": 3,
+      "electronics": 4,
+      "navigation": 6
+    },
+    "officers": 1,
+    "armor": 2,
+    "shield": 0,
+    "jumpCost": 4,
+    "cost": 85000
+  },
+  {
+    "name": "Battle Bridge 2",
+    "type": "bridge",
+    "subtype": "standard",
+    "size": "medium",
+    "mass": 250,
+    "skills": {
+      "pilot": 8,
+      "shipOps": 4,
+      "electronics": 5,
+      "navigation": 8
+    },
+    "officers": 1,
+    "armor": 2,
+    "shield": 0,
+    "jumpCost": 3,
+    "cost": 100000
+  },
+  {
+    "name": "Battle Bridge 3",
+    "type": "bridge",
+    "subtype": "standard",
+    "size": "medium",
+    "mass": 250,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 4,
+      "electronics": 6,
+      "navigation": 8
+    },
+    "officers": 1,
+    "armor": 2,
+    "shield": 0,
+    "jumpCost": 4,
+    "cost": 220000
+  },
+  {
+    "name": "Battle Bridge 4",
+    "type": "bridge",
+    "subtype": "standard",
+    "size": "medium",
+    "mass": 250,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 4,
+      "electronics": 6,
+      "navigation": 8
+    },
+    "officers": 1,
+    "armor": 2,
+    "shield": 0,
+    "jumpCost": 4,
+    "cost": 220000
+  },
+  {
+    "name": "Bridge",
+    "type": "bridge",
+    "subtype": "capital",
+    "size": "large",
+    "mass": 300,
+    "skills": {
+      "pilot": 5,
+      "shipOps": 3,
+      "electronics": 4,
+      "navigation": 5
+    },
+    "officers": 1,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 20000
+  },
+  {
+    "name": "Bridge 2",
+    "type": "bridge",
+    "subtype": "capital",
+    "size": "large",
+    "mass": 300,
+    "skills": {
+      "pilot": 6,
+      "shipOps": 3,
+      "electronics": 5,
+      "navigation": 5
+    },
+    "officers": 1,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 20000
+  },
+  {
+    "name": "Bridge 3",
+    "type": "bridge",
+    "subtype": "capital",
+    "size": "large",
+    "mass": 300,
+    "skills": {
+      "pilot": 6,
+      "shipOps": 4,
+      "electronics": 5,
+      "navigation": 6
+    },
+    "officers": 1,
+    "armor": 1,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 50000
+  },
+  {
+    "name": "Bridge 4",
+    "type": "bridge",
+    "subtype": "capital",
+    "size": "large",
+    "mass": 300,
+    "skills": {
+      "pilot": 7,
+      "shipOps": 4,
+      "electronics": 5,
+      "navigation": 7
+    },
+    "officers": 1,
+    "armor": 1,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 200000
+  },
+  {
+    "name": "Jyeeta Hivemind",
+    "type": "bridge",
+    "subtype": "capital",
+    "size": "large",
+    "mass": 300,
+    "skills": {
+      "pilot": 5,
+      "shipOps": 3,
+      "electronics": 4,
+      "navigation": 5
+    },
+    "officers": 1,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 20000
+  },
+  {
+    "name": "Battle Bridge",
+    "type": "bridge",
+    "subtype": "capital",
+    "size": "large",
+    "mass": 250,
+    "skills": {
+      "pilot": 6,
+      "shipOps": 3,
+      "electronics": 4,
+      "navigation": 6
+    },
+    "officers": 1,
+    "armor": 2,
+    "shield": 0,
+    "jumpCost": 4,
+    "cost": 85000
+  },
+  {
+    "name": "Battle Bridge 2",
+    "type": "bridge",
+    "subtype": "capital",
+    "size": "large",
+    "mass": 250,
+    "skills": {
+      "pilot": 8,
+      "shipOps": 4,
+      "electronics": 5,
+      "navigation": 8
+    },
+    "officers": 1,
+    "armor": 2,
+    "shield": 0,
+    "jumpCost": 3,
+    "cost": 100000
+  },
+  {
+    "name": "Battle Bridge 3",
+    "type": "bridge",
+    "subtype": "capital",
+    "size": "large",
+    "mass": 250,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 4,
+      "electronics": 6,
+      "navigation": 8
+    },
+    "officers": 1,
+    "armor": 2,
+    "shield": 0,
+    "jumpCost": 4,
+    "cost": 220000
+  },
+  {
+    "name": "Battle Bridge 4",
+    "type": "bridge",
+    "subtype": "capital",
+    "size": "large",
+    "mass": 250,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 4,
+      "electronics": 6,
+      "navigation": 8
+    },
+    "officers": 1,
+    "armor": 2,
+    "shield": 0,
+    "jumpCost": 4,
+    "cost": 220000
+  },
+  {
+    "name": "M2400 Void Engine: Balanced",
+    "type": "engine",
+    "massClass": 2400,
+    "size": "large",
+    "mass": 200,
+    "skills": {
+      "pilot": 7,
+      "shipOps": 6,
+      "electronics": 6,
+      "navigation": 2
+    },
+    "speed": 27,
+    "agility": 27,
+    "fuelPerAU": 3,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 12,
+    "armor": 0,
+    "shield": 3,
+    "jumpCost": 0,
+    "cost": 30000
+  },
+  {
+    "name": "M2400 Void Engine: Longhaul",
+    "type": "engine",
+    "massClass": 2400,
+    "size": "large",
+    "mass": 200,
+    "skills": {
+      "pilot": 6,
+      "shipOps": 6,
+      "electronics": 7,
+      "navigation": 2
+    },
+    "speed": 27,
+    "agility": 27,
+    "fuelPerAU": 2,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 15,
+    "armor": 0,
+    "shield": 4,
+    "jumpCost": 0,
+    "cost": 30000
+  },
+  {
+    "name": "M2400 Void Engine: Traveler",
+    "type": "engine",
+    "massClass": 2400,
+    "size": "large",
+    "mass": 200,
+    "skills": {
+      "pilot": 6,
+      "shipOps": 6,
+      "electronics": 6,
+      "navigation": 2
+    },
+    "speed": 30,
+    "agility": 27,
+    "fuelPerAU": 3,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 6,
+    "armor": 0,
+    "shield": 4,
+    "jumpCost": 0,
+    "cost": 30000
+  },
+  {
+    "name": "M2400 Void Engine: Chaser",
+    "type": "engine",
+    "massClass": 2400,
+    "size": "large",
+    "mass": 200,
+    "skills": {
+      "pilot": 7,
+      "shipOps": 6,
+      "electronics": 6,
+      "navigation": 2
+    },
+    "speed": 27,
+    "agility": 30,
+    "fuelPerAU": 2,
+    "fuelPerCombat": 8,
+    "reactorPoints": 2,
+    "rpPerRangeChange": 0,
+    "safetyRating": 10,
+    "armor": 0,
+    "shield": 3,
+    "jumpCost": 0,
+    "cost": 30000
+  },
+  {
+    "name": "M2400 Void Engine: Warhammer",
+    "type": "engine",
+    "massClass": 2400,
+    "size": "large",
+    "mass": 200,
+    "skills": {
+      "pilot": 6,
+      "shipOps": 6,
+      "electronics": 6,
+      "navigation": 2
+    },
+    "speed": 27,
+    "agility": 28,
+    "fuelPerAU": 4,
+    "fuelPerCombat": 9,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 7,
+    "armor": 0,
+    "shield": 3,
+    "jumpCost": 0,
+    "cost": 30000
+  },
+  {
+    "name": "M2400 Void Engine: Behemoth",
+    "type": "engine",
+    "massClass": 2400,
+    "size": "large",
+    "mass": 200,
+    "skills": {
+      "pilot": 8,
+      "shipOps": 6,
+      "electronics": 6,
+      "navigation": 2
+    },
+    "speed": 29,
+    "agility": 27,
+    "fuelPerAU": 4,
+    "fuelPerCombat": 9,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 7,
+    "armor": 0,
+    "shield": 7,
+    "jumpCost": 0,
+    "cost": 1200000
+  },
+  {
+    "name": "M2400 Void Engine: Dual-Field",
+    "type": "engine",
+    "massClass": 2400,
+    "size": "large",
+    "mass": 100,
+    "skills": {
+      "pilot": 7,
+      "shipOps": 6,
+      "electronics": 6,
+      "navigation": 2
+    },
+    "speed": 27,
+    "agility": 27,
+    "fuelPerAU": 3,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 12,
+    "armor": 0,
+    "shield": 3,
+    "jumpCost": 0,
+    "cost": 130000
+  },
+  {
+    "name": "M3400 Void Engine: Traveler",
+    "type": "engine",
+    "massClass": 3400,
+    "size": "large",
+    "mass": 400,
+    "skills": {
+      "pilot": 7,
+      "shipOps": 7,
+      "electronics": 9,
+      "navigation": 2
+    },
+    "speed": 29,
+    "agility": 24,
+    "fuelPerAU": 3,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 8,
+    "armor": 0,
+    "shield": 3,
+    "jumpCost": 0,
+    "cost": 50000
+  },
+  {
+    "name": "M3400 Void Engine: Chaser",
+    "type": "engine",
+    "massClass": 3400,
+    "size": "large",
+    "mass": 400,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 7,
+      "electronics": 7,
+      "navigation": 2
+    },
+    "speed": 24,
+    "agility": 29,
+    "fuelPerAU": 3,
+    "fuelPerCombat": 8,
+    "reactorPoints": 2,
+    "rpPerRangeChange": 0,
+    "safetyRating": 8,
+    "armor": 0,
+    "shield": 2,
+    "jumpCost": 0,
+    "cost": 50000
+  },
+  {
+    "name": "M3400 Void Engine: Balanced",
+    "type": "engine",
+    "massClass": 3400,
+    "size": "large",
+    "mass": 400,
+    "skills": {
+      "pilot": 8,
+      "shipOps": 8,
+      "electronics": 7,
+      "navigation": 2
+    },
+    "speed": 24,
+    "agility": 24,
+    "fuelPerAU": 3,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 12,
+    "armor": 0,
+    "shield": 2,
+    "jumpCost": 0,
+    "cost": 50000
+  },
+  {
+    "name": "M3400 Void Engine: Longhaul",
+    "type": "engine",
+    "massClass": 3400,
+    "size": "large",
+    "mass": 400,
+    "skills": {
+      "pilot": 7,
+      "shipOps": 9,
+      "electronics": 7,
+      "navigation": 2
+    },
+    "speed": 23,
+    "agility": 23,
+    "fuelPerAU": 2,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 15,
+    "armor": 0,
+    "shield": 3,
+    "jumpCost": 0,
+    "cost": 50000
+  },
+  {
+    "name": "M3400 Void Engine: Warhammer",
+    "type": "engine",
+    "massClass": 3400,
+    "size": "large",
+    "mass": 450,
+    "skills": {
+      "pilot": 7,
+      "shipOps": 9,
+      "electronics": 7,
+      "navigation": 2
+    },
+    "speed": 24,
+    "agility": 26,
+    "fuelPerAU": 4,
+    "fuelPerCombat": 9,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 7,
+    "armor": 0,
+    "shield": 2,
+    "jumpCost": 0,
+    "cost": 50000
+  },
+  {
+    "name": "M3400 Void Engine: Behemoth",
+    "type": "engine",
+    "massClass": 3400,
+    "size": "large",
+    "mass": 450,
+    "skills": {
+      "pilot": 8,
+      "shipOps": 9,
+      "electronics": 7,
+      "navigation": 2
+    },
+    "speed": 27,
+    "agility": 24,
+    "fuelPerAU": 4,
+    "fuelPerCombat": 9,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 7,
+    "armor": 0,
+    "shield": 8,
+    "jumpCost": 0,
+    "cost": 1700000
+  },
+  {
+    "name": "M3400 Void Engine: Dual-Field",
+    "type": "engine",
+    "massClass": 3400,
+    "size": "large",
+    "mass": 200,
+    "skills": {
+      "pilot": 8,
+      "shipOps": 8,
+      "electronics": 7,
+      "navigation": 2
+    },
+    "speed": 24,
+    "agility": 24,
+    "fuelPerAU": 3,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 12,
+    "armor": 0,
+    "shield": 2,
+    "jumpCost": 0,
+    "cost": 150000
+  },
+  {
+    "name": "M5000 Void Engine: Traveler",
+    "type": "engine",
+    "massClass": 5000,
+    "size": "large",
+    "mass": 700,
+    "skills": {
+      "pilot": 8,
+      "shipOps": 10,
+      "electronics": 6,
+      "navigation": 0
+    },
+    "speed": 23,
+    "agility": 16,
+    "fuelPerAU": 4,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 8,
+    "armor": 0,
+    "shield": 2,
+    "jumpCost": 0,
+    "cost": 75000
+  },
+  {
+    "name": "M5000 Void Engine: Balanced",
+    "type": "engine",
+    "massClass": 5000,
+    "size": "large",
+    "mass": 700,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 9,
+      "electronics": 6,
+      "navigation": 0
+    },
+    "speed": 19,
+    "agility": 19,
+    "fuelPerAU": 3,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 10,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 75000
+  },
+  {
+    "name": "M5000 Void Engine: Chaser",
+    "type": "engine",
+    "massClass": 5000,
+    "size": "large",
+    "mass": 700,
+    "skills": {
+      "pilot": 10,
+      "shipOps": 8,
+      "electronics": 6,
+      "navigation": 0
+    },
+    "speed": 18,
+    "agility": 22,
+    "fuelPerAU": 3,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 8,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 75000
+  },
+  {
+    "name": "M5000 Void Engine: Longhaul",
+    "type": "engine",
+    "massClass": 5000,
+    "size": "large",
+    "mass": 700,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 9,
+      "electronics": 6,
+      "navigation": 0
+    },
+    "speed": 20,
+    "agility": 18,
+    "fuelPerAU": 2,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 11,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 75000
+  },
+  {
+    "name": "M5000 Void Engine: Warhammer",
+    "type": "engine",
+    "massClass": 5000,
+    "size": "large",
+    "mass": 750,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 9,
+      "electronics": 7,
+      "navigation": 1
+    },
+    "speed": 19,
+    "agility": 20,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 9,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 6,
+    "armor": 0,
+    "shield": 1,
+    "jumpCost": 0,
+    "cost": 75000
+  },
+  {
+    "name": "M5000 Void Engine: Behemoth",
+    "type": "engine",
+    "massClass": 5000,
+    "size": "large",
+    "mass": 750,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 9,
+      "electronics": 7,
+      "navigation": 3
+    },
+    "speed": 21,
+    "agility": 19,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 9,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 6,
+    "armor": 0,
+    "shield": 9,
+    "jumpCost": 0,
+    "cost": 2300000
+  },
+  {
+    "name": "M5000 Void Engine: Dual-Field",
+    "type": "engine",
+    "massClass": 5000,
+    "size": "large",
+    "mass": 450,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 9,
+      "electronics": 6,
+      "navigation": 0
+    },
+    "speed": 19,
+    "agility": 19,
+    "fuelPerAU": 3,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 10,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 175000
+  },
+  {
+    "name": "M6000 Void Engine: Longhaul",
+    "type": "engine",
+    "massClass": 6000,
+    "size": "large",
+    "mass": 1100,
+    "skills": {
+      "pilot": 10,
+      "shipOps": 11,
+      "electronics": 7,
+      "navigation": 0
+    },
+    "speed": 15,
+    "agility": 15,
+    "fuelPerAU": 3,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 11,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M6000 Void Engine: Balanced",
+    "type": "engine",
+    "massClass": 6000,
+    "size": "large",
+    "mass": 1100,
+    "skills": {
+      "pilot": 11,
+      "shipOps": 9,
+      "electronics": 8,
+      "navigation": 0
+    },
+    "speed": 15,
+    "agility": 15,
+    "fuelPerAU": 4,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 10,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M6000 Void Engine: Traveler",
+    "type": "engine",
+    "massClass": 6000,
+    "size": "large",
+    "mass": 1100,
+    "skills": {
+      "pilot": 11,
+      "shipOps": 9,
+      "electronics": 8,
+      "navigation": 0
+    },
+    "speed": 19,
+    "agility": 13,
+    "fuelPerAU": 4,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 8,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M6000 Void Engine: Chaser",
+    "type": "engine",
+    "massClass": 6000,
+    "size": "large",
+    "mass": 1100,
+    "skills": {
+      "pilot": 11,
+      "shipOps": 9,
+      "electronics": 8,
+      "navigation": 0
+    },
+    "speed": 13,
+    "agility": 18,
+    "fuelPerAU": 3,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 7,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M6000 Void Engine: Warhammer",
+    "type": "engine",
+    "massClass": 6000,
+    "size": "large",
+    "mass": 1100,
+    "skills": {
+      "pilot": 11,
+      "shipOps": 9,
+      "electronics": 8,
+      "navigation": 1
+    },
+    "speed": 15,
+    "agility": 16,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 9,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 6,
+    "armor": 0,
+    "shield": 1,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M6000 Void Engine: Behemoth",
+    "type": "engine",
+    "massClass": 6000,
+    "size": "large",
+    "mass": 1100,
+    "skills": {
+      "pilot": 11,
+      "shipOps": 9,
+      "electronics": 8,
+      "navigation": 3
+    },
+    "speed": 17,
+    "agility": 14,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 9,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 6,
+    "armor": 0,
+    "shield": 10,
+    "jumpCost": 0,
+    "cost": 2600000
+  },
+  {
+    "name": "M6000 Void Engine: Dual-Field",
+    "type": "engine",
+    "massClass": 6000,
+    "size": "large",
+    "mass": 775,
+    "skills": {
+      "pilot": 11,
+      "shipOps": 9,
+      "electronics": 8,
+      "navigation": 0
+    },
+    "speed": 15,
+    "agility": 15,
+    "fuelPerAU": 4,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 10,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 200000
+  },
+  {
+    "name": "M7000 Void Engine: Chaser",
+    "type": "engine",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 1300,
+    "skills": {
+      "pilot": 10,
+      "shipOps": 9,
+      "electronics": 10,
+      "navigation": 0
+    },
+    "speed": 10,
+    "agility": 14,
+    "fuelPerAU": 4,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 7,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M7000 Void Engine: Traveler",
+    "type": "engine",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 1300,
+    "skills": {
+      "pilot": 12,
+      "shipOps": 11,
+      "electronics": 9,
+      "navigation": 0
+    },
+    "speed": 15,
+    "agility": 9,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 8,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M7000 Void Engine: Balanced",
+    "type": "engine",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 1300,
+    "skills": {
+      "pilot": 11,
+      "shipOps": 9,
+      "electronics": 8,
+      "navigation": 0
+    },
+    "speed": 12,
+    "agility": 12,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 9,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M7000 Void Engine: Longhaul",
+    "type": "engine",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 1300,
+    "skills": {
+      "pilot": 12,
+      "shipOps": 10,
+      "electronics": 9,
+      "navigation": 0
+    },
+    "speed": 12,
+    "agility": 11,
+    "fuelPerAU": 4,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 10,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M7000 Void Engine: Warhammer",
+    "type": "engine",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 1300,
+    "skills": {
+      "pilot": 12,
+      "shipOps": 10,
+      "electronics": 10,
+      "navigation": 1
+    },
+    "speed": 12,
+    "agility": 13,
+    "fuelPerAU": 6,
+    "fuelPerCombat": 10,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 6,
+    "armor": 0,
+    "shield": 1,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M7000 Void Engine: Behemoth",
+    "type": "engine",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 1300,
+    "skills": {
+      "pilot": 12,
+      "shipOps": 10,
+      "electronics": 10,
+      "navigation": 3
+    },
+    "speed": 14,
+    "agility": 11,
+    "fuelPerAU": 6,
+    "fuelPerCombat": 10,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 6,
+    "armor": 0,
+    "shield": 11,
+    "jumpCost": 0,
+    "cost": 2800000
+  },
+  {
+    "name": "M7000 Void Engine: Dual-Field",
+    "type": "engine",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 960,
+    "skills": {
+      "pilot": 11,
+      "shipOps": 9,
+      "electronics": 8,
+      "navigation": 0
+    },
+    "speed": 12,
+    "agility": 12,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 9,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 200000
+  },
+  {
+    "name": "M8000 Void Engine: Balanced",
+    "type": "engine",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 1500,
+    "skills": {
+      "pilot": 14,
+      "shipOps": 12,
+      "electronics": 11,
+      "navigation": 0
+    },
+    "speed": 9,
+    "agility": 9,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 9,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M8000 Void Engine: Longhaul",
+    "type": "engine",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 1500,
+    "skills": {
+      "pilot": 15,
+      "shipOps": 14,
+      "electronics": 12,
+      "navigation": 0
+    },
+    "speed": 10,
+    "agility": 6,
+    "fuelPerAU": 4,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 9,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M8000 Void Engine: Traveler",
+    "type": "engine",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 1500,
+    "skills": {
+      "pilot": 14,
+      "shipOps": 13,
+      "electronics": 9,
+      "navigation": 0
+    },
+    "speed": 15,
+    "agility": 8,
+    "fuelPerAU": 6,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 7,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M8000 Void Engine: Chaser",
+    "type": "engine",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 1500,
+    "skills": {
+      "pilot": 16,
+      "shipOps": 12,
+      "electronics": 11,
+      "navigation": 0
+    },
+    "speed": 10,
+    "agility": 12,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 6,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M8000 Void Engine: Warhammer",
+    "type": "engine",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 1500,
+    "skills": {
+      "pilot": 14,
+      "shipOps": 12,
+      "electronics": 12,
+      "navigation": 2
+    },
+    "speed": 9,
+    "agility": 11,
+    "fuelPerAU": 6,
+    "fuelPerCombat": 10,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 5,
+    "armor": 0,
+    "shield": 1,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M8000 Void Engine: Behemoth",
+    "type": "engine",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 1500,
+    "skills": {
+      "pilot": 14,
+      "shipOps": 12,
+      "electronics": 12,
+      "navigation": 4
+    },
+    "speed": 12,
+    "agility": 9,
+    "fuelPerAU": 6,
+    "fuelPerCombat": 11,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 5,
+    "armor": 0,
+    "shield": 12,
+    "jumpCost": 0,
+    "cost": 4800000
+  },
+  {
+    "name": "M8000 Void Engine: Dual-Field",
+    "type": "engine",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 1020,
+    "skills": {
+      "pilot": 14,
+      "shipOps": 12,
+      "electronics": 11,
+      "navigation": 0
+    },
+    "speed": 9,
+    "agility": 9,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 9,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 200000
+  },
+  {
+    "name": "M9000 Void Engine: Longhaul",
+    "type": "engine",
+    "massClass": 9000,
+    "size": "large",
+    "mass": 1750,
+    "skills": {
+      "pilot": 15,
+      "shipOps": 15,
+      "electronics": 10,
+      "navigation": 0
+    },
+    "speed": 10,
+    "agility": 6,
+    "fuelPerAU": 4,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 9,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M9000 Void Engine: Traveler",
+    "type": "engine",
+    "massClass": 9000,
+    "size": "large",
+    "mass": 1750,
+    "skills": {
+      "pilot": 14,
+      "shipOps": 16,
+      "electronics": 11,
+      "navigation": 0
+    },
+    "speed": 15,
+    "agility": 8,
+    "fuelPerAU": 6,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 6,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M9000 Void Engine: Chaser",
+    "type": "engine",
+    "massClass": 9000,
+    "size": "large",
+    "mass": 1750,
+    "skills": {
+      "pilot": 15,
+      "shipOps": 14,
+      "electronics": 10,
+      "navigation": 0
+    },
+    "speed": 10,
+    "agility": 10,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 8,
+    "reactorPoints": 3,
+    "rpPerRangeChange": 0,
+    "safetyRating": 6,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M9000 Void Engine: Balanced",
+    "type": "engine",
+    "massClass": 9000,
+    "size": "large",
+    "mass": 1750,
+    "skills": {
+      "pilot": 13,
+      "shipOps": 13,
+      "electronics": 10,
+      "navigation": 0
+    },
+    "speed": 9,
+    "agility": 9,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 8,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M9000 Void Engine: Warhammer",
+    "type": "engine",
+    "massClass": 9000,
+    "size": "large",
+    "mass": 1750,
+    "skills": {
+      "pilot": 16,
+      "shipOps": 12,
+      "electronics": 12,
+      "navigation": 2
+    },
+    "speed": 9,
+    "agility": 10,
+    "fuelPerAU": 6,
+    "fuelPerCombat": 10,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 4,
+    "armor": 0,
+    "shield": 1,
+    "jumpCost": 0,
+    "cost": 100000
+  },
+  {
+    "name": "M9000 Void Engine: Behemoth",
+    "type": "engine",
+    "massClass": 9000,
+    "size": "large",
+    "mass": 1750,
+    "skills": {
+      "pilot": 16,
+      "shipOps": 12,
+      "electronics": 12,
+      "navigation": 4
+    },
+    "speed": 11,
+    "agility": 9,
+    "fuelPerAU": 6,
+    "fuelPerCombat": 11,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 4,
+    "armor": 0,
+    "shield": 13,
+    "jumpCost": 0,
+    "cost": 6100000
+  },
+  {
+    "name": "M9000 Void Engine: Dual-Field",
+    "type": "engine",
+    "massClass": 9000,
+    "size": "large",
+    "mass": 1100,
+    "skills": {
+      "pilot": 14,
+      "shipOps": 12,
+      "electronics": 10,
+      "navigation": 0
+    },
+    "speed": 9,
+    "agility": 9,
+    "fuelPerAU": 5,
+    "fuelPerCombat": 8,
+    "reactorPoints": 4,
+    "rpPerRangeChange": 0,
+    "safetyRating": 8,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 500000
+  },
+  {
+    "name": "Basic Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 2400,
+    "size": "medium",
+    "mass": 200,
+    "skills": {
+      "pilot": 0,
+      "electronics": 2,
+      "navigation": 6
+    },
+    "armor": 0,
+    "shield": 1,
+    "jumpCost": 14,
+    "cost": 20000
+  },
+  {
+    "name": "Longhaul Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 2400,
+    "size": "medium",
+    "mass": 200,
+    "skills": {
+      "pilot": 0,
+      "electronics": 3,
+      "navigation": 8
+    },
+    "armor": 0,
+    "shield": 1,
+    "jumpCost": 10,
+    "cost": 20000
+  },
+  {
+    "name": "Kickstarter Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 2400,
+    "size": "medium",
+    "mass": 200,
+    "skills": {
+      "pilot": 0,
+      "electronics": 3,
+      "navigation": 7
+    },
+    "armor": 1,
+    "shield": 2,
+    "jumpCost": 12,
+    "cost": 20000
+  },
+  {
+    "name": "Combat Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 2400,
+    "size": "medium",
+    "mass": 190,
+    "skills": {
+      "pilot": 2,
+      "electronics": 3,
+      "navigation": 7
+    },
+    "armor": 1,
+    "shield": 4,
+    "jumpCost": 18,
+    "cost": 35000
+  },
+  {
+    "name": "Warhammer Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 2400,
+    "size": "medium",
+    "mass": 190,
+    "skills": {
+      "pilot": 6,
+      "electronics": 5,
+      "navigation": 7
+    },
+    "armor": 4,
+    "shield": 6,
+    "jumpCost": 24,
+    "cost": 95000
+  },
+  {
+    "name": "Performance Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 2400,
+    "size": "medium",
+    "mass": 190,
+    "skills": {
+      "pilot": 0,
+      "electronics": 5,
+      "navigation": 7
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 24,
+    "cost": 95000
+  },
+  {
+    "name": "Basic Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 3400,
+    "size": "medium",
+    "mass": 225,
+    "skills": {
+      "pilot": 0,
+      "electronics": 3,
+      "navigation": 10
+    },
+    "armor": 0,
+    "shield": 2,
+    "jumpCost": 18,
+    "cost": 20000
+  },
+  {
+    "name": "Longhaul Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 3400,
+    "size": "medium",
+    "mass": 225,
+    "skills": {
+      "pilot": 0,
+      "electronics": 3,
+      "navigation": 12
+    },
+    "armor": 0,
+    "shield": 1,
+    "jumpCost": 14,
+    "cost": 20000
+  },
+  {
+    "name": "Kickstarter Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 3400,
+    "size": "medium",
+    "mass": 225,
+    "skills": {
+      "pilot": 0,
+      "electronics": 4,
+      "navigation": 11
+    },
+    "armor": 1,
+    "shield": 1,
+    "jumpCost": 16,
+    "cost": 20000
+  },
+  {
+    "name": "Combat Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 3400,
+    "size": "medium",
+    "mass": 215,
+    "skills": {
+      "pilot": 2,
+      "electronics": 3,
+      "navigation": 10
+    },
+    "armor": 1,
+    "shield": 3,
+    "jumpCost": 20,
+    "cost": 35000
+  },
+  {
+    "name": "Warhammer Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 3400,
+    "size": "medium",
+    "mass": 215,
+    "skills": {
+      "pilot": 6,
+      "electronics": 5,
+      "navigation": 8
+    },
+    "armor": 4,
+    "shield": 6,
+    "jumpCost": 26,
+    "cost": 95000
+  },
+  {
+    "name": "Performance Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 3400,
+    "size": "medium",
+    "mass": 215,
+    "skills": {
+      "pilot": 0,
+      "electronics": 5,
+      "navigation": 8
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 26,
+    "cost": 95000
+  },
+  {
+    "name": "Basic Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 5000,
+    "size": "medium",
+    "mass": 225,
+    "skills": {
+      "pilot": 0,
+      "electronics": 3,
+      "navigation": 12
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 22,
+    "cost": 20000
+  },
+  {
+    "name": "Longhaul Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 5000,
+    "size": "medium",
+    "mass": 225,
+    "skills": {
+      "pilot": 0,
+      "electronics": 4,
+      "navigation": 14
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 18,
+    "cost": 20000
+  },
+  {
+    "name": "Kickstarter Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 5000,
+    "size": "medium",
+    "mass": 225,
+    "skills": {
+      "pilot": 0,
+      "electronics": 4,
+      "navigation": 13
+    },
+    "armor": 1,
+    "shield": 0,
+    "jumpCost": 20,
+    "cost": 20000
+  },
+  {
+    "name": "Combat Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 5000,
+    "size": "medium",
+    "mass": 215,
+    "skills": {
+      "pilot": 3,
+      "electronics": 2,
+      "navigation": 12
+    },
+    "armor": 2,
+    "shield": 3,
+    "jumpCost": 25,
+    "cost": 35000
+  },
+  {
+    "name": "Warhammer Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 5000,
+    "size": "medium",
+    "mass": 215,
+    "skills": {
+      "pilot": 7,
+      "electronics": 6,
+      "navigation": 8
+    },
+    "armor": 6,
+    "shield": 5,
+    "jumpCost": 31,
+    "cost": 95000
+  },
+  {
+    "name": "Performance Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 5000,
+    "size": "medium",
+    "mass": 215,
+    "skills": {
+      "pilot": 0,
+      "electronics": 6,
+      "navigation": 8
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 31,
+    "cost": 95000
+  },
+  {
+    "name": "Basic Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 6000,
+    "size": "medium",
+    "mass": 300,
+    "skills": {
+      "pilot": 0,
+      "electronics": 6,
+      "navigation": 14
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 26,
+    "cost": 20000
+  },
+  {
+    "name": "Longhaul Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 6000,
+    "size": "medium",
+    "mass": 300,
+    "skills": {
+      "pilot": 0,
+      "electronics": 4,
+      "navigation": 17
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 22,
+    "cost": 20000
+  },
+  {
+    "name": "Kickstarter Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 6000,
+    "size": "medium",
+    "mass": 300,
+    "skills": {
+      "pilot": 0,
+      "electronics": 5,
+      "navigation": 15
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 24,
+    "cost": 20000
+  },
+  {
+    "name": "Combat Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 6000,
+    "size": "medium",
+    "mass": 290,
+    "skills": {
+      "pilot": 3,
+      "electronics": 5,
+      "navigation": 14
+    },
+    "armor": 2,
+    "shield": 2,
+    "jumpCost": 29,
+    "cost": 45000
+  },
+  {
+    "name": "Warhammer Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 6000,
+    "size": "medium",
+    "mass": 290,
+    "skills": {
+      "pilot": 7,
+      "electronics": 7,
+      "navigation": 10
+    },
+    "armor": 6,
+    "shield": 5,
+    "jumpCost": 35,
+    "cost": 95000
+  },
+  {
+    "name": "Performance Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 6000,
+    "size": "medium",
+    "mass": 290,
+    "skills": {
+      "pilot": 0,
+      "electronics": 7,
+      "navigation": 10
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 35,
+    "cost": 95000
+  },
+  {
+    "name": "Basic Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 500,
+    "skills": {
+      "pilot": 0,
+      "electronics": 5,
+      "navigation": 15
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 28,
+    "cost": 30000
+  },
+  {
+    "name": "Longhaul Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 500,
+    "skills": {
+      "pilot": 0,
+      "electronics": 7,
+      "navigation": 18
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 25,
+    "cost": 30000
+  },
+  {
+    "name": "Kickstarter Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 500,
+    "skills": {
+      "pilot": 0,
+      "electronics": 6,
+      "navigation": 16
+    },
+    "armor": 1,
+    "shield": 1,
+    "jumpCost": 26,
+    "cost": 30000
+  },
+  {
+    "name": "Combat Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 480,
+    "skills": {
+      "pilot": 4,
+      "electronics": 4,
+      "navigation": 15
+    },
+    "armor": 3,
+    "shield": 2,
+    "jumpCost": 32,
+    "cost": 45000
+  },
+  {
+    "name": "Warhammer Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 480,
+    "skills": {
+      "pilot": 8,
+      "electronics": 7,
+      "navigation": 11
+    },
+    "armor": 7,
+    "shield": 4,
+    "jumpCost": 38,
+    "cost": 95000
+  },
+  {
+    "name": "Performance Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 7000,
+    "size": "large",
+    "mass": 480,
+    "skills": {
+      "pilot": 0,
+      "electronics": 7,
+      "navigation": 11
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 38,
+    "cost": 95000
+  },
+  {
+    "name": "Basic Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 550,
+    "skills": {
+      "pilot": 0,
+      "electronics": 8,
+      "navigation": 18
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 32,
+    "cost": 30000
+  },
+  {
+    "name": "Longhaul Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 550,
+    "skills": {
+      "pilot": 0,
+      "electronics": 7,
+      "navigation": 20
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 28,
+    "cost": 30000
+  },
+  {
+    "name": "Kickstarter Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 550,
+    "skills": {
+      "pilot": 0,
+      "electronics": 10,
+      "navigation": 17
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 30,
+    "cost": 30000
+  },
+  {
+    "name": "Combat Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 525,
+    "skills": {
+      "pilot": 4,
+      "electronics": 7,
+      "navigation": 17
+    },
+    "armor": 3,
+    "shield": 1,
+    "jumpCost": 36,
+    "cost": 85000
+  },
+  {
+    "name": "Warhammer Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 525,
+    "skills": {
+      "pilot": 8,
+      "electronics": 8,
+      "navigation": 13
+    },
+    "armor": 7,
+    "shield": 4,
+    "jumpCost": 42,
+    "cost": 185000
+  },
+  {
+    "name": "Performance Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 8000,
+    "size": "large",
+    "mass": 525,
+    "skills": {
+      "pilot": 0,
+      "electronics": 8,
+      "navigation": 13
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 42,
+    "cost": 185000
+  },
+  {
+    "name": "Basic Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 9000,
+    "size": "large",
+    "mass": 750,
+    "skills": {
+      "pilot": 0,
+      "electronics": 10,
+      "navigation": 19
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 36,
+    "cost": 30000
+  },
+  {
+    "name": "Longhaul Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 9000,
+    "size": "large",
+    "mass": 750,
+    "skills": {
+      "pilot": 0,
+      "electronics": 8,
+      "navigation": 21
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 30,
+    "cost": 30000
+  },
+  {
+    "name": "Combat Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 9000,
+    "size": "large",
+    "mass": 725,
+    "skills": {
+      "pilot": 4,
+      "electronics": 8,
+      "navigation": 19
+    },
+    "armor": 3,
+    "shield": 1,
+    "jumpCost": 40,
+    "cost": 85000
+  },
+  {
+    "name": "Warhammer Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 9000,
+    "size": "large",
+    "mass": 725,
+    "skills": {
+      "pilot": 8,
+      "electronics": 9,
+      "navigation": 15
+    },
+    "armor": 7,
+    "shield": 3,
+    "jumpCost": 50,
+    "cost": 185000
+  },
+  {
+    "name": "Performance Hyperwarp Drive",
+    "type": "hyperwarp",
+    "massClass": 9000,
+    "size": "large",
+    "mass": 725,
+    "skills": {
+      "pilot": 0,
+      "electronics": 9,
+      "navigation": 15
+    },
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 50,
+    "cost": 185000
+  }
+]
