@@ -1,1 +1,2411 @@
-{}
+{
+  "Juror Class": {
+    "large": [
+      "Cargo Hold 1",
+      "M3400 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Barracks 3",
+      "M3400 Basic Hyperwarp Drive",
+      "Bridge",
+      "Reinforced Structures 1"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Paladin Cruiser": {
+    "large": [
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "Large Fuel Tank 1",
+      "M5000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 3",
+      "M5000 Basic Hyperwarp Drive",
+      "Basic Medical Bay",
+      "Bridge"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Fidelis Cutter": {
+    "large": [
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "M6000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Ares Missile System",
+      "Barracks 4",
+      "M6000 Basic Hyperwarp Drive",
+      "Basic Medical Bay",
+      "Deflector Array 1",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Pilot Assist Module 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Scout Cutter": {
+    "large": [
+      "Cargo Hold 3",
+      "M2400 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Barracks 2",
+      "M2400 Basic Hyperwarp Drive",
+      "Bridge"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Light Railgun",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Pilot Assist Module 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Cautela Heavylift": {
+    "large": [
+      "M7000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 2",
+      "M7000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 2",
+      "Barracks 2",
+      "Basic Medical Bay",
+      "Fuel Tank 1",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Imperator PC-1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Dragoon Cruiser": {
+    "large": [
+      "M7000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 2",
+      "M7000 Void Engine: Warhammer"
+    ],
+    "medium": [
+      "Barracks 2",
+      "Barracks 2",
+      "Basic Medical Bay",
+      "Fuel Tank 1",
+      "Luxury Cabin",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Starshot Lance Array"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Imperator PC-1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Frontier Liner": {
+    "large": [
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "M5000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Barracks 3",
+      "M5000 Basic Hyperwarp Drive",
+      "Bridge",
+      "Harvester Bay",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "EVA Airlock",
+      "Hydra Missile Array",
+      "Imperator PC-1",
+      "Matchweave EVA Suits",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A2"
+    ]
+  },
+  "Guardian Interceptor": {
+    "large": [
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "M6000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Barracks 4",
+      "M6000 Basic Hyperwarp Drive",
+      "Deflector Array 1",
+      "Luxury Cabin",
+      "Starshot Lance Array",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Light Railgun",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Pilot Assist Module 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Broadsword Class": {
+    "large": [
+      "M8000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Cargo Hold 2",
+      "Hull Plating 1",
+      "Large Fuel Tank 1",
+      "M8000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Archangel Railgun",
+      "Ares Missile System",
+      "Barracks 5",
+      "Basic Medical Bay",
+      "Deflector Array 1",
+      "Mass Reducer 1",
+      "Mass Reducer 1",
+      "Reinforced Structures 1"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Imperator PC-1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Reactor Spike Module 2",
+      "Weapons Locker A1"
+    ]
+  },
+  "Galtak Freighter": {
+    "large": [
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "M5000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Barracks 3",
+      "M5000 Basic Hyperwarp Drive",
+      "Bridge"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Hydra Missile Array",
+      "Imperator PC-1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Lightbow Raptor": {
+    "large": [
+      "Cargo Hold 1",
+      "M3400 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 3",
+      "M3400 Basic Hyperwarp Drive",
+      "Bridge",
+      "Reinforced Structures 1"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Longbow Cruiser": {
+    "large": [
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "Luxury Suites",
+      "M5000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Barracks 3",
+      "M5000 Basic Hyperwarp Drive",
+      "Bridge",
+      "Fuel Tank 1",
+      "Starshot Lance Array"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Hydra Missile Array",
+      "Imperator PC-1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Raptor Class": {
+    "large": [
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "M6000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 4",
+      "Ares Missile System",
+      "Barracks 4",
+      "M6000 Basic Hyperwarp Drive",
+      "Basic Medical Bay",
+      "Fuel Tank 1",
+      "Starshot Lance Array",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Pilot Assist Module 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Solar Predator": {
+    "large": [
+      "Advanced Medical Ward",
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "M5000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Archangel Railgun",
+      "Barracks 3",
+      "M5000 Basic Hyperwarp Drive",
+      "Bridge"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Light Railgun",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Phoenix Lance",
+      "Weapons Locker A2"
+    ]
+  },
+  "Vengeance Class": {
+    "large": [
+      "Battle Prow 1",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Hull Plating 1",
+      "M6000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Ares Missile System",
+      "Barracks 4",
+      "M6000 Basic Hyperwarp Drive",
+      "Deflector Array 1",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Light Railgun",
+      "Mass Dampener 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Pilot Assist Module 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Warhammer Class": {
+    "large": [
+      "M8000 Basic Hyperwarp Drive",
+      "Battle Prow 1",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Cargo Hold 2",
+      "Hull Plating 1",
+      "M8000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Adv. Mass Dampener 1",
+      "Adv. Mass Dampener 1",
+      "Archangel Railgun",
+      "Ares Missile System",
+      "Barracks 5",
+      "Basic Medical Bay",
+      "Deflector Array 1",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Dart Jammer": {
+    "large": [
+      "Cargo Hold 1",
+      "M3400 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Barracks 3",
+      "M3400 Basic Hyperwarp Drive",
+      "Bridge",
+      "Reinforced Structures 1"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Stellar Falcon": {
+    "large": [
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Hull Plating 1",
+      "M6000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 4",
+      "M6000 Basic Hyperwarp Drive",
+      "Deflector Array 1",
+      "Luxury Cabin",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Pilot Assist Module 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Hammerhead Jammer": {
+    "large": [
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "Hull Plating 1",
+      "M5000 Void Engine: Traveler"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 3",
+      "M5000 Basic Hyperwarp Drive",
+      "Basic Medical Bay",
+      "Bridge"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Sword Battlecruiser": {
+    "large": [
+      "Barracks 6",
+      "M9000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Cargo Hold 2",
+      "M9000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Adv. Mass Dampener 4",
+      "Archangel Railgun",
+      "Ares Missile System",
+      "Basic Medical Bay",
+      "Deflector Array 1",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Starshot Lance Array"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Imperator PC-1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Pilot Assist Module 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Cautela Titan": {
+    "large": [
+      "Barracks 6",
+      "M9000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Cargo Hold 2",
+      "M9000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 2",
+      "Adv. Mass Dampener 4",
+      "Archangel Railgun",
+      "Ares Missile System",
+      "Basic Medical Bay",
+      "Deflector Array 1",
+      "Fuel Tank 2",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Starshot Lance Array"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Strikecruiser": {
+    "large": [
+      "Battle Prow 1",
+      "Cargo Hold 1",
+      "M3400 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Barracks 3",
+      "M3400 Basic Hyperwarp Drive",
+      "Bridge 3"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Imperator PC-1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Weapons Locker A2"
+    ]
+  },
+  "Paladin Defender": {
+    "large": [
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "Hull Plating 1",
+      "M5000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 3",
+      "M5000 Basic Hyperwarp Drive",
+      "Basic Medical Bay",
+      "Bridge"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Callus Freighter": {
+    "large": [
+      "Battle Prow 1",
+      "Cargo Hold 1",
+      "M3400 Void Engine: Chaser"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Barracks 3",
+      "M3400 Basic Hyperwarp Drive",
+      "Bridge 3"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Imperator PC-1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Vrax Hauler": {
+    "large": [
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "Hull Plating 1",
+      "M5000 Void Engine: Traveler"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Ares Missile System",
+      "Ares Missile System",
+      "Barracks 3",
+      "M5000 Basic Hyperwarp Drive",
+      "Basic Medical Bay",
+      "Bridge"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Paladin Cutter": {
+    "large": [
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "Hull Plating 1",
+      "M5000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 3",
+      "M5000 Basic Hyperwarp Drive",
+      "Basic Medical Bay",
+      "Bridge"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Vulture Liner": {
+    "large": [
+      "Cargo Hold 1",
+      "M3400 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 3",
+      "M3400 Basic Hyperwarp Drive",
+      "Reinforced Structures 1"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Scout Bridge",
+      "Weapons Locker A1"
+    ]
+  },
+  "Allistar Liner": {
+    "large": [
+      "Cargo Hold 2",
+      "M2400 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Barracks 3",
+      "M2400 Basic Hyperwarp Drive",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Mass Modulator 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Scout Bridge",
+      "Weapons Locker A1"
+    ]
+  },
+  "Bolt Raptor": {
+    "large": [
+      "Cargo Hold 1",
+      "M3400 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 3",
+      "M3400 Basic Hyperwarp Drive",
+      "Reinforced Structures 1"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Mass Dampener 1",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Phoenix Lance",
+      "Pilot Assist Module 1",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Scout Bridge",
+      "Weapons Locker A1"
+    ]
+  },
+  "Dart Liner": {
+    "large": [
+      "Cargo Hold 1",
+      "M3400 Void Engine: Chaser"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 3",
+      "M3400 Basic Hyperwarp Drive"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Light Railgun",
+      "Nav Assist Module 1",
+      "Phoenix Lance",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Scout Bridge",
+      "Sig Dampener 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Volk Frigate": {
+    "large": [
+      "Cargo Hold 2",
+      "M2400 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Barracks 3",
+      "M2400 Basic Hyperwarp Drive",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Scout Bridge",
+      "Weapons Locker A1"
+    ]
+  },
+  "Galtak Heavylift": {
+    "large": [
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "Luxury Suites",
+      "M5000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Ares Missile System",
+      "Barracks 3",
+      "M5000 Basic Hyperwarp Drive",
+      "Bridge"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Nav Assist Module 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Aeternum Vindex": {
+    "large": [
+      "Cargo Hold 2",
+      "M2400 Void Engine: Longhaul"
+    ],
+    "medium": [
+      "Barracks 3",
+      "M2400 Basic Hyperwarp Drive",
+      "Mass Reducer 1",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Nav Assist Module 2",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Scout Bridge",
+      "Weapons Locker A1"
+    ]
+  },
+  "Zartar Fang": {
+    "large": [
+      "Cargo Hold 4",
+      "M2400 Void Engine: Chaser"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Armored Officer Suites",
+      "M2400 Basic Hyperwarp Drive",
+      "Mass Reducer 1",
+      "Reinforced Barracks 3",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Light Railgun",
+      "Mass Modulator 1",
+      "Nav Assist Module 2",
+      "Pilot Assist Module 1",
+      "Scout Bridge",
+      "Weapons Locker A4"
+    ]
+  },
+  "Gunhawk Sabre": {
+    "large": [
+      "M2400 Void Engine: Chaser"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 2",
+      "Adv. Mass Dampener 2",
+      "Armored Officer Suites",
+      "Barracks 2",
+      "M2400 Basic Hyperwarp Drive",
+      "Storage Hold",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Nav Assist Module 2",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Pilot Assist Module 2",
+      "Scout Bridge",
+      "Small Fuel Tank 2",
+      "Weapons Locker A2"
+    ]
+  },
+  "Palace Interceptor": {
+    "large": [
+      "Cargo Hold 1",
+      "M3400 Void Engine: Traveler"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 3",
+      "M3400 Basic Hyperwarp Drive",
+      "Mass Reducer 1",
+      "Shielded Officer Suites",
+      "Starshot Lance Array"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Defense Pattern Matrix 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Nav Assist Module 1",
+      "Passenger Cabin",
+      "Scout Bridge",
+      "Weapons Locker A1"
+    ]
+  },
+  "Corsair Interceptor": {
+    "large": [
+      "Cargo Hold 2",
+      "M3400 Void Engine: Chaser"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 3",
+      "M3400 Basic Hyperwarp Drive"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Nav Assist Module 2",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Scout Bridge",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Victus Interceptor": {
+    "large": [
+      "Cargo Hold 1",
+      "Launch Bay",
+      "M3400 Void Engine: Dual-Field"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 4",
+      "Barracks 4",
+      "M3400 Basic Hyperwarp Drive",
+      "Reinforced Structures 1"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Pilot Assist Module 1",
+      "Scout Bridge",
+      "Weapons Locker A1"
+    ]
+  },
+  "Sword Cutter": {
+    "large": [
+      "Cargo Hold 4",
+      "M3400 Void Engine: Warhammer"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 4",
+      "Ares Missile System",
+      "Ares Missile System",
+      "Barracks 4",
+      "M3400 Combat Hyperwarp Drive",
+      "Officer Suites"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Armored Bulkheads 1",
+      "Light Railgun",
+      "Light Railgun",
+      "Magnamech Plating",
+      "Pilot Assist Module 1",
+      "Reactor Spike Module 2",
+      "Scout Bridge",
+      "Sensor Array 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Wolf Vector": {
+    "large": [
+      "Fuel-Cargo Hold 4",
+      "M3400 Void Engine: Behemoth"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 4",
+      "Ares Missile System",
+      "Ares Missile System",
+      "Barracks 4",
+      "M3400 Combat Hyperwarp Drive",
+      "Officer Suites"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Nav Assist Module 1",
+      "Pilot Assist Module 1",
+      "Reinforced Officer Cabin",
+      "Scout Bridge",
+      "Sensor Array 1",
+      "Sensor Array 1",
+      "Triple-Arc Signal Array",
+      "Weapons Locker A1"
+    ]
+  },
+  "Longbolt": {
+    "large": [
+      "Cargo Hold 1",
+      "M3400 Void Engine: Longhaul"
+    ],
+    "medium": [
+      "Barracks 3",
+      "M3400 Basic Hyperwarp Drive",
+      "Bridge",
+      "Water-Fuel Reclamation 1"
+    ],
+    "small": [
+      "Dual-Arc Signal Array",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Sensor Array 1",
+      "Stalwart PC-1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Royale Gladius": {
+    "large": [
+      "Battle Prow 1",
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "M5000 Void Engine: Traveler"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 3",
+      "M5000 Basic Hyperwarp Drive",
+      "Bridge",
+      "Passenger Suites"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Weapons Locker A1"
+    ]
+  },
+  "Strikecarrier": {
+    "large": [
+      "Armored Cargo Hold 4",
+      "Battle Prow 1",
+      "Launch Bay",
+      "M5000 Void Engine: Warhammer"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 4",
+      "M5000 Basic Hyperwarp Drive",
+      "Battle Bridge",
+      "Passenger Suites"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Pilot Assist Module 1",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Sensor Array 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Reach Carrier": {
+    "large": [
+      "Armored Cargo Hold 4",
+      "Hull Plating 1",
+      "Launch Bay",
+      "M5000 Void Engine: Dual-Field"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Armored Officer Suites",
+      "Armored Officer Suites",
+      "M5000 Basic Hyperwarp Drive",
+      "Battle Bridge",
+      "Hangar Bay",
+      "Shielded Barracks 4"
+    ],
+    "small": [
+      "Defense Pattern Matrix 1",
+      "ECCM Screen Matrix 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Mass Dampener 4",
+      "Pilot Assist Module 1",
+      "Sensor Array 1",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Reach Cruiser": {
+    "large": [
+      "Cargo Hold 3",
+      "Cargo Hold 3",
+      "Hull Plating 1",
+      "M5000 Void Engine: Chaser"
+    ],
+    "medium": [
+      "M5000 Basic Hyperwarp Drive",
+      "Battle Bridge",
+      "Passenger Suites",
+      "Reinforced Barracks 4",
+      "Torpedo Mk-Alpha",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Armored Bulkheads 1",
+      "Light Railgun",
+      "Light Railgun",
+      "Mass Dampener 1",
+      "Mass Dampener 4",
+      "Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Weapons Locker A1"
+    ]
+  },
+  "Reach Defender": {
+    "large": [
+      "Battle Prow 4",
+      "Cargo Hold 3",
+      "Cargo Hold 3",
+      "M5000 Void Engine: Dual-Field"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Armored Officer Suites",
+      "M5000 Basic Hyperwarp Drive",
+      "Battle Bridge",
+      "M94 Barrel-Cannon",
+      "M94 Barrel-Cannon",
+      "Reinforced Barracks 4"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Armored Bulkheads 1",
+      "Light Railgun",
+      "Light Railgun",
+      "Mass Dampener 1",
+      "Mass Dampener 4",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Arcanum Freighter": {
+    "large": [
+      "Cargo Hold 4",
+      "Cargo Hold 4",
+      "Cargo Hold 4",
+      "M5000 Void Engine: Traveler"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 4",
+      "M5000 Basic Hyperwarp Drive",
+      "Bridge",
+      "Passenger Suites"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Light Railgun",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Nav Assist Module 1",
+      "Pilot Assist Module 1",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Weapons Locker A1"
+    ]
+  },
+  "Crimson Defender": {
+    "large": [
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Hull Plating 1",
+      "M6000 Void Engine: Chaser"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "M6000 Basic Hyperwarp Drive",
+      "Mass Reducer 1",
+      "Reinforced Barracks 5",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Boarding Assault System 1",
+      "ECCM Screen Matrix 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Nav Assist Module 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Azure Defender": {
+    "large": [
+      "Battle Prow 2",
+      "Capital Bridge",
+      "Cargo Hold 4",
+      "M6000 Void Engine: Traveler"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Ares Missile System",
+      "M6000 Combat Hyperwarp Drive",
+      "Mass Reducer 1",
+      "Reinforced Barracks 5",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites"
+    ],
+    "small": [
+      "Defense Pattern Matrix 4",
+      "Defense Pattern Matrix 4",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Light Railgun",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Pilot Assist Module 1",
+      "Reactor Spike Module 2",
+      "Sig Dampener 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Lockwood Defender": {
+    "large": [
+      "Advanced Launch Bay",
+      "Capital Bridge",
+      "Cargo Hold 4",
+      "Cargo Hold 4",
+      "M6000 Void Engine: Behemoth"
+    ],
+    "medium": [
+      "M6000 Combat Hyperwarp Drive",
+      "Mass Reducer 1",
+      "Mass Reducer 1",
+      "Redlance Goltha Scanner",
+      "Reinforced Barracks 4",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites",
+      "Starshot Lance Array"
+    ],
+    "small": [
+      "Depth Scanner Omega",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Magnamech Plating",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Pilot Assist Module 1",
+      "Sig Veil Field",
+      "Sig Veil Field",
+      "Weapons Locker A1"
+    ]
+  },
+  "Horizon Highliner": {
+    "large": [
+      "Capital Bridge",
+      "Cargo Hold 4",
+      "Cargo Hold 4",
+      "M6000 Void Engine: Longhaul",
+      "Salvage Bay 1"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Ares Missile System",
+      "M6000 Basic Hyperwarp Drive",
+      "Mass Reducer 1",
+      "Mass Reducer 1",
+      "Reinforced Barracks 4",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Magnamech Plating",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Pilot Assist Module 1",
+      "Reactor Spike Module 2",
+      "Sensor Array 1",
+      "Sig Dampener 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Horizon Cruiser": {
+    "large": [
+      "Battle Prow 1",
+      "Capital Bridge",
+      "Cargo Hold 4",
+      "M6000 Void Engine: Dual-Field",
+      "Shielded Launch Bay"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Ares Missile System",
+      "M6000 Basic Hyperwarp Drive",
+      "Mass Reducer 1",
+      "Mass Reducer 1",
+      "Reinforced Barracks 5",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites"
+    ],
+    "small": [
+      "C-Tak Interceptor System 1",
+      "Defense Pattern Matrix 1",
+      "Defense Pattern Matrix 1",
+      "Light Railgun",
+      "Light Railgun",
+      "Nav Assist Module 1",
+      "Pilot Assist Module 1",
+      "Reactor Spike Module 2",
+      "Weapons Locker A1"
+    ]
+  },
+  "Neutiquam Cruiser": {
+    "large": [
+      "Compact Capital Bridge 4",
+      "Fuel-Cargo Hold 4",
+      "Hull Plating 1",
+      "Hyperion Launch Bay",
+      "M6000 Void Engine: Dual-Field"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Ares Missile System",
+      "Armored Officer Suites",
+      "M6000 Combat Hyperwarp Drive",
+      "Mass Reducer 1",
+      "Mass Reducer 1",
+      "Reinforced Structures 4",
+      "Shielded Barracks 5",
+      "Shielded Officer Suites"
+    ],
+    "small": [
+      "C-Tak Interceptor System 1",
+      "Defense Pattern Matrix 1",
+      "Defense Pattern Matrix 1",
+      "Defense Pattern Matrix 1",
+      "ECCM Screen Matrix 1",
+      "Nav Assist Module 1",
+      "Pilot Assist Module 1",
+      "Reactor Spike Module 2",
+      "Reinforced Officer Cabin",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Tiberian Highliner": {
+    "large": [
+      "Barracks 6",
+      "M7000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 2",
+      "Hull Plating 1",
+      "M7000 Void Engine: Longhaul"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Basic Medical Bay",
+      "Fuel Tank 1",
+      "Mass Reducer 1",
+      "Officer Suites",
+      "Officer Suites",
+      "Reinforced Structures 1"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Light Railgun",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Prison Cell",
+      "Sensor Array 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Degla Megalift": {
+    "large": [
+      "M7000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 2",
+      "M7000 Void Engine: Longhaul",
+      "Salvage Bay 1"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Barracks 2",
+      "Barracks 2",
+      "Basic Medical Bay",
+      "Fuel Tank 1",
+      "Mass Reducer 1",
+      "Officer Suites",
+      "Reinforced Structures 1",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "ECCM Screen Matrix 1",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Light Railgun",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Leo Battlecruiser": {
+    "large": [
+      "Armored Cargo Hold 4",
+      "Barracks 6",
+      "Capital Bridge",
+      "M7000 Void Engine: Dual-Field",
+      "Shielded Launch Bay",
+      "M7000 Warhammer Hyperwarp Drive"
+    ],
+    "medium": [
+      "Fidelis Hangar Bay",
+      "Fidelis Hangar Bay",
+      "Lion Mass Reducer 4",
+      "Lion Mass Reducer 4",
+      "Officer Suites",
+      "Officer Suites",
+      "Orbital Fuel Scoop 4",
+      "Torpedo Mk-Alpha",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "ECCM Screen Matrix 1",
+      "Interlocking Sensor Matrix 5",
+      "Light Railgun",
+      "Light Railgun",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Prison Cell",
+      "Sensor Array 1",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Aegis Freighter": {
+    "large": [
+      "M8000 Basic Hyperwarp Drive",
+      "Battle Prow 1",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Cargo Hold 2",
+      "M8000 Void Engine: Balanced",
+      "Salvage Bay 1"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Adv. Mass Dampener 1",
+      "Adv. Mass Dampener 1",
+      "Archangel Railgun",
+      "Ares Missile System",
+      "Barracks 5",
+      "Basic Medical Bay",
+      "Deflector Array 1",
+      "Officer Suites",
+      "Officer Suites",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Weapons Locker A1"
+    ]
+  },
+  "Pallas Freighter": {
+    "large": [
+      "M8000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 2",
+      "Cargo Hold 2",
+      "Cargo Hold 2",
+      "Hull Plating 1",
+      "M8000 Void Engine: Dual-Field",
+      "Salvage Bay 1"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Adv. Mass Dampener 1",
+      "Armored Officer Suites",
+      "Basic Medical Bay",
+      "Deflector Array 1",
+      "Reinforced Barracks 5",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Shielded Officer Suites",
+      "Torpedo Mk-Alpha",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Phoenix Lance",
+      "Phoenix Lance",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Tempus Freighter": {
+    "large": [
+      "Capital Freighter Bridge 5",
+      "Cargo Hold 4",
+      "Cargo Hold 4",
+      "Cargo Hold 4",
+      "M8000 Combat Hyperwarp Drive",
+      "Fuel-Cargo Hold 4",
+      "Hull Plating 1",
+      "M8000 Void Engine: Dual-Field"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Adv. Mass Dampener 1",
+      "Armored Officer Suites",
+      "Deflector Array 1",
+      "Deflector Array 6",
+      "Peak Velocity Matrix 3",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1",
+      "Shielded Barracks 5",
+      "Shielded Officer Suites",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Reactor Spike Module 3",
+      "Reactor Spike Module 3",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Fallen Carrier": {
+    "large": [
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Launch Bay",
+      "Launch Bay",
+      "M6000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Ares Missile System",
+      "M6000 Basic Hyperwarp Drive",
+      "Hangar Bay",
+      "Mass Reducer 1",
+      "Mass Reducer 1",
+      "Reinforced Barracks 5",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites"
+    ],
+    "small": [
+      "ECCM Screen Matrix 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Mass Dampener 1",
+      "Nav Assist Module 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Weapons Locker A1"
+    ]
+  },
+  "Extremis Carrier": {
+    "large": [
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Launch Bay",
+      "Launch Bay",
+      "M6000 Void Engine: Dual-Field"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Ares Missile System",
+      "M6000 Combat Hyperwarp Drive",
+      "Hangar Bay",
+      "Mass Reducer 1",
+      "Mass Reducer 1",
+      "Reinforced Barracks 5",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites"
+    ],
+    "small": [
+      "Light Railgun",
+      "Light Railgun",
+      "Light Railgun",
+      "Nav Assist Module 1",
+      "Nav Assist Module 1",
+      "Reinforced Medical Chamber",
+      "Weapons Locker A1"
+    ]
+  },
+  "Vark Carrier": {
+    "large": [
+      "Capital Carrier Bridge 5",
+      "Fuel-Cargo Hold 5",
+      "M6000 Void Engine: Traveler",
+      "Reinforced Launch Bay",
+      "Shielded Launch Bay"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 4",
+      "Adv. Mass Dampener 4",
+      "Ares Missile System",
+      "Ares Missile System",
+      "Armored Officer Suites",
+      "Armored Officer Suites",
+      "M6000 Combat Hyperwarp Drive",
+      "Hangar Bay",
+      "Shielded Barracks 5",
+      "Shielded Officer Suites"
+    ],
+    "small": [
+      "C-Tak Interceptor System 1",
+      "Defense Pattern Matrix 1",
+      "Nav Assist Module 1",
+      "Reactor Spike Module 1",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Azurite Cruiser": {
+    "large": [
+      "M7000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 2",
+      "M7000 Void Engine: Behemoth"
+    ],
+    "medium": [
+      "Armored Storage",
+      "Basic Medical Bay",
+      "Deflector Array 4",
+      "Fuel Tank 1",
+      "Goliath Missile Battery",
+      "Goliath Missile Battery",
+      "Shielded Barracks 4",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Armored Bulkheads 1",
+      "Armored Bulkheads 1",
+      "Defense Pattern Matrix 1",
+      "ECCM Screen Matrix 1",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Imperator PC-1",
+      "Mass Dampener 4",
+      "Pilot Assist Module 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Obsidian Carrier": {
+    "large": [
+      "M7000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Launch Bay",
+      "Launch Bay",
+      "M7000 Void Engine: Behemoth"
+    ],
+    "medium": [
+      "Hangar Bay",
+      "Hangar Bay",
+      "Mass Reducer 1",
+      "Reinforced Barracks 5",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites",
+      "Torpedo Mk-Alpha",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Phoenix Lance",
+      "Pilot Assist Module 1",
+      "Sensor Array 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Basalt Carrier": {
+    "large": [
+      "M7000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Launch Bay",
+      "Launch Bay",
+      "M7000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Ares Missile System",
+      "Hangar Bay",
+      "Hangar Bay",
+      "Mass Reducer 1",
+      "Reinforced Barracks 5",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites"
+    ],
+    "small": [
+      "ECCM Screen Matrix 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Pilot Assist Module 1",
+      "Sensor Array 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Mortifor Carrier": {
+    "large": [
+      "Capital Carrier Bridge 5",
+      "Fuel-Cargo Hold 5",
+      "M8000 Void Engine: Traveler",
+      "Reinforced Barracks 6",
+      "Reinforced Launch Bay",
+      "Retribution Gravcannon",
+      "M8000 Warhammer Hyperwarp Drive"
+    ],
+    "medium": [
+      "Armored Officer Suites",
+      "Armored Officer Suites",
+      "Hangar Bay",
+      "Hangar Bay",
+      "Reinforced Structures 1",
+      "Torpedo Mk-Alpha",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "C-Tak Interceptor System 1",
+      "Defense Pattern Matrix 1",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Mass Dampener 3",
+      "Nav Assist Module 1",
+      "Nav Assist Module 1",
+      "Pilot Assist Module 1",
+      "Reactor Spike Module 1",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Harbinger Carrier": {
+    "large": [
+      "M8000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Launch Bay",
+      "Launch Bay",
+      "M8000 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Ares Missile System",
+      "Ares Missile System",
+      "Ares Missile System",
+      "Hangar Bay",
+      "Hangar Bay",
+      "Mass Reducer 1",
+      "Reinforced Barracks 5",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites"
+    ],
+    "small": [
+      "ECCM Screen Matrix 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Nav Assist Module 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Pilot Assist Module 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Skylift Carrier": {
+    "large": [
+      "M8000 Basic Hyperwarp Drive",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "Launch Bay",
+      "M8000 Void Engine: Warhammer"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Ares Missile System",
+      "Armored Officer Suites",
+      "Armored Officer Suites",
+      "Hangar Bay",
+      "Hangar Bay",
+      "Reinforced Barracks 5",
+      "Reinforced Structures 1"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Nav Assist Module 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Pilot Assist Module 1",
+      "Sensor Array 1",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Reach Vindex": {
+    "large": [
+      "Cargo Hold 1",
+      "M2400 Void Engine: Balanced"
+    ],
+    "medium": [
+      "Barracks 3",
+      "M2400 Basic Hyperwarp Drive",
+      "Fuel Tank 1"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Scout Bridge",
+      "Weapons Locker A1"
+    ]
+  },
+  "Rim Exocruiser": {
+    "large": [
+      "Hauler Hold",
+      "M3400 Void Engine: Warhammer"
+    ],
+    "medium": [
+      "M3400 Basic Hyperwarp Drive",
+      "Resource Processor",
+      "Shielded Barracks 4",
+      "Shielded Officer Suites",
+      "Water-Fuel Reclamation 2"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Defense Pattern Matrix 4",
+      "Defense Pattern Matrix 4",
+      "Defense Pattern Matrix 4",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Scout Bridge",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Larimar Battlecruiser": {
+    "large": [
+      "Battle Prow 5",
+      "Capital Bridge",
+      "Cargo Hold 2",
+      "M7000 Void Engine: Behemoth",
+      "M8000 Warhammer Hyperwarp Drive"
+    ],
+    "medium": [
+      "Deflector Array 4",
+      "Fuel Tank 1",
+      "Mass Reducer 4",
+      "Shielded Barracks 4",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites",
+      "Shielded Officer Suites",
+      "Torpedo Mk-Alpha",
+      "Torpedo Mk-Alpha",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Armored Bulkheads 1",
+      "Defense Pattern Matrix 1",
+      "Interlocking Sensor Matrix 4",
+      "Interlocking Sensor Matrix 4",
+      "Mass Dampener 4",
+      "Pilot Assist Module 1",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Dreadnought Battlecarrier": {
+    "large": [
+      "Barracks 6",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "M9000 Void Engine: Dual-Field",
+      "Reinforced Launch Bay",
+      "Shielded Launch Bay",
+      "M9000 Warhammer Hyperwarp Drive"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 4",
+      "Adv. Mass Dampener 4",
+      "Ares Missile System",
+      "Basic Medical Bay",
+      "Deflector Array 1",
+      "Officer Suites",
+      "Officer Suites",
+      "Officer Suites",
+      "Peak Velocity Matrix 1",
+      "Peak Velocity Matrix 1",
+      "Reinforced Structures 1"
+    ],
+    "small": [
+      "Defense Pattern Matrix 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Mass Modulator 1",
+      "Nav Assist Module 1",
+      "Pilot Assist Module 1",
+      "Reactor Spike Module 1",
+      "Reactor Spike Module 1",
+      "Reactor Spike Module 1",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Caliga Vindex": {
+    "large": [
+      "Cargo Hold 1",
+      "M2400 Void Engine: Behemoth"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 4",
+      "M2400 Basic Hyperwarp Drive",
+      "Reinforced Barracks 3"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Nav Assist Module 1",
+      "Nav Assist Module 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Reactor Spike Module 1",
+      "Reactor Spike Module 1",
+      "Scout Bridge",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Shizari Huntress": {
+    "large": [
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Launch Bay",
+      "M6000 Void Engine: Traveler"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 4",
+      "Barracks 5",
+      "M6000 Basic Hyperwarp Drive",
+      "Hangar Bay",
+      "Officer Suites",
+      "Torpedo Mk-Alpha",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Defense Pattern Matrix 1",
+      "ECCM Screen Matrix 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Pilot Assist Module 1",
+      "Sensor Array 1",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Acheron Battlecarrier": {
+    "large": [
+      "M9000 Basic Hyperwarp Drive",
+      "Battle Prow 1",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "Large Fuel Tank 1",
+      "M9000 Void Engine: Warhammer",
+      "Reinforced Barracks 6"
+    ],
+    "medium": [
+      "Ares Missile System",
+      "Ares Missile System",
+      "Basic Medical Bay",
+      "Deflector Array 1",
+      "Mass Reducer 4",
+      "Mass Reducer 4",
+      "Reinforced Structures 1",
+      "Reinforced Structures 1"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Light Railgun",
+      "Mass Modulator 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Reactor Spike Module 2",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Vengeance Class Mk3": {
+    "large": [
+      "Battle Prow 1",
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Hull Plating 1",
+      "Launch Bay",
+      "M7000 Void Engine: Dual-Field",
+      "M7000 Warhammer Hyperwarp Drive"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Ares Missile System",
+      "Barracks 4",
+      "Deflector Array 1",
+      "Officer Suites",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Light Railgun",
+      "Light Railgun",
+      "Mass Dampener 1",
+      "Nav Assist Module 1",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Officer Cabin",
+      "Phoenix Lance",
+      "Reactor Spike Module 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Wolfpack Interceptor": {
+    "large": [
+      "Cargo Hold 1",
+      "M3400 Void Engine: Chaser"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 4",
+      "Ares Missile System",
+      "Ares Missile System",
+      "Barracks 4",
+      "M3400 Longhaul Hyperwarp Drive",
+      "Officer Suites"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Nav Assist Module 1",
+      "Pilot Assist Module 1",
+      "Reactor Spike Module 2",
+      "Reinforced Officer Cabin",
+      "Scout Bridge",
+      "Sensor Array 1",
+      "Sensor Array 1",
+      "Weapons Locker A1"
+    ]
+  },
+  "Paladin Crusader": {
+    "large": [
+      "Cargo Hold 1",
+      "Large Fuel Tank 1",
+      "M5000 Void Engine: Balanced",
+      "Obliterator PK-1"
+    ],
+    "medium": [
+      "M5000 Basic Hyperwarp Drive",
+      "Basic Medical Bay",
+      "Bridge",
+      "Mass Reducer 1",
+      "Reinforced Barracks 4",
+      "Starshot Lance Array"
+    ],
+    "small": [
+      "Armored Bulkheads 1",
+      "Hellfire Torpedo",
+      "Hellfire Torpedo",
+      "Imperator PC-1",
+      "Officer Cabin",
+      "Passenger Cabin",
+      "Phoenix Lance",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Weapons Locker A1"
+    ]
+  },
+  "Voracious Class": {
+    "large": [
+      "Capital Bridge",
+      "Cargo Hold 1",
+      "Cargo Hold 1",
+      "M6000 Void Engine: Dual-Field"
+    ],
+    "medium": [
+      "Adv. Mass Dampener 1",
+      "Barracks 4",
+      "M6000 Basic Hyperwarp Drive",
+      "Hangar Bay",
+      "Micro Launch Bay",
+      "Starshot Lance Array",
+      "Starshot Lance Array",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "Defense Pattern Matrix 1",
+      "Defense Pattern Matrix 1",
+      "Hellfire Torpedo",
+      "Officer Cabin",
+      "Pilot Assist Module 1",
+      "Reactor Spike Module 2",
+      "Reactor Spike Module 2",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  },
+  "Alistar Huntress": {
+    "large": [
+      "Capital Carrier Bridge 5",
+      "Fuel-Cargo Hold 5",
+      "M9000 Void Engine: Warhammer",
+      "Reinforced Barracks 6",
+      "Reinforced Launch Bay",
+      "Retribution Gravcannon",
+      "M9000 Warhammer Hyperwarp Drive"
+    ],
+    "medium": [
+      "Armored Officer Suites",
+      "Armored Officer Suites",
+      "Combat Medical Clinic",
+      "Hangar Bay",
+      "Hangar Bay",
+      "Hangar Bay",
+      "Reinforced Structures 1",
+      "Torpedo Mk-Alpha",
+      "Torpedo Mk-Alpha"
+    ],
+    "small": [
+      "C-Tak Interceptor System 1",
+      "Defense Pattern Matrix 1",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Mass Dampener 1",
+      "Mass Dampener 3",
+      "Nav Assist Module 1",
+      "Nav Assist Module 1",
+      "Pilot Assist Module 1",
+      "Reactor Spike Module 1",
+      "Reinforced Officer Cabin",
+      "Reinforced Officer Cabin",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Valiant Autocannon",
+      "Weapons Locker A1"
+    ]
+  }
+}
