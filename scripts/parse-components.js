@@ -171,7 +171,8 @@ const components = raw
   .split('\n')
   .filter(l => l.trim() && !l.trim().startsWith('#'))
   .map(parseLine)
-  .filter(Boolean);
+  .filter(Boolean)
+  .filter(c => c.faction !== 'Jyeeta');
 
 fs.mkdirSync(path.dirname(outPath), { recursive: true });
 fs.writeFileSync(outPath, JSON.stringify(components, null, 2));
