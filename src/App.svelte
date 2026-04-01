@@ -8,6 +8,11 @@
 
   const MASS_CLASS_ORDER = [2400, 3400, 5000, 6000, 7000, 8000, 9000]
 
+  const SKILL_LABELS = {
+    pilot: 'Pilot', shipOps: 'Ship Ops', gunnery: 'Gunnery',
+    electronics: 'Electronics', navigation: 'Navigation',
+  }
+
   const massClassGroups = MASS_CLASS_ORDER.map(mc => ({
     massClass: mc,
     ships: shipsData
@@ -70,6 +75,62 @@
         c.name.toLowerCase().includes(pickerSearch.trim().toLowerCase())
       )
     return list
+  })
+
+  // --- Stats derivations ---
+
+  const equippedComponents = $derived(
+    slots.filter(s => s.component !== null).map(s => s.component)
+  )
+
+  const totalMass = $derived(
+    equippedComponents.reduce((sum, c) => sum + c.mass, 0)
+  )
+  const massOverLimit = $derived(
+    selectedShip ? totalMass > selectedShip.massCapacity : false
+  )
+
+  const totalArmor = $derived(
+    (selectedShip?.armor ?? 0) + equippedComponents.reduce((sum, c) => sum + c.armor, 0)
+  )
+  const totalShield = $derived(
+    (selectedShip?.shield ?? 0) + equippedComponents.reduce((sum, c) => sum + c.shield, 0)
+  )
+  const totalFuel = $derived(
+    (selectedShip?.fuelTank ?? 0) + equippedComponents.reduce((sum, c) => sum + c.fuel, 0)
+  )
+  const totalCargo = $derived(
+    (selectedShip?.defaultCargo ?? 0) + equippedComponents.reduce((sum, c) => sum + c.cargo, 0)
+  )
+  const totalJumpCost = $derived(
+    (selectedShip?.jumpCost ?? 0) + equippedComponents.reduce((sum, c) => sum + c.jumpCost, 0)
+  )
+  const totalCrew = $derived(
+    equippedComponents.reduce((sum, c) => sum + c.crew, 0)
+  )
+  const totalOfficers = $derived(
+    equippedComponents.reduce((sum, c) => sum + c.officers, 0)
+  )
+  const totalPassengers = $derived(
+    equippedComponents.reduce((sum, c) => sum + c.passengers, 0)
+  )
+  const totalPrisoners = $derived(
+    equippedComponents.reduce((sum, c) => sum + c.prisoners, 0)
+  )
+  const totalMedical = $derived(
+    equippedComponents.reduce((sum, c) => sum + c.medical, 0)
+  )
+
+  const totalSkills = $derived.by(() => {
+    const skills = { pilot: 0, shipOps: 0, gunnery: 0, electronics: 0, navigation: 0 }
+    for (const c of equippedComponents) {
+      skills.pilot += c.skills.pilot
+      skills.shipOps += c.skills.shipOps
+      skills.gunnery += c.skills.gunnery
+      skills.electronics += c.skills.electronics
+      skills.navigation += c.skills.navigation
+    }
+    return skills
   })
 
   // --- Event handlers ---
@@ -178,9 +239,88 @@
 
     <aside class="stats-panel">
       {#if selectedShip}
-        <p class="stats-placeholder">
-          Stats for <strong>{selectedShip.name}</strong> coming in Stage 3.
-        </p>
+        <h2 class="stats-heading">{selectedShip.name}</h2>
+
+        <div class="stat-row" class:stat-row--danger={massOverLimit}>
+          <span class="stat-label">Mass</span>
+          <span class="stat-value">{totalMass} / {selectedShip.massCapacity}</span>
+        </div>
+
+        <hr class="stat-divider" />
+
+        <div class="stat-row">
+          <span class="stat-label">Hull</span>
+          <span class="stat-value">{selectedShip.hull}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Armor</span>
+          <span class="stat-value">{totalArmor}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Shield</span>
+          <span class="stat-value">
+            {selectedShip.shield !== null ? totalShield : 'T.B.C.'}
+          </span>
+        </div>
+
+        <hr class="stat-divider" />
+
+        <div class="stat-row">
+          <span class="stat-label">Fuel</span>
+          <span class="stat-value">{totalFuel}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Cargo</span>
+          <span class="stat-value">{totalCargo}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Jump Cost</span>
+          <span class="stat-value">{totalJumpCost}</span>
+        </div>
+
+        <hr class="stat-divider" />
+
+        <div class="stat-row">
+          <span class="stat-label">Crew</span>
+          <span class="stat-value">{totalCrew} / {selectedShip.maxCrew}</span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">Officers</span>
+          <span class="stat-value">{totalOfficers} / {selectedShip.maxOfficers}</span>
+        </div>
+        {#if totalPassengers > 0}
+          <div class="stat-row">
+            <span class="stat-label">Passengers</span>
+            <span class="stat-value">{totalPassengers}</span>
+          </div>
+        {/if}
+        {#if totalPrisoners > 0}
+          <div class="stat-row">
+            <span class="stat-label">Prisoners</span>
+            <span class="stat-value">{totalPrisoners}</span>
+          </div>
+        {/if}
+        {#if totalMedical > 0}
+          <div class="stat-row">
+            <span class="stat-label">Medical</span>
+            <span class="stat-value">{totalMedical}</span>
+          </div>
+        {/if}
+
+        <hr class="stat-divider" />
+
+        <h3 class="stats-subheading">Skill Requirements</h3>
+        {#each Object.entries(totalSkills) as [skill, value]}
+          {#if value > 0}
+            <div class="stat-row">
+              <span class="stat-label">{SKILL_LABELS[skill]}</span>
+              <span class="stat-value">{value}</span>
+            </div>
+          {/if}
+        {/each}
+        {#if Object.values(totalSkills).every(v => v === 0)}
+          <p class="muted">No skill requirements.</p>
+        {/if}
       {:else}
         <p class="stats-placeholder">Select a ship to begin.</p>
       {/if}
@@ -381,6 +521,49 @@
     padding: var(--space-3);
     position: sticky;
     top: var(--space-3);
+  }
+
+  .stats-heading {
+    font-size: var(--text-base);
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+  }
+
+  .stats-subheading {
+    font-size: var(--text-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-1);
+  }
+
+  .stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2px 0;
+    font-size: var(--text-sm);
+  }
+
+  .stat-row--danger {
+    color: var(--color-danger);
+    font-weight: 600;
+  }
+
+  .stat-label {
+    color: var(--color-text-muted);
+  }
+
+  .stat-value {
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+  }
+
+  .stat-divider {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    margin: var(--space-2) 0;
   }
 
   .stats-placeholder {

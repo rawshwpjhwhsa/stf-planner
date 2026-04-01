@@ -221,18 +221,15 @@ Tasks:
 **Goal:** Live stat calculations update as components change.
 
 Tasks:
-- [ ] **Mass:** sum of all component masses vs. ship capacity; warning if over limit
-- [ ] **Skill pools:** sum of pilot/shipOps/gunnery/electronics/navigation across all components
-  - Display as `[provided] / [required]` per skill
-  - Color indicator: green (≥100%), yellow (75–99%), red (<75%)
-  - Note: "required" comes from summing component skill requirements — need to verify this
-    model against how the game actually works (ship components list their *requirements*, not
-    contributions; crew fill those requirements). May need schema adjustment.
-- [ ] **Crew:** total crew slots provided vs. occupied
-- [ ] **Officers:** total officer slots provided vs. occupied
-- [ ] **Hull / Armor / Shield / Fuel / Cargo / Medical / Passengers / Prisoners** totals
-- [ ] **Jump cost** total
-- [ ] Install cost running total (cumulative)
+- [x] **Mass:** sum of all component masses vs. ship capacity; warning if over limit
+- [x] **Skill pools:** sum of pilot/shipOps/gunnery/electronics/navigation across all components
+  - Displayed as total requirements only (provided side deferred to Stage 6 officer management)
+  - Color indicator deferred to Stage 6 (needs officer/crew skill contributions)
+- [x] **Crew:** total crew slots provided vs. max crew
+- [x] **Officers:** total officer slots provided vs. max officers
+- [x] **Hull / Armor / Shield / Fuel / Cargo / Medical / Passengers / Prisoners** totals
+- [x] **Jump cost** total
+- [ ] Install cost running total (cumulative) — skipped: no cost field in components.json
 
 **Clarification needed at this stage:** The wiki `Ship_Components_Reference` table has columns
 for both "skill requirements added by this component" and potentially "skill points provided."
@@ -353,4 +350,5 @@ Tasks:
 - [x] Data sources identified and scraped
 - [x] Schema designed
 - [x] Open questions identified
-- [ ] Stage 0 started
+- [x] Stages 0–2 complete
+- [x] Stage 3 complete (stats panel — mass, skills, crew, defense, resources)
