@@ -1066,7 +1066,11 @@
   }
 
   .copy-link-btn:hover {
-    opacity: 0.85;
+    background: #3d89e0;
+  }
+
+  .copy-link-btn:active {
+    background: #356fb8;
   }
 
   .app-main {
@@ -1122,11 +1126,16 @@
     cursor: pointer;
     text-align: left;
     gap: var(--space-2);
+    transition: background 0.15s, border-color 0.15s;
   }
 
   .slot-btn:hover {
     border-color: var(--color-accent);
     background: var(--color-surface-2);
+  }
+
+  .slot-btn:active {
+    background: var(--color-border);
   }
 
   .slot-btn--empty .slot-btn__label {
@@ -1312,6 +1321,10 @@
     border-color: var(--color-text-muted);
   }
 
+  .picker-tab:active {
+    background: var(--color-surface-2);
+  }
+
   .picker-tab--active {
     border-color: var(--color-accent);
     color: var(--color-accent);
@@ -1352,6 +1365,10 @@
 
   .picker-item:hover {
     background: var(--color-surface-2);
+  }
+
+  .picker-item:active {
+    background: var(--color-border);
   }
 
   .picker-item__name {
@@ -1477,6 +1494,10 @@
   .add-btn:hover {
     border-color: var(--color-accent);
     color: var(--color-accent);
+  }
+
+  .add-btn:active {
+    background: rgba(78, 154, 241, 0.1);
   }
 
   .stat-row--met {
