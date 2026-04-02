@@ -145,12 +145,13 @@ is not documented on the wiki. Approach:
 - Cross-reference with wiki weapon range band documentation
 - May need to reverse-engineer from known loadouts
 
-### OQ-3: Officer skill contribution model (→ Stage 6)
-Officers contribute to skill pools differently than regular crew. Specifically:
-- Officers can have up to 3 jobs, each providing skill points
-- The exact per-job skill values need to be sourced (from `data.json` in the original STFX repo,
-  or from the wiki's Jobs/Talents pages)
-- Regular crew each have a single job and contribute fixed skill amounts
+### OQ-3: Officer skill contribution model (→ Stage 6) ✅ RESOLVED
+Officers and crew both contribute skills via their assigned jobs:
+- **Jobs** are the atomic unit: 38 jobs, each with 2–4 skills (from a pool of 17) and 36 levels
+- **Officers** have up to 3 jobs at independent levels; **crew** have 1 job each
+- Skill values sourced from STFX `data.json` snapshot, parsed into `src/data/jobs.json`
+- The 5 ship skills (pilot, shipOps, gunnery, electronics, navigation) satisfy component requirements
+- The 12 secondary skills (command, tactics, repair, etc.) are tracked for future use
 
 ---
 
@@ -253,31 +254,33 @@ Tasks:
 **Goal:** Bridge, Engine, and Hyperwarp slots are selectable and contribute to stats.
 
 Tasks:
-- [ ] Add dedicated core component slots to the UI (distinct from swappable slots)
-- [ ] On ship select, auto-assign default core components matching the ship's mass class
+- [x] Add dedicated core component slots to the UI (distinct from swappable slots)
+- [x] On ship select, auto-assign default core components matching the ship's mass class
   and the engine listed in `ships.json`
-- [ ] Core component pickers filter to the correct mass class
-- [ ] Engine stat display: Speed, Agility, Fuel/AU, Fuel/Combat, Reactor Points, Safety Rating
-- [ ] Core component skills contribute to skill pool totals
-- [ ] Core component mass contributes to total mass
+- [x] Core component pickers filter to the correct mass class
+- [x] Engine stat display: Speed, Agility, Fuel/AU, Fuel/Combat, Reactor Points, Safety Rating
+- [x] Core component skills contribute to skill pool totals
+- [x] Core component mass contributes to total mass
 
 **Done when:** Selecting a different bridge/engine/hyperwarp updates all stats correctly.
 
 ---
 
-### Stage 6 — Officer Management
-**Goal:** Add officer cards to the Crew view; officers count toward skill pools.
+### Stage 6 — Officer & Crew Management
+**Goal:** Officers and crew modeled individually; all 17 skills tracked and displayed.
 
 Tasks:
-- [ ] Resolve OQ-3: source per-job skill values (check original STFX `data.json` for jobs schema)
-- [ ] Officer card component: name (editable), up to 3 job slots, derived skill contributions
-- [ ] Add/remove officer cards (up to ship's officer cap)
-- [ ] Officer skills sum into the overall skill pool totals
-- [ ] "Crew" tab vs "Officers" tab (or combined view)
-- [ ] Regular crew: simplified (number of crew × average skill contribution, or just crew count
-  toward cap for now)
+- [x] Resolve OQ-3: sourced per-job skill values from STFX `data.json` (38 jobs, 36 levels each)
+- [x] Parse jobs data into `src/data/jobs.json` via `scripts/parse-jobs.js`
+- [x] Officer cards: up to 3 job slots per officer, each with job picker + level input
+- [x] Add/remove officers (capped by `min(ship.maxOfficers, component-provided officer slots)`)
+- [x] Individual crew members: 1 job + level each, add/remove up to effective crew cap
+- [x] All 17 skills aggregated from officer + crew jobs into `providedSkills`
+- [x] Stats panel: ship skills shown as "provided / required" with deficit highlighting;
+  secondary skills shown when non-zero
+- [x] Officers and crew reset on ship change
 
-**Done when:** Adding an officer with jobs updates skill pool totals.
+**Done when:** Adding an officer/crew with jobs updates all skill pool totals.
 
 ---
 
@@ -348,3 +351,5 @@ Tasks:
 - [x] Stages 0–2 complete
 - [x] Stage 3 complete (stats panel — mass, skills, crew, defense, resources)
 - [x] Stage 4 complete (armor/shield block% formulas and display)
+- [x] Stage 5 complete (core component management — bridge/engine/hyperwarp slots, pickers, engine stats)
+- [x] Stage 6 complete (officer & crew management — individual jobs/levels, all 17 skills tracked)

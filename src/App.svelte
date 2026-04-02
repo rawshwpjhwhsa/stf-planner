@@ -3,16 +3,31 @@
   import componentsData from './data/components.json'
   import coreComponentsData from './data/core_components.json'
   import defaultLoadouts from './data/default_loadouts.json'
+  import jobsData from './data/jobs.json'
   import { buildInitialSlots } from './lib/loadout.js'
 
   // --- Module-level constants (computed once, not reactive) ---
 
   const MASS_CLASS_ORDER = [2400, 3400, 5000, 6000, 7000, 8000, 9000]
 
-  const SKILL_LABELS = {
+  const SHIP_SKILL_KEYS = ['pilot', 'shipOps', 'gunnery', 'electronics', 'navigation']
+  const SECONDARY_SKILL_KEYS = [
+    'command', 'doctor', 'evasion', 'explorer', 'heavy_firearms',
+    'intimidate', 'light_firearms', 'melee', 'negotiate', 'repair',
+    'stealth', 'tactics',
+  ]
+
+  const ALL_SKILL_LABELS = {
     pilot: 'Pilot', shipOps: 'Ship Ops', gunnery: 'Gunnery',
     electronics: 'Electronics', navigation: 'Navigation',
+    command: 'Command', doctor: 'Doctor', evasion: 'Evasion',
+    explorer: 'Explorer', heavy_firearms: 'Heavy Firearms',
+    intimidate: 'Intimidate', light_firearms: 'Light Firearms',
+    melee: 'Melee', negotiate: 'Negotiate', repair: 'Repair',
+    stealth: 'Stealth', tactics: 'Tactics',
   }
+
+  const jobsById = new Map(jobsData.map(j => [j.id, j]))
 
   const massClassGroups = MASS_CLASS_ORDER.map(mc => ({
     massClass: mc,
@@ -57,6 +72,9 @@
   let corePickerOpen = $state(false)
   let corePickerType = $state(null)
   let corePickerSearch = $state('')
+
+  let officers = $state([])
+  let crew = $state([])
 
   // --- Derived values ---
 
@@ -195,17 +213,57 @@
     allEquippedComponents.reduce((sum, c) => sum + (c.cost ?? 0), 0)
   )
 
-  const totalSkills = $derived.by(() => {
+  const requiredSkills = $derived.by(() => {
     const skills = { pilot: 0, shipOps: 0, gunnery: 0, electronics: 0, navigation: 0 }
     for (const c of allEquippedComponents) {
-      skills.pilot += c.skills.pilot
-      skills.shipOps += c.skills.shipOps
-      skills.gunnery += c.skills.gunnery
-      skills.electronics += c.skills.electronics
-      skills.navigation += c.skills.navigation
+      for (const key of SHIP_SKILL_KEYS) skills[key] += c.skills[key] ?? 0
     }
     return skills
   })
+
+  function getJobSkills(jobId, level) {
+    if (!jobId || level < 1) return {}
+    const job = jobsById.get(jobId)
+    if (!job) return {}
+    const values = job.levels[Math.min(level, 36) - 1]
+    const result = {}
+    for (let i = 0; i < job.skills.length; i++) {
+      result[job.skills[i]] = values[i]
+    }
+    return result
+  }
+
+  const providedSkills = $derived.by(() => {
+    const skills = {}
+    for (const key of [...SHIP_SKILL_KEYS, ...SECONDARY_SKILL_KEYS]) skills[key] = 0
+
+    for (const officer of officers) {
+      for (const jobSlot of officer.jobs) {
+        if (!jobSlot.jobId) continue
+        const contrib = getJobSkills(jobSlot.jobId, jobSlot.level)
+        for (const [skill, value] of Object.entries(contrib)) {
+          skills[skill] = (skills[skill] ?? 0) + value
+        }
+      }
+    }
+
+    for (const member of crew) {
+      if (!member.jobId) continue
+      const contrib = getJobSkills(member.jobId, member.level)
+      for (const [skill, value] of Object.entries(contrib)) {
+        skills[skill] = (skills[skill] ?? 0) + value
+      }
+    }
+
+    return skills
+  })
+
+  const effectiveMaxOfficers = $derived(
+    selectedShip ? Math.min(selectedShip.maxOfficers, totalOfficers) : 0
+  )
+  const effectiveMaxCrew = $derived(
+    selectedShip ? Math.min(selectedShip.maxCrew, totalCrew) : 0
+  )
 
   // --- Event handlers ---
 
@@ -216,6 +274,8 @@
       selectedEngine = null
       selectedHyperwarp = null
       bridgeSubtype = null
+      officers = []
+      crew = []
       return
     }
     const ship = shipsData.find(s => s.name === selectedShipName)
@@ -225,6 +285,8 @@
     selectedEngine = result.engine
     selectedHyperwarp = result.hyperwarp
     bridgeSubtype = result.bridge?.subtype ?? null
+    officers = []
+    crew = []
   }
 
   function openPicker(index) {
@@ -269,6 +331,41 @@
 
   function coreBackdropClose(e) {
     if (e.target === e.currentTarget) closeCorePicker()
+  }
+
+  // --- Officer / Crew handlers ---
+
+  function addOfficer() {
+    if (officers.length >= effectiveMaxOfficers) return
+    officers.push({ jobs: [{ jobId: null, level: 1 }] })
+  }
+
+  function removeOfficer(index) {
+    officers.splice(index, 1)
+  }
+
+  function addJobSlot(officerIndex) {
+    const officer = officers[officerIndex]
+    if (officer.jobs.length >= 3) return
+    officer.jobs.push({ jobId: null, level: 1 })
+  }
+
+  function removeJobSlot(officerIndex, jobIndex) {
+    const officer = officers[officerIndex]
+    if (officer.jobs.length <= 1) {
+      removeOfficer(officerIndex)
+    } else {
+      officer.jobs.splice(jobIndex, 1)
+    }
+  }
+
+  function addCrew() {
+    if (crew.length >= effectiveMaxCrew) return
+    crew.push({ jobId: null, level: 1 })
+  }
+
+  function removeCrew(index) {
+    crew.splice(index, 1)
   }
 
   // --- Dialog open/close effect ---
@@ -391,6 +488,75 @@
           <h2 class="slot-group__heading">Crafts</h2>
           <p class="muted">Craft bay: {selectedShip.maxCrafts} max (Stage 9)</p>
         </div>
+
+        <div class="slot-group officers-group">
+          <h2 class="slot-group__heading">
+            Officers ({officers.length} / {effectiveMaxOfficers})
+          </h2>
+
+          {#each officers as officer, oi}
+            <div class="officer-card">
+              <div class="officer-card__header">
+                <span>Officer {oi + 1}</span>
+                <button class="remove-btn" onclick={() => removeOfficer(oi)} aria-label="Remove officer">&times;</button>
+              </div>
+              {#each officer.jobs as jobSlot, ji}
+                <div class="job-row">
+                  <select class="job-select" bind:value={jobSlot.jobId}>
+                    <option value={null}>— Job —</option>
+                    {#each jobsData as job}
+                      <option value={job.id}>{job.name}</option>
+                    {/each}
+                  </select>
+                  <input
+                    class="level-input"
+                    type="number"
+                    min="1"
+                    max="36"
+                    bind:value={jobSlot.level}
+                  />
+                  <button class="remove-btn" onclick={() => removeJobSlot(oi, ji)} aria-label="Remove job">&times;</button>
+                </div>
+              {/each}
+              {#if officer.jobs.length < 3}
+                <button class="add-btn" onclick={() => addJobSlot(oi)}>+ Add Job</button>
+              {/if}
+            </div>
+          {/each}
+
+          {#if officers.length < effectiveMaxOfficers}
+            <button class="add-btn" onclick={addOfficer}>+ Add Officer</button>
+          {/if}
+        </div>
+
+        <div class="slot-group crew-group">
+          <h2 class="slot-group__heading">
+            Crew ({crew.length} / {effectiveMaxCrew})
+          </h2>
+
+          {#each crew as member, ci}
+            <div class="job-row">
+              <select class="job-select" bind:value={member.jobId}>
+                <option value={null}>— Job —</option>
+                {#each jobsData as job}
+                  <option value={job.id}>{job.name}</option>
+                {/each}
+              </select>
+              <input
+                class="level-input"
+                type="number"
+                min="1"
+                max="36"
+                bind:value={member.level}
+              />
+              <button class="remove-btn" onclick={() => removeCrew(ci)} aria-label="Remove crew">&times;</button>
+            </div>
+          {/each}
+
+          {#if crew.length < effectiveMaxCrew}
+            <button class="add-btn" onclick={addCrew}>+ Add Crew</button>
+          {/if}
+        </div>
       {/if}
     </section>
 
@@ -502,17 +668,28 @@
 
         <hr class="stat-divider" />
 
-        <h3 class="stats-subheading">Skill Requirements</h3>
-        {#each Object.entries(totalSkills) as [skill, value]}
-          {#if value > 0}
-            <div class="stat-row">
-              <span class="stat-label">{SKILL_LABELS[skill]}</span>
-              <span class="stat-value">{value}</span>
-            </div>
-          {/if}
+        <h3 class="stats-subheading">Ship Skills</h3>
+        {#each SHIP_SKILL_KEYS as skill}
+          {@const req = requiredSkills[skill]}
+          {@const prov = providedSkills[skill]}
+          {@const deficit = req > 0 && prov < req}
+          <div class="stat-row" class:stat-row--danger={deficit} class:stat-row--met={req > 0 && prov >= req}>
+            <span class="stat-label">{ALL_SKILL_LABELS[skill]}</span>
+            <span class="stat-value">{prov} / {req}</span>
+          </div>
         {/each}
-        {#if Object.values(totalSkills).every(v => v === 0)}
-          <p class="muted">No skill requirements.</p>
+
+        {#if SECONDARY_SKILL_KEYS.some(s => providedSkills[s] > 0)}
+          <hr class="stat-divider" />
+          <h3 class="stats-subheading">Secondary Skills</h3>
+          {#each SECONDARY_SKILL_KEYS as skill}
+            {#if providedSkills[skill] > 0}
+              <div class="stat-row">
+                <span class="stat-label">{ALL_SKILL_LABELS[skill]}</span>
+                <span class="stat-value">{providedSkills[skill]}</span>
+              </div>
+            {/if}
+          {/each}
         {/if}
       {:else}
         <p class="stats-placeholder">Select a ship to begin.</p>
@@ -987,6 +1164,88 @@
   .picker-cancel:hover {
     color: var(--color-text);
     border-color: var(--color-text-muted);
+  }
+
+  /* Officer cards & crew rows */
+  .officer-card {
+    background: var(--color-surface-2);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: var(--space-2);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+
+  .officer-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+
+  .job-row {
+    display: flex;
+    gap: var(--space-1);
+    align-items: center;
+  }
+
+  .job-select {
+    flex: 1;
+    min-width: 0;
+    padding: var(--space-1) var(--space-2);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    font-size: var(--text-sm);
+  }
+
+  .level-input {
+    width: 56px;
+    padding: var(--space-1) var(--space-1);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+    font-size: var(--text-sm);
+    text-align: center;
+  }
+
+  .remove-btn {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0 var(--space-1);
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .remove-btn:hover {
+    color: var(--color-danger);
+  }
+
+  .add-btn {
+    padding: var(--space-1) var(--space-2);
+    background: transparent;
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-sm);
+    color: var(--color-text-muted);
+    cursor: pointer;
+    font-size: var(--text-sm);
+    font-style: italic;
+  }
+
+  .add-btn:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .stat-row--met {
+    color: var(--color-accent);
   }
 
   /* Mobile */
