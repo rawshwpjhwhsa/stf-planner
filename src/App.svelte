@@ -274,8 +274,6 @@
       selectedEngine = null
       selectedHyperwarp = null
       bridgeSubtype = null
-      officers = []
-      crew = []
       return
     }
     const ship = shipsData.find(s => s.name === selectedShipName)
@@ -285,8 +283,6 @@
     selectedEngine = result.engine
     selectedHyperwarp = result.hyperwarp
     bridgeSubtype = result.bridge?.subtype ?? null
-    officers = []
-    crew = []
   }
 
   function openPicker(index) {
@@ -490,7 +486,7 @@
         </div>
 
         <div class="slot-group officers-group">
-          <h2 class="slot-group__heading">
+          <h2 class="slot-group__heading" class:slot-group__heading--over={officers.length > effectiveMaxOfficers}>
             Officers ({officers.length} / {effectiveMaxOfficers})
           </h2>
 
@@ -530,7 +526,7 @@
         </div>
 
         <div class="slot-group crew-group">
-          <h2 class="slot-group__heading">
+          <h2 class="slot-group__heading" class:slot-group__heading--over={crew.length > effectiveMaxCrew}>
             Crew ({crew.length} / {effectiveMaxCrew})
           </h2>
 
@@ -864,6 +860,10 @@
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--color-text-muted);
+  }
+
+  .slot-group__heading--over {
+    color: var(--color-danger);
   }
 
   .slot-list {
