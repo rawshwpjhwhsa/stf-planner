@@ -137,13 +137,15 @@ Armor and shield use asymptotic damage-reduction formulas, both capped at 60%:
 - **Shield:** `blockPct = min(0.6, (0.03 × shield) / (1 + 0.03 × |shield|))`
 - Source: `startraders.fandom.com/wiki/Ship_Armor` and Steam community discussion
 
-### OQ-2: Attack range distribution formula (→ Stage 7)
-The original STFX tool showed a combat range breakdown (e.g. "I: 388, II: 452, III: 270...").
-These values are derived from installed weapon components and their range bands. The formula
-is not documented on the wiki. Approach:
-- Check the STFX source (gitlab.com/tswift/stfx) for the calculation logic
-- Cross-reference with wiki weapon range band documentation
-- May need to reverse-engineer from known loadouts
+### OQ-2: Combat test score formulas (→ Stage 7) ✅ RESOLVED
+Rather than replicating the STFX damage-sum approach, implemented the actual game combat formulas
+from the wiki's Ship Combat Test Scores Summary page:
+- **Attack** (per range band I–V): `0.4*(WeaponAcc + Speed/Agility + Nav/Pilot) + 0.2*(Gun + Tactics)`
+  with +25% at weapon's optimal range. Summed across all equipped weapons.
+- **Defense/Range Change/Board/Escape**: formulas using engine Speed/Agility + provided skills
+  (Pilot, Electronics, Navigation, Command, Tactics). Short-range formula at bands I–III,
+  long-range at IV–V.
+- Weapon data (range, accuracy, damage, etc.) enriched from STFX snapshot into components.json
 
 ### OQ-3: Officer skill contribution model (→ Stage 6) ✅ RESOLVED
 Officers and crew both contribute skills via their assigned jobs:
@@ -284,16 +286,17 @@ Tasks:
 
 ---
 
-### Stage 7 — Attack Range Distribution
-**Goal:** Resolve OQ-2 and display the range band breakdown.
+### Stage 7 — Combat Scores by Range Band
+**Goal:** Display combat test scores per the game's actual formulas, not just STFX damage sums.
 
 Tasks:
-- [ ] Research formula: check STFX source code, wiki combat/weapons pages
-- [ ] Understand range bands I–V and how weapon components contribute
-- [ ] Implement range distribution calculation
-- [ ] Display as the original STFX tool did (list of I: N, II: N... or a bar chart)
+- [x] Enrich `components.json` with weapon data from STFX (range, accuracy, damage, etc.)
+- [x] Implement combat formulas from wiki Ship Combat Test Scores Summary page
+- [x] Attack scores per range band (I–V): summed across equipped weapons, +25% at optimal range
+- [x] Defense, Range Change, Board, Escape scores per range band (short formula I–III, long IV–V)
+- [x] Grid display in stats panel with best attack band highlighted
 
-**Done when:** Range display matches original STFX for a known weapon loadout.
+**Done when:** Combat scores update live as weapons/crew/engine change.
 
 ---
 
@@ -353,3 +356,4 @@ Tasks:
 - [x] Stage 4 complete (armor/shield block% formulas and display)
 - [x] Stage 5 complete (core component management — bridge/engine/hyperwarp slots, pickers, engine stats)
 - [x] Stage 6 complete (officer & crew management — individual jobs/levels, all 17 skills tracked)
+- [x] Stage 7 complete (combat scores by range band — attack/defense/maneuver per game formulas)

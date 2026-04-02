@@ -9,6 +9,7 @@
   // --- Module-level constants (computed once, not reactive) ---
 
   const MASS_CLASS_ORDER = [2400, 3400, 5000, 6000, 7000, 8000, 9000]
+  const RANGE_BAND_LABELS = ['I', 'II', 'III', 'IV', 'V']
 
   const SHIP_SKILL_KEYS = ['pilot', 'shipOps', 'gunnery', 'electronics', 'navigation']
   const SECONDARY_SKILL_KEYS = [
@@ -264,6 +265,79 @@
   const effectiveMaxCrew = $derived(
     selectedShip ? Math.min(selectedShip.maxCrew, totalCrew) : 0
   )
+
+  // --- Combat score derivations ---
+
+  function combatScore(primaryA, primaryB, secondaryA, secondaryB) {
+    return 0.4 * (primaryA + primaryB) + 0.2 * (secondaryA + secondaryB)
+  }
+
+  const engineSpeed = $derived(selectedEngine?.speed ?? 0)
+  const engineAgility = $derived(selectedEngine?.agility ?? 0)
+
+  const equippedWeapons = $derived(
+    allEquippedComponents.filter(c => c.weapon != null)
+  )
+
+  const attackScores = $derived.by(() => {
+    const scores = [0, 0, 0, 0, 0]
+    const pilot = providedSkills.pilot
+    const nav = providedSkills.navigation
+    const gun = providedSkills.gunnery
+    const tactics = providedSkills.tactics
+    for (const comp of equippedWeapons) {
+      const w = comp.weapon
+      for (let b = 1; b <= 5; b++) {
+        let score = (b >= 4)
+          ? 0.4 * (w.accuracy + engineSpeed + nav) + 0.2 * (gun + tactics)
+          : 0.4 * (w.accuracy + engineAgility + pilot) + 0.2 * (gun + tactics)
+        if (b === w.range) score *= 1.25
+        scores[b - 1] += score
+      }
+    }
+    return scores
+  })
+
+  const defenseScores = $derived.by(() => {
+    const pilot = providedSkills.pilot
+    const elec = providedSkills.electronics
+    const command = providedSkills.command
+    const hi = Math.max(pilot, elec)
+    const lo = Math.min(pilot, elec)
+    const short = combatScore(engineAgility, hi, lo, command)
+    const long = combatScore(engineSpeed, hi, lo, command)
+    return [short, short, short, long, long]
+  })
+
+  const rangeChangeScores = $derived.by(() => {
+    const pilot = providedSkills.pilot
+    const nav = providedSkills.navigation
+    const elec = providedSkills.electronics
+    const tactics = providedSkills.tactics
+    const short = combatScore(engineAgility, pilot, elec, tactics)
+    const long = combatScore(engineSpeed, nav, elec, tactics)
+    return [short, short, short, long, long]
+  })
+
+  const boardScores = $derived.by(() => {
+    const pilot = providedSkills.pilot
+    const nav = providedSkills.navigation
+    const command = providedSkills.command
+    const tactics = providedSkills.tactics
+    const short = combatScore(engineAgility, pilot, command, tactics)
+    const long = combatScore(engineSpeed, nav, command, tactics)
+    return [short, short, short, long, long]
+  })
+
+  const escapeScores = $derived.by(() => {
+    const pilot = providedSkills.pilot
+    const nav = providedSkills.navigation
+    const elec = providedSkills.electronics
+    const command = providedSkills.command
+    const short = combatScore(engineAgility, pilot, elec, command)
+    const long = combatScore(engineSpeed, nav, elec, command)
+    return [short, short, short, long, long]
+  })
 
   // --- Event handlers ---
 
@@ -687,6 +761,48 @@
             {/if}
           {/each}
         {/if}
+
+        <hr class="stat-divider" />
+        <h3 class="stats-subheading">Combat Scores</h3>
+
+        <div class="combat-grid">
+          <div class="combat-grid__header"></div>
+          {#each RANGE_BAND_LABELS as label}
+            <div class="combat-grid__header">{label}</div>
+          {/each}
+
+          <div class="combat-grid__label">Attack</div>
+          {#if equippedWeapons.length > 0}
+            {#each attackScores as score, i}
+              {@const best = Math.max(...attackScores)}
+              <div class="combat-grid__value" class:combat-grid__value--optimal={score === best && score > 0}>
+                {Math.round(score)}
+              </div>
+            {/each}
+          {:else}
+            <div class="combat-grid__empty" style="grid-column: span 5;">No weapons</div>
+          {/if}
+
+          <div class="combat-grid__label">Defense</div>
+          {#each defenseScores as score}
+            <div class="combat-grid__value">{Math.round(score)}</div>
+          {/each}
+
+          <div class="combat-grid__label">Rng Chg</div>
+          {#each rangeChangeScores as score}
+            <div class="combat-grid__value">{Math.round(score)}</div>
+          {/each}
+
+          <div class="combat-grid__label">Board</div>
+          {#each boardScores as score}
+            <div class="combat-grid__value">{Math.round(score)}</div>
+          {/each}
+
+          <div class="combat-grid__label">Escape</div>
+          {#each escapeScores as score}
+            <div class="combat-grid__value">{Math.round(score)}</div>
+          {/each}
+        </div>
       {:else}
         <p class="stats-placeholder">Select a ship to begin.</p>
       {/if}
@@ -1246,6 +1362,47 @@
 
   .stat-row--met {
     color: var(--color-accent);
+  }
+
+  /* Combat scores grid */
+  .combat-grid {
+    display: grid;
+    grid-template-columns: auto repeat(5, 1fr);
+    gap: 1px var(--space-1);
+    font-size: var(--text-sm);
+    align-items: center;
+  }
+
+  .combat-grid__header {
+    color: var(--color-text-muted);
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .combat-grid__label {
+    color: var(--color-text-muted);
+    padding: 2px 0;
+  }
+
+  .combat-grid__value {
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    padding: 2px 0;
+  }
+
+  .combat-grid__value--optimal {
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+
+  .combat-grid__empty {
+    color: var(--color-text-muted);
+    font-style: italic;
+    text-align: center;
+    padding: 2px 0;
   }
 
   /* Mobile */

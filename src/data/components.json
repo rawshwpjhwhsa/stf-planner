@@ -22,7 +22,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 39160
+    "cost": 39160,
+    "weapon": null
   },
   {
     "name": "Cargo Hold 2",
@@ -47,7 +48,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 81000
+    "cost": 81000,
+    "weapon": null
   },
   {
     "name": "Cargo Hold 3",
@@ -72,7 +74,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 134040
+    "cost": 134040,
+    "weapon": null
   },
   {
     "name": "Storage Hold",
@@ -97,7 +100,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 42050
+    "cost": 42050,
+    "weapon": null
   },
   {
     "name": "Armored Storage",
@@ -122,7 +126,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 66750
+    "cost": 66750,
+    "weapon": null
   },
   {
     "name": "Cargo-Fuel Storage",
@@ -147,7 +152,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 32750
+    "cost": 32750,
+    "weapon": null
   },
   {
     "name": "Cargo Hold 4",
@@ -172,7 +178,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 214040
+    "cost": 214040,
+    "weapon": null
   },
   {
     "name": "Cargo Hold 5",
@@ -197,7 +204,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 228050
+    "cost": 228050,
+    "weapon": null
   },
   {
     "name": "Armored Cargo Hold 4",
@@ -222,7 +230,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 255000
+    "cost": 255000,
+    "weapon": null
   },
   {
     "name": "Fuel-Cargo Hold 4",
@@ -247,7 +256,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 260000
+    "cost": 260000,
+    "weapon": null
   },
   {
     "name": "Hauler Hold",
@@ -272,7 +282,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 294860
+    "cost": 294860,
+    "weapon": null
   },
   {
     "name": "Fuel-Cargo Hold 5",
@@ -297,7 +308,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 314000
+    "cost": 314000,
+    "weapon": null
   },
   {
     "name": "Cargo Hold 6",
@@ -322,7 +334,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 758050
+    "cost": 758050,
+    "weapon": null
   },
   {
     "name": "Cargo Hold 7",
@@ -347,7 +360,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 988050
+    "cost": 988050,
+    "weapon": null
   },
   {
     "name": "Cargo Hold 8",
@@ -372,7 +386,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 1218050
+    "cost": 1218050,
+    "weapon": null
   },
   {
     "name": "Armored Cargo Hold 5",
@@ -397,7 +412,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 958050
+    "cost": 958050,
+    "weapon": null
   },
   {
     "name": "Armored Cargo Hold 6",
@@ -422,7 +438,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 1338050
+    "cost": 1338050,
+    "weapon": null
   },
   {
     "name": "Storage Cache",
@@ -447,7 +464,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 15760
+    "cost": 15760,
+    "weapon": null
   },
   {
     "name": "Cargo-Fuel Pod",
@@ -472,7 +490,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 14250
+    "cost": 14250,
+    "weapon": null
   },
   {
     "name": "Hellfire Torpedo",
@@ -497,7 +516,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": {
+      "range": 5,
+      "accuracy": 4,
+      "damage_min": 21,
+      "damage_max": 60,
+      "weapon_type": 7,
+      "ap": 2,
+      "crit": 2
+    }
   },
   {
     "name": "Torpedo Mk-Alpha",
@@ -522,7 +550,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 27020
+    "cost": 27020,
+    "weapon": {
+      "range": 5,
+      "accuracy": 5,
+      "damage_min": 31,
+      "damage_max": 70,
+      "weapon_type": 7,
+      "ap": 2,
+      "crit": 2
+    }
   },
   {
     "name": "Firestorm Torpedo",
@@ -547,7 +584,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 14480
+    "cost": 14480,
+    "weapon": {
+      "range": 5,
+      "accuracy": 8,
+      "damage_min": 31,
+      "damage_max": 70,
+      "weapon_type": 7,
+      "ap": 2,
+      "crit": 3
+    }
   },
   {
     "name": "Void-Lance Torpedo",
@@ -572,7 +618,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 47000
+    "cost": 47000,
+    "weapon": {
+      "range": 5,
+      "accuracy": 11,
+      "damage_min": 31,
+      "damage_max": 100,
+      "weapon_type": 7,
+      "ap": 3,
+      "crit": 5
+    }
   },
   {
     "name": "Inferno Torpedo",
@@ -597,7 +652,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 128750
+    "cost": 128750,
+    "weapon": {
+      "range": 5,
+      "accuracy": 10,
+      "damage_min": 36,
+      "damage_max": 75,
+      "weapon_type": 7,
+      "ap": 2,
+      "crit": 8
+    }
   },
   {
     "name": "Torpedo MK2-Alpha",
@@ -622,7 +686,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 176800
+    "cost": 176800,
+    "weapon": {
+      "range": 5,
+      "accuracy": 14,
+      "damage_min": 41,
+      "damage_max": 90,
+      "weapon_type": 7,
+      "ap": 3,
+      "crit": 10
+    }
   },
   {
     "name": "Torpedo Dual-Laced Array",
@@ -647,7 +720,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 202400
+    "cost": 202400,
+    "weapon": {
+      "range": 5,
+      "accuracy": 14,
+      "damage_min": 36,
+      "damage_max": 90,
+      "weapon_type": 7,
+      "ap": 2,
+      "crit": 8
+    }
   },
   {
     "name": "Firewave Torpedo",
@@ -672,7 +754,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 362240
+    "cost": 362240,
+    "weapon": {
+      "range": 5,
+      "accuracy": 16,
+      "damage_min": 41,
+      "damage_max": 100,
+      "weapon_type": 7,
+      "ap": 2,
+      "crit": 10
+    }
   },
   {
     "name": "Cadonya Buster Array",
@@ -697,7 +788,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 548120
+    "cost": 548120,
+    "weapon": {
+      "range": 5,
+      "accuracy": 16,
+      "damage_min": 101,
+      "damage_max": 160,
+      "weapon_type": 7,
+      "ap": 4,
+      "crit": 12
+    }
   },
   {
     "name": "Valiant Autocannon",
@@ -722,7 +822,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": {
+      "range": 1,
+      "accuracy": 1,
+      "damage_min": 66,
+      "damage_max": 115,
+      "weapon_type": 1,
+      "ap": 1,
+      "crit": 5
+    }
   },
   {
     "name": "M90 Barrel-Cannon",
@@ -747,7 +856,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 27560
+    "cost": 27560,
+    "weapon": {
+      "range": 1,
+      "accuracy": 2,
+      "damage_min": 136,
+      "damage_max": 187,
+      "weapon_type": 1,
+      "ap": 2,
+      "crit": 12
+    }
   },
   {
     "name": "M92 Barrel-Cannon",
@@ -772,7 +890,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 13520
+    "cost": 13520,
+    "weapon": {
+      "range": 1,
+      "accuracy": 3,
+      "damage_min": 76,
+      "damage_max": 125,
+      "weapon_type": 1,
+      "ap": 1,
+      "crit": 15
+    }
   },
   {
     "name": "M94 Barrel-Cannon",
@@ -797,7 +924,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 41000
+    "cost": 41000,
+    "weapon": {
+      "range": 1,
+      "accuracy": 5,
+      "damage_min": 161,
+      "damage_max": 210,
+      "weapon_type": 1,
+      "ap": 2,
+      "crit": 10
+    }
   },
   {
     "name": "Dual-Linked Autocannon",
@@ -822,7 +958,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 92520
+    "cost": 92520,
+    "weapon": {
+      "range": 1,
+      "accuracy": 6,
+      "damage_min": 86,
+      "damage_max": 135,
+      "weapon_type": 1,
+      "ap": 1,
+      "crit": 20
+    }
   },
   {
     "name": "Vanguard Autocannon",
@@ -847,7 +992,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 173816
+    "cost": 173816,
+    "weapon": {
+      "range": 1,
+      "accuracy": 6,
+      "damage_min": 101,
+      "damage_max": 150,
+      "weapon_type": 1,
+      "ap": 1,
+      "crit": 15
+    }
   },
   {
     "name": "Lionheart Cannon",
@@ -872,7 +1026,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 220800
+    "cost": 220800,
+    "weapon": {
+      "range": 1,
+      "accuracy": 10,
+      "damage_min": 91,
+      "damage_max": 140,
+      "weapon_type": 1,
+      "ap": 1,
+      "crit": 15
+    }
   },
   {
     "name": "M95 Tracer Cannon",
@@ -897,7 +1060,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 190460
+    "cost": 190460,
+    "weapon": {
+      "range": 1,
+      "accuracy": 11,
+      "damage_min": 91,
+      "damage_max": 150,
+      "weapon_type": 1,
+      "ap": 1,
+      "crit": 20
+    }
   },
   {
     "name": "M101 Tracker Cannon",
@@ -922,7 +1094,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 420000
+    "cost": 420000,
+    "weapon": {
+      "range": 1,
+      "accuracy": 12,
+      "damage_min": 96,
+      "damage_max": 160,
+      "weapon_type": 1,
+      "ap": 1,
+      "crit": 15
+    }
   },
   {
     "name": "M115 Twin Autocannon",
@@ -947,7 +1128,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 460000
+    "cost": 460000,
+    "weapon": {
+      "range": 1,
+      "accuracy": 14,
+      "damage_min": 101,
+      "damage_max": 165,
+      "weapon_type": 1,
+      "ap": 1,
+      "crit": 10
+    }
   },
   {
     "name": "Vengence Gravcannon",
@@ -972,7 +1162,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 0
+    "cost": 0,
+    "weapon": {
+      "range": 2,
+      "accuracy": 0,
+      "damage_min": 181,
+      "damage_max": 270,
+      "weapon_type": 5,
+      "ap": 3,
+      "crit": 15
+    }
   },
   {
     "name": "Retaliation Gravcannon",
@@ -997,7 +1196,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 27020
+    "cost": 27020,
+    "weapon": {
+      "range": 2,
+      "accuracy": 2,
+      "damage_min": 186,
+      "damage_max": 275,
+      "weapon_type": 5,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "JUK Gravity Array",
@@ -1022,7 +1230,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 33440
+    "cost": 33440,
+    "weapon": {
+      "range": 2,
+      "accuracy": 2,
+      "damage_min": 201,
+      "damage_max": 290,
+      "weapon_type": 5,
+      "ap": 3,
+      "crit": 35
+    }
   },
   {
     "name": "JUK Gravcannon",
@@ -1047,7 +1264,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 42500
+    "cost": 42500,
+    "weapon": {
+      "range": 2,
+      "accuracy": 3,
+      "damage_min": 216,
+      "damage_max": 305,
+      "weapon_type": 5,
+      "ap": 3,
+      "crit": 35
+    }
   },
   {
     "name": "JUK-22 Gravcannon",
@@ -1072,7 +1298,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 168460
+    "cost": 168460,
+    "weapon": {
+      "range": 2,
+      "accuracy": 3,
+      "damage_min": 241,
+      "damage_max": 330,
+      "weapon_type": 5,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "JUK-24 Gravcannon",
@@ -1097,7 +1332,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 228200
+    "cost": 228200,
+    "weapon": {
+      "range": 2,
+      "accuracy": 4,
+      "damage_min": 251,
+      "damage_max": 340,
+      "weapon_type": 5,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "Retribution Gravcannon",
@@ -1122,7 +1366,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 398280
+    "cost": 398280,
+    "weapon": {
+      "range": 2,
+      "accuracy": 5,
+      "damage_min": 351,
+      "damage_max": 450,
+      "weapon_type": 5,
+      "ap": 4,
+      "crit": 45
+    }
   },
   {
     "name": "Coronation Gravcannon",
@@ -1147,7 +1400,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 558260
+    "cost": 558260,
+    "weapon": {
+      "range": 2,
+      "accuracy": 6,
+      "damage_min": 401,
+      "damage_max": 500,
+      "weapon_type": 5,
+      "ap": 4,
+      "crit": 20
+    }
   },
   {
     "name": "Ruut 82 Gravcannon",
@@ -1172,7 +1434,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 426800
+    "cost": 426800,
+    "weapon": {
+      "range": 2,
+      "accuracy": 3,
+      "damage_min": 301,
+      "damage_max": 400,
+      "weapon_type": 5,
+      "ap": 4,
+      "crit": 40
+    }
   },
   {
     "name": "Ruut 84 Gravcannon",
@@ -1197,7 +1468,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 546240
+    "cost": 546240,
+    "weapon": {
+      "range": 2,
+      "accuracy": 4,
+      "damage_min": 321,
+      "damage_max": 420,
+      "weapon_type": 5,
+      "ap": 4,
+      "crit": 45
+    }
   },
   {
     "name": "Phoenix Lance",
@@ -1222,7 +1502,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": {
+      "range": 2,
+      "accuracy": 2,
+      "damage_min": 101,
+      "damage_max": 140,
+      "weapon_type": 2,
+      "ap": 2,
+      "crit": 15
+    }
   },
   {
     "name": "Starshot Lance Array",
@@ -1247,7 +1536,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 27020
+    "cost": 27020,
+    "weapon": {
+      "range": 2,
+      "accuracy": 3,
+      "damage_min": 181,
+      "damage_max": 220,
+      "weapon_type": 2,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "HX-Cycle Lance",
@@ -1272,7 +1570,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 13840
+    "cost": 13840,
+    "weapon": {
+      "range": 2,
+      "accuracy": 4,
+      "damage_min": 121,
+      "damage_max": 160,
+      "weapon_type": 2,
+      "ap": 2,
+      "crit": 15
+    }
   },
   {
     "name": "HX-2 Lance",
@@ -1297,7 +1604,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 17000
+    "cost": 17000,
+    "weapon": {
+      "range": 2,
+      "accuracy": 6,
+      "damage_min": 141,
+      "damage_max": 180,
+      "weapon_type": 2,
+      "ap": 2,
+      "crit": 10
+    }
   },
   {
     "name": "Starfall Lance Array",
@@ -1322,7 +1638,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 118850
+    "cost": 118850,
+    "weapon": {
+      "range": 2,
+      "accuracy": 8,
+      "damage_min": 241,
+      "damage_max": 280,
+      "weapon_type": 2,
+      "ap": 3,
+      "crit": 15
+    }
   },
   {
     "name": "Cloudstrike Lance",
@@ -1347,7 +1672,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 203400
+    "cost": 203400,
+    "weapon": {
+      "range": 2,
+      "accuracy": 6,
+      "damage_min": 181,
+      "damage_max": 220,
+      "weapon_type": 2,
+      "ap": 2,
+      "crit": 30
+    }
   },
   {
     "name": "Thunder XK3 Lance Array",
@@ -1372,7 +1706,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 227800
+    "cost": 227800,
+    "weapon": {
+      "range": 2,
+      "accuracy": 8,
+      "damage_min": 276,
+      "damage_max": 315,
+      "weapon_type": 2,
+      "ap": 3,
+      "crit": 10
+    }
   },
   {
     "name": "Void-Thunder Lance",
@@ -1397,7 +1740,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 255320
+    "cost": 255320,
+    "weapon": {
+      "range": 2,
+      "accuracy": 9,
+      "damage_min": 181,
+      "damage_max": 220,
+      "weapon_type": 2,
+      "ap": 2,
+      "crit": 35
+    }
   },
   {
     "name": "Hazuk Duo-Arc",
@@ -1422,7 +1774,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 430740
+    "cost": 430740,
+    "weapon": {
+      "range": 2,
+      "accuracy": 10,
+      "damage_min": 281,
+      "damage_max": 320,
+      "weapon_type": 2,
+      "ap": 3,
+      "crit": 10
+    }
   },
   {
     "name": "Cerulean Tri-Arc",
@@ -1447,7 +1808,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 538250
+    "cost": 538250,
+    "weapon": {
+      "range": 2,
+      "accuracy": 11,
+      "damage_min": 311,
+      "damage_max": 350,
+      "weapon_type": 2,
+      "ap": 3,
+      "crit": 20
+    }
   },
   {
     "name": "Ares Missile System",
@@ -1472,7 +1842,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 23500
+    "cost": 23500,
+    "weapon": {
+      "range": 4,
+      "accuracy": 6,
+      "damage_min": 111,
+      "damage_max": 210,
+      "weapon_type": 6,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "Hydra Missile Array",
@@ -1497,7 +1876,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": {
+      "range": 4,
+      "accuracy": 8,
+      "damage_min": 121,
+      "damage_max": 220,
+      "weapon_type": 6,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "Arratech Missile Pod",
@@ -1522,7 +1910,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 13840
+    "cost": 13840,
+    "weapon": {
+      "range": 4,
+      "accuracy": 10,
+      "damage_min": 126,
+      "damage_max": 225,
+      "weapon_type": 6,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "Aramech Missile Pod",
@@ -1547,7 +1944,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 18000
+    "cost": 18000,
+    "weapon": {
+      "range": 4,
+      "accuracy": 11,
+      "damage_min": 131,
+      "damage_max": 230,
+      "weapon_type": 6,
+      "ap": 3,
+      "crit": 25
+    }
   },
   {
     "name": "Dracos Missile Array",
@@ -1572,7 +1978,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 132650
+    "cost": 132650,
+    "weapon": {
+      "range": 4,
+      "accuracy": 13,
+      "damage_min": 141,
+      "damage_max": 240,
+      "weapon_type": 6,
+      "ap": 3,
+      "crit": 25
+    }
   },
   {
     "name": "Dracos X2 Missile Battery",
@@ -1597,7 +2012,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 178400
+    "cost": 178400,
+    "weapon": {
+      "range": 4,
+      "accuracy": 15,
+      "damage_min": 141,
+      "damage_max": 240,
+      "weapon_type": 6,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "Aramech X2 Missile Battery",
@@ -1622,7 +2046,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 232600
+    "cost": 232600,
+    "weapon": {
+      "range": 4,
+      "accuracy": 17,
+      "damage_min": 131,
+      "damage_max": 230,
+      "weapon_type": 6,
+      "ap": 3,
+      "crit": 35
+    }
   },
   {
     "name": "Valkri Missile Pods",
@@ -1647,7 +2080,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 252680
+    "cost": 252680,
+    "weapon": {
+      "range": 4,
+      "accuracy": 18,
+      "damage_min": 131,
+      "damage_max": 230,
+      "weapon_type": 6,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "Vector Missile System",
@@ -1672,7 +2114,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 26800
+    "cost": 26800,
+    "weapon": {
+      "range": 4,
+      "accuracy": 8,
+      "damage_min": 141,
+      "damage_max": 240,
+      "weapon_type": 6,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "Dual-Linked Vector Missile",
@@ -1697,7 +2148,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 156860
+    "cost": 156860,
+    "weapon": {
+      "range": 4,
+      "accuracy": 10,
+      "damage_min": 161,
+      "damage_max": 260,
+      "weapon_type": 6,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "Goliath Missile Battery",
@@ -1722,7 +2182,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 291480
+    "cost": 291480,
+    "weapon": {
+      "range": 4,
+      "accuracy": 14,
+      "damage_min": 171,
+      "damage_max": 270,
+      "weapon_type": 6,
+      "ap": 3,
+      "crit": 40
+    }
   },
   {
     "name": "Gargoyle Missile Battery",
@@ -1747,7 +2216,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 410000
+    "cost": 410000,
+    "weapon": {
+      "range": 4,
+      "accuracy": 17,
+      "damage_min": 151,
+      "damage_max": 250,
+      "weapon_type": 6,
+      "ap": 3,
+      "crit": 15
+    }
   },
   {
     "name": "Imperator PC-1",
@@ -1772,7 +2250,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": {
+      "range": 3,
+      "accuracy": 1,
+      "damage_min": 117,
+      "damage_max": 136,
+      "weapon_type": 3,
+      "ap": 2,
+      "crit": 15
+    }
   },
   {
     "name": "Stalwart PC-1",
@@ -1797,7 +2284,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": {
+      "range": 3,
+      "accuracy": 2,
+      "damage_min": 121,
+      "damage_max": 140,
+      "weapon_type": 3,
+      "ap": 2,
+      "crit": 30
+    }
   },
   {
     "name": "Imperator Plasma Artillery",
@@ -1822,7 +2318,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 34400
+    "cost": 34400,
+    "weapon": {
+      "range": 3,
+      "accuracy": 6,
+      "damage_min": 141,
+      "damage_max": 160,
+      "weapon_type": 3,
+      "ap": 3,
+      "crit": 25
+    }
   },
   {
     "name": "Commander PC-1",
@@ -1847,7 +2352,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 17000
+    "cost": 17000,
+    "weapon": {
+      "range": 3,
+      "accuracy": 4,
+      "damage_min": 101,
+      "damage_max": 120,
+      "weapon_type": 3,
+      "ap": 2,
+      "crit": 25
+    }
   },
   {
     "name": "MK Plasma Ordnance",
@@ -1872,7 +2386,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 152850
+    "cost": 152850,
+    "weapon": {
+      "range": 3,
+      "accuracy": 5,
+      "damage_min": 151,
+      "damage_max": 170,
+      "weapon_type": 3,
+      "ap": 3,
+      "crit": 25
+    }
   },
   {
     "name": "X2 Plasma Battery",
@@ -1897,7 +2420,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 206800
+    "cost": 206800,
+    "weapon": {
+      "range": 3,
+      "accuracy": 6,
+      "damage_min": 121,
+      "damage_max": 140,
+      "weapon_type": 3,
+      "ap": 2,
+      "crit": 30
+    }
   },
   {
     "name": "Commander Plasma Artillery",
@@ -1922,7 +2454,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 252400
+    "cost": 252400,
+    "weapon": {
+      "range": 3,
+      "accuracy": 10,
+      "damage_min": 151,
+      "damage_max": 170,
+      "weapon_type": 3,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "Azmath Plasma Ordnance",
@@ -1947,7 +2488,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 294820
+    "cost": 294820,
+    "weapon": {
+      "range": 3,
+      "accuracy": 11,
+      "damage_min": 151,
+      "damage_max": 170,
+      "weapon_type": 3,
+      "ap": 3,
+      "crit": 30
+    }
   },
   {
     "name": "Obliterator PK-1",
@@ -1972,7 +2522,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 128400
+    "cost": 128400,
+    "weapon": {
+      "range": 3,
+      "accuracy": 7,
+      "damage_min": 151,
+      "damage_max": 170,
+      "weapon_type": 3,
+      "ap": 4,
+      "crit": 30
+    }
   },
   {
     "name": "Obliterator PK-2",
@@ -1997,7 +2556,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 242620
+    "cost": 242620,
+    "weapon": {
+      "range": 3,
+      "accuracy": 9,
+      "damage_min": 151,
+      "damage_max": 170,
+      "weapon_type": 3,
+      "ap": 4,
+      "crit": 35
+    }
   },
   {
     "name": "Obliterator PKX-3",
@@ -2022,7 +2590,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 298420
+    "cost": 298420,
+    "weapon": {
+      "range": 3,
+      "accuracy": 11,
+      "damage_min": 151,
+      "damage_max": 170,
+      "weapon_type": 3,
+      "ap": 4,
+      "crit": 35
+    }
   },
   {
     "name": "Interceder PCX-5",
@@ -2047,7 +2624,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 315860
+    "cost": 315860,
+    "weapon": {
+      "range": 3,
+      "accuracy": 10,
+      "damage_min": 51,
+      "damage_max": 80,
+      "weapon_type": 3,
+      "ap": 4,
+      "crit": 35
+    }
   },
   {
     "name": "Interceder PCX-1",
@@ -2072,7 +2658,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 148640
+    "cost": 148640,
+    "weapon": {
+      "range": 3,
+      "accuracy": 8,
+      "damage_min": 51,
+      "damage_max": 80,
+      "weapon_type": 3,
+      "ap": 4,
+      "crit": 35
+    }
   },
   {
     "name": "Light Railgun",
@@ -2097,7 +2692,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": {
+      "range": 3,
+      "accuracy": 3,
+      "damage_min": 91,
+      "damage_max": 110,
+      "weapon_type": 4,
+      "ap": 3,
+      "crit": 5
+    }
   },
   {
     "name": "Archangel Railgun",
@@ -2122,7 +2726,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 27020
+    "cost": 27020,
+    "weapon": {
+      "range": 3,
+      "accuracy": 4,
+      "damage_min": 121,
+      "damage_max": 140,
+      "weapon_type": 4,
+      "ap": 3,
+      "crit": 10
+    }
   },
   {
     "name": "Helios Railgun",
@@ -2147,7 +2760,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 33440
+    "cost": 33440,
+    "weapon": {
+      "range": 3,
+      "accuracy": 6,
+      "damage_min": 121,
+      "damage_max": 140,
+      "weapon_type": 4,
+      "ap": 3,
+      "crit": 20
+    }
   },
   {
     "name": "Helios X Railgun",
@@ -2172,7 +2794,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 42500
+    "cost": 42500,
+    "weapon": {
+      "range": 3,
+      "accuracy": 7,
+      "damage_min": 123,
+      "damage_max": 142,
+      "weapon_type": 4,
+      "ap": 3,
+      "crit": 25
+    }
   },
   {
     "name": "Archangel Dual-R Railgun",
@@ -2197,7 +2828,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 148650
+    "cost": 148650,
+    "weapon": {
+      "range": 3,
+      "accuracy": 10,
+      "damage_min": 126,
+      "damage_max": 145,
+      "weapon_type": 4,
+      "ap": 3,
+      "crit": 20
+    }
   },
   {
     "name": "Elomag Railgun",
@@ -2222,7 +2862,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 208630
+    "cost": 208630,
+    "weapon": {
+      "range": 3,
+      "accuracy": 10,
+      "damage_min": 131,
+      "damage_max": 150,
+      "weapon_type": 4,
+      "ap": 3,
+      "crit": 20
+    }
   },
   {
     "name": "Helios X2 Railgun Array",
@@ -2247,7 +2896,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 250000
+    "cost": 250000,
+    "weapon": {
+      "range": 3,
+      "accuracy": 12,
+      "damage_min": 201,
+      "damage_max": 220,
+      "weapon_type": 4,
+      "ap": 4,
+      "crit": 20
+    }
   },
   {
     "name": "Tri Helical Rail X3",
@@ -2272,7 +2930,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 302680
+    "cost": 302680,
+    "weapon": {
+      "range": 3,
+      "accuracy": 14,
+      "damage_min": 201,
+      "damage_max": 220,
+      "weapon_type": 4,
+      "ap": 4,
+      "crit": 25
+    }
   },
   {
     "name": "Lightspear Railgun",
@@ -2297,7 +2964,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 13840
+    "cost": 13840,
+    "weapon": {
+      "range": 3,
+      "accuracy": 5,
+      "damage_min": 101,
+      "damage_max": 120,
+      "weapon_type": 4,
+      "ap": 3,
+      "crit": 10
+    }
   },
   {
     "name": "Blazelight Railgun",
@@ -2322,7 +2998,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 191860
+    "cost": 191860,
+    "weapon": {
+      "range": 3,
+      "accuracy": 7,
+      "damage_min": 101,
+      "damage_max": 120,
+      "weapon_type": 4,
+      "ap": 3,
+      "crit": 10
+    }
   },
   {
     "name": "Radiance Railgun",
@@ -2347,7 +3032,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 257600
+    "cost": 257600,
+    "weapon": {
+      "range": 3,
+      "accuracy": 8,
+      "damage_min": 81,
+      "damage_max": 100,
+      "weapon_type": 4,
+      "ap": 3,
+      "crit": 10
+    }
   },
   {
     "name": "Demon-X Heavy Rail",
@@ -2372,7 +3066,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 530080
+    "cost": 530080,
+    "weapon": {
+      "range": 3,
+      "accuracy": 15,
+      "damage_min": 241,
+      "damage_max": 280,
+      "weapon_type": 4,
+      "ap": 4,
+      "crit": 20
+    }
   },
   {
     "name": "Demon-X Fast Rail",
@@ -2397,7 +3100,16 @@
     "prisoners": 0,
     "medical": 0,
     "category": "weapons",
-    "cost": 722001
+    "cost": 722001,
+    "weapon": {
+      "range": 3,
+      "accuracy": 11,
+      "damage_min": 201,
+      "damage_max": 230,
+      "weapon_type": 4,
+      "ap": 3,
+      "crit": 25
+    }
   },
   {
     "name": "Barracks 1",
@@ -2422,7 +3134,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 23500
+    "cost": 23500,
+    "weapon": null
   },
   {
     "name": "Barracks 2",
@@ -2447,7 +3160,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 27290
+    "cost": 27290,
+    "weapon": null
   },
   {
     "name": "Barracks 3",
@@ -2472,7 +3186,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 33920
+    "cost": 33920,
+    "weapon": null
   },
   {
     "name": "Barracks 4",
@@ -2497,7 +3212,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 42500
+    "cost": 42500,
+    "weapon": null
   },
   {
     "name": "Barracks 5",
@@ -2522,7 +3238,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 54560
+    "cost": 54560,
+    "weapon": null
   },
   {
     "name": "Barracks 6",
@@ -2547,7 +3264,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 147600
+    "cost": 147600,
+    "weapon": null
   },
   {
     "name": "Barracks 7",
@@ -2572,7 +3290,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 188720
+    "cost": 188720,
+    "weapon": null
   },
   {
     "name": "Barracks 8",
@@ -2597,7 +3316,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 237360
+    "cost": 237360,
+    "weapon": null
   },
   {
     "name": "Reinforced Barracks 3",
@@ -2622,7 +3342,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 153920
+    "cost": 153920,
+    "weapon": null
   },
   {
     "name": "Reinforced Barracks 4",
@@ -2647,7 +3368,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 222500
+    "cost": 222500,
+    "weapon": null
   },
   {
     "name": "Reinforced Barracks 5",
@@ -2672,7 +3394,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 321340
+    "cost": 321340,
+    "weapon": null
   },
   {
     "name": "Reinforced Barracks 6",
@@ -2697,7 +3420,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 417600
+    "cost": 417600,
+    "weapon": null
   },
   {
     "name": "Reinforced Barracks 8",
@@ -2722,7 +3446,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 508960
+    "cost": 508960,
+    "weapon": null
   },
   {
     "name": "Shielded Barracks 3",
@@ -2747,7 +3472,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 153920
+    "cost": 153920,
+    "weapon": null
   },
   {
     "name": "Shielded Barracks 4",
@@ -2772,7 +3498,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 142500
+    "cost": 142500,
+    "weapon": null
   },
   {
     "name": "Shielded Barracks 5",
@@ -2797,7 +3524,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 321340
+    "cost": 321340,
+    "weapon": null
   },
   {
     "name": "Shielded Barracks 6",
@@ -2822,7 +3550,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 321340
+    "cost": 321340,
+    "weapon": null
   },
   {
     "name": "Battle Barracks 3",
@@ -2847,7 +3576,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 273920
+    "cost": 273920,
+    "weapon": null
   },
   {
     "name": "Battle Barracks 4",
@@ -2872,7 +3602,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 388000
+    "cost": 388000,
+    "weapon": null
   },
   {
     "name": "Compact Barracks",
@@ -2897,7 +3628,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 69500
+    "cost": 69500,
+    "weapon": null
   },
   {
     "name": "Squad Barracks",
@@ -2922,7 +3654,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 69500
+    "cost": 69500,
+    "weapon": null
   },
   {
     "name": "Officer Cabin",
@@ -2947,7 +3680,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 8500
+    "cost": 8500,
+    "weapon": null
   },
   {
     "name": "Reinforced Officer Cabin",
@@ -2972,7 +3706,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 36620
+    "cost": 36620,
+    "weapon": null
   },
   {
     "name": "Officer Suites",
@@ -2997,7 +3732,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 36000
+    "cost": 36000,
+    "weapon": null
   },
   {
     "name": "Shielded Officer Suites",
@@ -3022,7 +3758,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 55000
+    "cost": 55000,
+    "weapon": null
   },
   {
     "name": "Armored Officer Suites",
@@ -3047,7 +3784,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 57000
+    "cost": 57000,
+    "weapon": null
   },
   {
     "name": "Navigation Annex",
@@ -3072,7 +3810,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 276000
+    "cost": 276000,
+    "weapon": null
   },
   {
     "name": "Engineering Annex",
@@ -3097,7 +3836,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 276000
+    "cost": 276000,
+    "weapon": null
   },
   {
     "name": "Warden's Annex",
@@ -3122,7 +3862,8 @@
     "prisoners": 1,
     "medical": 2,
     "category": "crew",
-    "cost": 298000
+    "cost": 298000,
+    "weapon": null
   },
   {
     "name": "Tactician's Annex",
@@ -3147,7 +3888,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "crew",
-    "cost": 284000
+    "cost": 284000,
+    "weapon": null
   },
   {
     "name": "Weapons Locker A1",
@@ -3172,7 +3914,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": null
   },
   {
     "name": "Weapons Locker A2",
@@ -3197,7 +3940,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 36500
+    "cost": 36500,
+    "weapon": null
   },
   {
     "name": "Weapons Locker A3",
@@ -3222,7 +3966,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 58500
+    "cost": 58500,
+    "weapon": null
   },
   {
     "name": "Weapons Locker A4",
@@ -3247,7 +3992,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 108000
+    "cost": 108000,
+    "weapon": null
   },
   {
     "name": "Weapons Locker A5",
@@ -3272,7 +4018,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 182000
+    "cost": 182000,
+    "weapon": null
   },
   {
     "name": "Weapons Locker A6",
@@ -3297,7 +4044,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 344000
+    "cost": 344000,
+    "weapon": null
   },
   {
     "name": "Sensor Array 1",
@@ -3322,7 +4070,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": null
   },
   {
     "name": "Sensor Array 2",
@@ -3347,7 +4096,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 22000
+    "cost": 22000,
+    "weapon": null
   },
   {
     "name": "Sensor Array 3",
@@ -3372,7 +4122,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 33640
+    "cost": 33640,
+    "weapon": null
   },
   {
     "name": "Sensor Array 4",
@@ -3397,7 +4148,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 62920
+    "cost": 62920,
+    "weapon": null
   },
   {
     "name": "Sensor Array 5",
@@ -3422,7 +4174,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 114750
+    "cost": 114750,
+    "weapon": null
   },
   {
     "name": "Sig Dampener 1",
@@ -3447,7 +4200,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 23500
+    "cost": 23500,
+    "weapon": null
   },
   {
     "name": "Sig Dampener 2",
@@ -3472,7 +4226,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 62600
+    "cost": 62600,
+    "weapon": null
   },
   {
     "name": "Sig Dampener 3",
@@ -3497,7 +4252,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 118600
+    "cost": 118600,
+    "weapon": null
   },
   {
     "name": "Sig Veil Field",
@@ -3522,7 +4278,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 202000
+    "cost": 202000,
+    "weapon": null
   },
   {
     "name": "Sig Concealment Field",
@@ -3547,7 +4304,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 352600
+    "cost": 352600,
+    "weapon": null
   },
   {
     "name": "Luxury Cabin",
@@ -3572,7 +4330,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 70250
+    "cost": 70250,
+    "weapon": null
   },
   {
     "name": "Passenger Cabin",
@@ -3597,7 +4356,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 9000
+    "cost": 9000,
+    "weapon": null
   },
   {
     "name": "Luxury Suites",
@@ -3622,7 +4382,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 172080
+    "cost": 172080,
+    "weapon": null
   },
   {
     "name": "Passenger Suites",
@@ -3647,7 +4408,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 36750
+    "cost": 36750,
+    "weapon": null
   },
   {
     "name": "Grand Lux Suites",
@@ -3672,7 +4434,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 202800
+    "cost": 202800,
+    "weapon": null
   },
   {
     "name": "Reinforced Passenger Cabin",
@@ -3697,7 +4460,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 77500
+    "cost": 77500,
+    "weapon": null
   },
   {
     "name": "Shielded Passenger Cabin",
@@ -3722,7 +4486,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "cargo",
-    "cost": 70000
+    "cost": 70000,
+    "weapon": null
   },
   {
     "name": "Prison Cell",
@@ -3747,7 +4512,8 @@
     "prisoners": 1,
     "medical": 0,
     "category": "cargo",
-    "cost": 8500
+    "cost": 8500,
+    "weapon": null
   },
   {
     "name": "Prison Cellblock",
@@ -3772,7 +4538,8 @@
     "prisoners": 3,
     "medical": 0,
     "category": "cargo",
-    "cost": 22960
+    "cost": 22960,
+    "weapon": null
   },
   {
     "name": "Interrogation Chamber",
@@ -3797,7 +4564,8 @@
     "prisoners": 1,
     "medical": 0,
     "category": "cargo",
-    "cost": 85000
+    "cost": 85000,
+    "weapon": null
   },
   {
     "name": "Interrogation Ward",
@@ -3822,7 +4590,8 @@
     "prisoners": 4,
     "medical": 0,
     "category": "cargo",
-    "cost": 295000
+    "cost": 295000,
+    "weapon": null
   },
   {
     "name": "Reinforced Prison Cell",
@@ -3847,7 +4616,8 @@
     "prisoners": 1,
     "medical": 0,
     "category": "cargo",
-    "cost": 63800
+    "cost": 63800,
+    "weapon": null
   },
   {
     "name": "Shielded Prison Cell",
@@ -3872,7 +4642,8 @@
     "prisoners": 1,
     "medical": 0,
     "category": "cargo",
-    "cost": 66500
+    "cost": 66500,
+    "weapon": null
   },
   {
     "name": "Prison Ward",
@@ -3897,7 +4668,8 @@
     "prisoners": 4,
     "medical": 0,
     "category": "cargo",
-    "cost": 175000
+    "cost": 175000,
+    "weapon": null
   },
   {
     "name": "Fuel Tank 1",
@@ -3922,7 +4694,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 31340
+    "cost": 31340,
+    "weapon": null
   },
   {
     "name": "Fuel Tank 2",
@@ -3947,7 +4720,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 42690
+    "cost": 42690,
+    "weapon": null
   },
   {
     "name": "Fuel Tank 3",
@@ -3972,7 +4746,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 54310
+    "cost": 54310,
+    "weapon": null
   },
   {
     "name": "Fuel Tank 4",
@@ -3997,7 +4772,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 101560
+    "cost": 101560,
+    "weapon": null
   },
   {
     "name": "Fuel Tank 5",
@@ -4022,7 +4798,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 325000
+    "cost": 325000,
+    "weapon": null
   },
   {
     "name": "Fuel Tank 6",
@@ -4047,7 +4824,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 555000
+    "cost": 555000,
+    "weapon": null
   },
   {
     "name": "Fuel Tank 7",
@@ -4072,7 +4850,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 855000
+    "cost": 855000,
+    "weapon": null
   },
   {
     "name": "Small Fuel Tank 1",
@@ -4097,7 +4876,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 15120
+    "cost": 15120,
+    "weapon": null
   },
   {
     "name": "Small Fuel Tank 2",
@@ -4122,7 +4902,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 20400
+    "cost": 20400,
+    "weapon": null
   },
   {
     "name": "Small Fuel Tank 3",
@@ -4147,7 +4928,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 25360
+    "cost": 25360,
+    "weapon": null
   },
   {
     "name": "Small Fuel Tank 4",
@@ -4172,7 +4954,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 30640
+    "cost": 30640,
+    "weapon": null
   },
   {
     "name": "Large Fuel Tank 1",
@@ -4197,7 +4980,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 90960
+    "cost": 90960,
+    "weapon": null
   },
   {
     "name": "Large Fuel Tank 2",
@@ -4222,7 +5006,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 118200
+    "cost": 118200,
+    "weapon": null
   },
   {
     "name": "Large Fuel Tank 3",
@@ -4247,7 +5032,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 149440
+    "cost": 149440,
+    "weapon": null
   },
   {
     "name": "Large Fuel Tank 4",
@@ -4272,7 +5058,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 189760
+    "cost": 189760,
+    "weapon": null
   },
   {
     "name": "Reinforced Fuel Tank",
@@ -4297,7 +5084,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 62750
+    "cost": 62750,
+    "weapon": null
   },
   {
     "name": "Reinforced Fuel Pod",
@@ -4322,7 +5110,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 44580
+    "cost": 44580,
+    "weapon": null
   },
   {
     "name": "Fuel Helix Coil 2",
@@ -4347,7 +5136,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 52460
+    "cost": 52460,
+    "weapon": null
   },
   {
     "name": "Fuel Helix Coil 3",
@@ -4372,7 +5162,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 84840
+    "cost": 84840,
+    "weapon": null
   },
   {
     "name": "Fuel Helix Coil 4",
@@ -4397,7 +5188,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 156100
+    "cost": 156100,
+    "weapon": null
   },
   {
     "name": "Fuel Helix Coil 5",
@@ -4422,7 +5214,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 254800
+    "cost": 254800,
+    "weapon": null
   },
   {
     "name": "Water-Fuel Reclamation 1",
@@ -4447,7 +5240,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 36320
+    "cost": 36320,
+    "weapon": null
   },
   {
     "name": "Water-Fuel Reclamation 2",
@@ -4472,7 +5266,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 85800
+    "cost": 85800,
+    "weapon": null
   },
   {
     "name": "Water-Fuel Reclamation 3",
@@ -4497,7 +5292,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 183000
+    "cost": 183000,
+    "weapon": null
   },
   {
     "name": "Water-Fuel Reclamation 4",
@@ -4522,7 +5318,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 256000
+    "cost": 256000,
+    "weapon": null
   },
   {
     "name": "Water-Fuel Reclamation 5",
@@ -4547,7 +5344,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 386000
+    "cost": 386000,
+    "weapon": null
   },
   {
     "name": "Water-Fuel Reclamation 6",
@@ -4572,7 +5370,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 516000
+    "cost": 516000,
+    "weapon": null
   },
   {
     "name": "Orbital Fuel Scoop 1",
@@ -4597,7 +5396,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 36500
+    "cost": 36500,
+    "weapon": null
   },
   {
     "name": "Orbital Fuel Scoop 2",
@@ -4622,7 +5422,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 50000
+    "cost": 50000,
+    "weapon": null
   },
   {
     "name": "Orbital Fuel Scoop 3",
@@ -4647,7 +5448,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 72000
+    "cost": 72000,
+    "weapon": null
   },
   {
     "name": "Orbital Fuel Scoop 4",
@@ -4672,7 +5474,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 108000
+    "cost": 108000,
+    "weapon": null
   },
   {
     "name": "Orbital Fuel Scoop 5",
@@ -4697,7 +5500,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 168000
+    "cost": 168000,
+    "weapon": null
   },
   {
     "name": "Extraction Drill",
@@ -4722,7 +5526,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 17000
+    "cost": 17000,
+    "weapon": null
   },
   {
     "name": "Harvester Bay",
@@ -4747,7 +5552,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 34000
+    "cost": 34000,
+    "weapon": null
   },
   {
     "name": "Resource Processor",
@@ -4772,7 +5578,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 99000
+    "cost": 99000,
+    "weapon": null
   },
   {
     "name": "Javat Mechi-Reaper",
@@ -4797,7 +5604,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 257000
+    "cost": 257000,
+    "weapon": null
   },
   {
     "name": "Matchweave EVA Suits",
@@ -4822,7 +5630,8 @@
     "prisoners": 0,
     "medical": 1,
     "category": "operations",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": null
   },
   {
     "name": "L-Support Rover",
@@ -4847,7 +5656,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 25940
+    "cost": 25940,
+    "weapon": null
   },
   {
     "name": "Hyperion Exo-Suits",
@@ -4872,7 +5682,8 @@
     "prisoners": 0,
     "medical": 1,
     "category": "operations",
-    "cost": 30560
+    "cost": 30560,
+    "weapon": null
   },
   {
     "name": "Exo-Crawler",
@@ -4897,7 +5708,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 79000
+    "cost": 79000,
+    "weapon": null
   },
   {
     "name": "EVA Airlock",
@@ -4922,7 +5734,8 @@
     "prisoners": 0,
     "medical": 1,
     "category": "operations",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": null
   },
   {
     "name": "Weather Seals",
@@ -4947,7 +5760,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 25940
+    "cost": 25940,
+    "weapon": null
   },
   {
     "name": "Radiation Seals",
@@ -4972,7 +5786,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 30560
+    "cost": 30560,
+    "weapon": null
   },
   {
     "name": "Mesa Radiate-Seal",
@@ -4997,7 +5812,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 37250
+    "cost": 37250,
+    "weapon": null
   },
   {
     "name": "Surface Scanner",
@@ -5022,7 +5838,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": null
   },
   {
     "name": "Wide-Arc Scanner",
@@ -5047,7 +5864,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 17500
+    "cost": 17500,
+    "weapon": null
   },
   {
     "name": "Depth Scanner Omega",
@@ -5072,7 +5890,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 24000
+    "cost": 24000,
+    "weapon": null
   },
   {
     "name": "Depth Scanner Omega-X",
@@ -5097,7 +5916,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 42000
+    "cost": 42000,
+    "weapon": null
   },
   {
     "name": "Magnamech Plating",
@@ -5122,7 +5942,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 37000
+    "cost": 37000,
+    "weapon": null
   },
   {
     "name": "Centurion Radiation Array",
@@ -5147,7 +5968,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 72000
+    "cost": 72000,
+    "weapon": null
   },
   {
     "name": "Ferrochromium Plating",
@@ -5172,7 +5994,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 114000
+    "cost": 114000,
+    "weapon": null
   },
   {
     "name": "Ferrochromium Plating II",
@@ -5197,7 +6020,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 164000
+    "cost": 164000,
+    "weapon": null
   },
   {
     "name": "Duranium Coating",
@@ -5222,7 +6046,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 45000
+    "cost": 45000,
+    "weapon": null
   },
   {
     "name": "Ferrochromium Coating",
@@ -5247,7 +6072,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 115000
+    "cost": 115000,
+    "weapon": null
   },
   {
     "name": "Iridlaentine Weave-Coating",
@@ -5272,7 +6098,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 228000
+    "cost": 228000,
+    "weapon": null
   },
   {
     "name": "Duranium Coating II",
@@ -5297,7 +6124,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 498000
+    "cost": 498000,
+    "weapon": null
   },
   {
     "name": "Duranium Coating III",
@@ -5322,7 +6150,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 858000
+    "cost": 858000,
+    "weapon": null
   },
   {
     "name": "Oni-Signal Array",
@@ -5347,7 +6176,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": null
   },
   {
     "name": "Dual-Arc Signal Array",
@@ -5372,7 +6202,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 18000
+    "cost": 18000,
+    "weapon": null
   },
   {
     "name": "Triple-Arc Signal Array",
@@ -5397,7 +6228,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 26000
+    "cost": 26000,
+    "weapon": null
   },
   {
     "name": "Multi-Signal Array",
@@ -5422,7 +6254,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 50000
+    "cost": 50000,
+    "weapon": null
   },
   {
     "name": "EVA Deck 1",
@@ -5447,7 +6280,8 @@
     "prisoners": 0,
     "medical": 1,
     "category": "operations",
-    "cost": 20500
+    "cost": 20500,
+    "weapon": null
   },
   {
     "name": "EVA Deck 2",
@@ -5472,7 +6306,8 @@
     "prisoners": 0,
     "medical": 2,
     "category": "operations",
-    "cost": 41720
+    "cost": 41720,
+    "weapon": null
   },
   {
     "name": "EVA Deck 3",
@@ -5497,7 +6332,8 @@
     "prisoners": 0,
     "medical": 2,
     "category": "operations",
-    "cost": 56500
+    "cost": 56500,
+    "weapon": null
   },
   {
     "name": "EVA Deck 4",
@@ -5522,7 +6358,8 @@
     "prisoners": 0,
     "medical": 3,
     "category": "operations",
-    "cost": 94000
+    "cost": 94000,
+    "weapon": null
   },
   {
     "name": "Salvage Bay 1",
@@ -5547,7 +6384,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 20500
+    "cost": 20500,
+    "weapon": null
   },
   {
     "name": "Salvage Bay 2",
@@ -5572,7 +6410,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 41720
+    "cost": 41720,
+    "weapon": null
   },
   {
     "name": "Salvage Bay 3",
@@ -5597,7 +6436,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 56500
+    "cost": 56500,
+    "weapon": null
   },
   {
     "name": "Salvage Bay 4",
@@ -5622,7 +6462,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 94000
+    "cost": 94000,
+    "weapon": null
   },
   {
     "name": "Salvage Bay 5",
@@ -5647,7 +6488,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 694000
+    "cost": 694000,
+    "weapon": null
   },
   {
     "name": "Armored Salvage Bay 5",
@@ -5672,7 +6514,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 764000
+    "cost": 764000,
+    "weapon": null
   },
   {
     "name": "Salvage Bay 6",
@@ -5697,7 +6540,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 0
+    "cost": 0,
+    "weapon": null
   },
   {
     "name": "Reinforced Medical Chamber",
@@ -5722,7 +6566,8 @@
     "prisoners": 0,
     "medical": 2,
     "category": "crew",
-    "cost": 9500
+    "cost": 9500,
+    "weapon": null
   },
   {
     "name": "Basic Medical Bay",
@@ -5747,7 +6592,8 @@
     "prisoners": 0,
     "medical": 4,
     "category": "crew",
-    "cost": 34880
+    "cost": 34880,
+    "weapon": null
   },
   {
     "name": "Shielded Medical Chamber",
@@ -5772,7 +6618,8 @@
     "prisoners": 0,
     "medical": 2,
     "category": "crew",
-    "cost": 12000
+    "cost": 12000,
+    "weapon": null
   },
   {
     "name": "Medical Bay",
@@ -5797,7 +6644,8 @@
     "prisoners": 0,
     "medical": 5,
     "category": "crew",
-    "cost": 40800
+    "cost": 40800,
+    "weapon": null
   },
   {
     "name": "Advanced Medical Ward",
@@ -5822,7 +6670,8 @@
     "prisoners": 0,
     "medical": 9,
     "category": "crew",
-    "cost": 110640
+    "cost": 110640,
+    "weapon": null
   },
   {
     "name": "Combat Medical Ward",
@@ -5847,7 +6696,8 @@
     "prisoners": 0,
     "medical": 8,
     "category": "crew",
-    "cost": 258640
+    "cost": 258640,
+    "weapon": null
   },
   {
     "name": "Reinforced Medical Ward",
@@ -5872,7 +6722,8 @@
     "prisoners": 0,
     "medical": 8,
     "category": "crew",
-    "cost": 294600
+    "cost": 294600,
+    "weapon": null
   },
   {
     "name": "Advanced Medical Bay",
@@ -5897,7 +6748,8 @@
     "prisoners": 0,
     "medical": 6,
     "category": "crew",
-    "cost": 277330
+    "cost": 277330,
+    "weapon": null
   },
   {
     "name": "Medical Clinic",
@@ -5922,7 +6774,8 @@
     "prisoners": 0,
     "medical": 8,
     "category": "crew",
-    "cost": 360640
+    "cost": 360640,
+    "weapon": null
   },
   {
     "name": "Advanced Medical Clinic",
@@ -5947,7 +6800,8 @@
     "prisoners": 0,
     "medical": 9,
     "category": "crew",
-    "cost": 432640
+    "cost": 432640,
+    "weapon": null
   },
   {
     "name": "Combat Medical Clinic",
@@ -5972,7 +6826,8 @@
     "prisoners": 0,
     "medical": 6,
     "category": "crew",
-    "cost": 297330
+    "cost": 297330,
+    "weapon": null
   },
   {
     "name": "Plague Ward",
@@ -5997,7 +6852,8 @@
     "prisoners": 1,
     "medical": 7,
     "category": "crew",
-    "cost": 340750
+    "cost": 340750,
+    "weapon": null
   },
   {
     "name": "Advanced Medical Chamber",
@@ -6022,7 +6878,8 @@
     "prisoners": 0,
     "medical": 3,
     "category": "crew",
-    "cost": 12000
+    "cost": 12000,
+    "weapon": null
   },
   {
     "name": "Mass Dampener 1",
@@ -6047,7 +6904,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 21340
+    "cost": 21340,
+    "weapon": null
   },
   {
     "name": "Mass Dampener 2",
@@ -6072,7 +6930,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 53920
+    "cost": 53920,
+    "weapon": null
   },
   {
     "name": "Mass Dampener 3",
@@ -6097,7 +6956,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 69780
+    "cost": 69780,
+    "weapon": null
   },
   {
     "name": "Mass Dampener 4",
@@ -6122,7 +6982,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 86800
+    "cost": 86800,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 1",
@@ -6147,7 +7008,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 25940
+    "cost": 25940,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 2",
@@ -6172,7 +7034,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 75890
+    "cost": 75890,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 3",
@@ -6197,7 +7060,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 92000
+    "cost": 92000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 4",
@@ -6222,7 +7086,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 128000
+    "cost": 128000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 5",
@@ -6247,7 +7112,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 262000
+    "cost": 262000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 6",
@@ -6272,7 +7138,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 350000
+    "cost": 350000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 5",
@@ -6297,7 +7164,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 262000
+    "cost": 262000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 6",
@@ -6322,7 +7190,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 350000
+    "cost": 350000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 5",
@@ -6347,7 +7216,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 262000
+    "cost": 262000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 6",
@@ -6372,7 +7242,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 350000
+    "cost": 350000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 5",
@@ -6397,7 +7268,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 262000
+    "cost": 262000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 6",
@@ -6422,7 +7294,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 350000
+    "cost": 350000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 5",
@@ -6447,7 +7320,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 262000
+    "cost": 262000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 6",
@@ -6472,7 +7346,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 350000
+    "cost": 350000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 5",
@@ -6497,7 +7372,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 262000
+    "cost": 262000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 6",
@@ -6522,7 +7398,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 350000
+    "cost": 350000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 5",
@@ -6547,7 +7424,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 262000
+    "cost": 262000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 6",
@@ -6572,7 +7450,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 350000
+    "cost": 350000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 5",
@@ -6597,7 +7476,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 262000
+    "cost": 262000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 6",
@@ -6622,7 +7502,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 350000
+    "cost": 350000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 5",
@@ -6647,7 +7528,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 262000
+    "cost": 262000,
+    "weapon": null
   },
   {
     "name": "Adv. Mass Dampener 6",
@@ -6672,7 +7554,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 350000
+    "cost": 350000,
+    "weapon": null
   },
   {
     "name": "Mass Modulator 1",
@@ -6697,7 +7580,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 30800
+    "cost": 30800,
+    "weapon": null
   },
   {
     "name": "Mass Modulator 2",
@@ -6722,7 +7606,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 42000
+    "cost": 42000,
+    "weapon": null
   },
   {
     "name": "Mass Modulator 3",
@@ -6747,7 +7632,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 72720
+    "cost": 72720,
+    "weapon": null
   },
   {
     "name": "Mass Modulator 4",
@@ -6772,7 +7658,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 90640
+    "cost": 90640,
+    "weapon": null
   },
   {
     "name": "Mass Reducer 1",
@@ -6797,7 +7684,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 29480
+    "cost": 29480,
+    "weapon": null
   },
   {
     "name": "Mass Reducer 2",
@@ -6822,7 +7710,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 79250
+    "cost": 79250,
+    "weapon": null
   },
   {
     "name": "Mass Reducer 3",
@@ -6847,7 +7736,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 134660
+    "cost": 134660,
+    "weapon": null
   },
   {
     "name": "Mass Reducer 4",
@@ -6872,7 +7762,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 167840
+    "cost": 167840,
+    "weapon": null
   },
   {
     "name": "Hawk Mass Reducer 4",
@@ -6897,7 +7788,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 279240
+    "cost": 279240,
+    "weapon": null
   },
   {
     "name": "Lion Mass Reducer 4",
@@ -6922,7 +7814,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 279240
+    "cost": 279240,
+    "weapon": null
   },
   {
     "name": "Quad-Goltha Scanner",
@@ -6947,7 +7840,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 130000
+    "cost": 130000,
+    "weapon": null
   },
   {
     "name": "Redlight Goltha Scanner",
@@ -6972,7 +7866,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 140000
+    "cost": 140000,
+    "weapon": null
   },
   {
     "name": "Redlance Goltha Scanner",
@@ -6997,7 +7892,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "operations",
-    "cost": 175000
+    "cost": 175000,
+    "weapon": null
   },
   {
     "name": "Armored Bulkheads 1",
@@ -7022,7 +7918,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 22060
+    "cost": 22060,
+    "weapon": null
   },
   {
     "name": "Armored Bulkheads 2",
@@ -7047,7 +7944,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 43000
+    "cost": 43000,
+    "weapon": null
   },
   {
     "name": "Armored Bulkheads 3",
@@ -7072,7 +7970,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 85000
+    "cost": 85000,
+    "weapon": null
   },
   {
     "name": "Armored Bulkheads 4",
@@ -7097,7 +7996,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 98000
+    "cost": 98000,
+    "weapon": null
   },
   {
     "name": "Armored Bulkheads 5",
@@ -7122,7 +8022,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 167000
+    "cost": 167000,
+    "weapon": null
   },
   {
     "name": "Deflector Array 1",
@@ -7147,7 +8048,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 30920
+    "cost": 30920,
+    "weapon": null
   },
   {
     "name": "Deflector Array 2",
@@ -7172,7 +8074,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 63680
+    "cost": 63680,
+    "weapon": null
   },
   {
     "name": "Deflector Array 3",
@@ -7197,7 +8100,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 118280
+    "cost": 118280,
+    "weapon": null
   },
   {
     "name": "Deflector Array 4",
@@ -7222,7 +8126,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 236710
+    "cost": 236710,
+    "weapon": null
   },
   {
     "name": "Deflector Array 5",
@@ -7247,7 +8152,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 1867100
+    "cost": 1867100,
+    "weapon": null
   },
   {
     "name": "Deflector Array 6",
@@ -7272,7 +8178,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 2867100
+    "cost": 2867100,
+    "weapon": null
   },
   {
     "name": "Reinforced Structures 1",
@@ -7297,7 +8204,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 87500
+    "cost": 87500,
+    "weapon": null
   },
   {
     "name": "Reinforced Structures 2",
@@ -7322,7 +8230,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 152300
+    "cost": 152300,
+    "weapon": null
   },
   {
     "name": "Reinforced Structures 3",
@@ -7347,7 +8256,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 192800
+    "cost": 192800,
+    "weapon": null
   },
   {
     "name": "Reinforced Structures 4",
@@ -7372,7 +8282,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 241130
+    "cost": 241130,
+    "weapon": null
   },
   {
     "name": "Reinforced Structures 5",
@@ -7397,7 +8308,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 277000
+    "cost": 277000,
+    "weapon": null
   },
   {
     "name": "Battle Prow 1",
@@ -7422,7 +8334,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 101680
+    "cost": 101680,
+    "weapon": null
   },
   {
     "name": "Battle Prow 2",
@@ -7447,7 +8360,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 197040
+    "cost": 197040,
+    "weapon": null
   },
   {
     "name": "Battle Prow 3",
@@ -7472,7 +8386,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 281280
+    "cost": 281280,
+    "weapon": null
   },
   {
     "name": "Battle Prow 4",
@@ -7497,7 +8412,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 431280
+    "cost": 431280,
+    "weapon": null
   },
   {
     "name": "Battle Prow 5",
@@ -7522,7 +8438,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 736280
+    "cost": 736280,
+    "weapon": null
   },
   {
     "name": "Hull Plating 1",
@@ -7547,7 +8464,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 105520
+    "cost": 105520,
+    "weapon": null
   },
   {
     "name": "Hull Plating 2",
@@ -7572,7 +8490,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 221360
+    "cost": 221360,
+    "weapon": null
   },
   {
     "name": "Hull Plating 3",
@@ -7597,7 +8516,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 331240
+    "cost": 331240,
+    "weapon": null
   },
   {
     "name": "Hull Plating 4",
@@ -7622,7 +8542,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 383240
+    "cost": 383240,
+    "weapon": null
   },
   {
     "name": "Hull Plating 5",
@@ -7647,7 +8568,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 398240
+    "cost": 398240,
+    "weapon": null
   },
   {
     "name": "Reactor Spike Module 1",
@@ -7672,7 +8594,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 17650
+    "cost": 17650,
+    "weapon": null
   },
   {
     "name": "Reactor Spike Module 2",
@@ -7697,7 +8620,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 61520
+    "cost": 61520,
+    "weapon": null
   },
   {
     "name": "Reactor Spike Module 3",
@@ -7722,7 +8646,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 175640
+    "cost": 175640,
+    "weapon": null
   },
   {
     "name": "Reactor Spike Module 4",
@@ -7747,7 +8672,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 247760
+    "cost": 247760,
+    "weapon": null
   },
   {
     "name": "Pilot Assist Module 1",
@@ -7772,7 +8698,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": null
   },
   {
     "name": "Pilot Assist Module 2",
@@ -7797,7 +8724,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 32000
+    "cost": 32000,
+    "weapon": null
   },
   {
     "name": "Pilot Assist Module 3",
@@ -7822,7 +8750,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 59800
+    "cost": 59800,
+    "weapon": null
   },
   {
     "name": "Pilot Assist Module 4",
@@ -7847,7 +8776,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 94600
+    "cost": 94600,
+    "weapon": null
   },
   {
     "name": "Nav Assist Module 1",
@@ -7872,7 +8802,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 15500
+    "cost": 15500,
+    "weapon": null
   },
   {
     "name": "Nav Assist Module 2",
@@ -7897,7 +8828,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 38600
+    "cost": 38600,
+    "weapon": null
   },
   {
     "name": "Nav Assist Module 3",
@@ -7922,7 +8854,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 69800
+    "cost": 69800,
+    "weapon": null
   },
   {
     "name": "Nav Assist Module 4",
@@ -7947,7 +8880,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 102600
+    "cost": 102600,
+    "weapon": null
   },
   {
     "name": "Defense Pattern Matrix 1",
@@ -7972,7 +8906,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 22240
+    "cost": 22240,
+    "weapon": null
   },
   {
     "name": "Defense Pattern Matrix 2",
@@ -7997,7 +8932,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 54420
+    "cost": 54420,
+    "weapon": null
   },
   {
     "name": "Defense Pattern Matrix 3",
@@ -8022,7 +8958,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 86500
+    "cost": 86500,
+    "weapon": null
   },
   {
     "name": "Defense Pattern Matrix 4",
@@ -8047,7 +8984,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 154000
+    "cost": 154000,
+    "weapon": null
   },
   {
     "name": "Peak Velocity Matrix 1",
@@ -8072,7 +9010,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 42410
+    "cost": 42410,
+    "weapon": null
   },
   {
     "name": "Peak Velocity Matrix 2",
@@ -8097,7 +9036,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 90800
+    "cost": 90800,
+    "weapon": null
   },
   {
     "name": "Peak Velocity Matrix 3",
@@ -8122,7 +9062,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 216800
+    "cost": 216800,
+    "weapon": null
   },
   {
     "name": "Peak Velocity Matrix 4",
@@ -8147,7 +9088,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 336800
+    "cost": 336800,
+    "weapon": null
   },
   {
     "name": "Radi-Pulse Booster 1",
@@ -8172,7 +9114,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 18250
+    "cost": 18250,
+    "weapon": null
   },
   {
     "name": "Void-Pulse Booster 1",
@@ -8197,7 +9140,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 18250
+    "cost": 18250,
+    "weapon": null
   },
   {
     "name": "Radi-Pulse Booster 2",
@@ -8222,7 +9166,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 112480
+    "cost": 112480,
+    "weapon": null
   },
   {
     "name": "Void-Pulse Booster 2",
@@ -8247,7 +9192,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 112480
+    "cost": 112480,
+    "weapon": null
   },
   {
     "name": "Radi-Pulse Booster 3",
@@ -8272,7 +9218,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 298820
+    "cost": 298820,
+    "weapon": null
   },
   {
     "name": "Void-Pulse Booster 3",
@@ -8297,7 +9244,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 298820
+    "cost": 298820,
+    "weapon": null
   },
   {
     "name": "ECCM Screen Matrix 1",
@@ -8322,7 +9270,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 17650
+    "cost": 17650,
+    "weapon": null
   },
   {
     "name": "ECCM Screen Matrix 2",
@@ -8347,7 +9296,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 34420
+    "cost": 34420,
+    "weapon": null
   },
   {
     "name": "ECCM Screen Matrix 3",
@@ -8372,7 +9322,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 56500
+    "cost": 56500,
+    "weapon": null
   },
   {
     "name": "ECCM Screen Matrix 4",
@@ -8397,7 +9348,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 94000
+    "cost": 94000,
+    "weapon": null
   },
   {
     "name": "ECCM Screen Matrix 5",
@@ -8422,7 +9374,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 222860
+    "cost": 222860,
+    "weapon": null
   },
   {
     "name": "ECCM Screen Matrix 6",
@@ -8447,7 +9400,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 222860
+    "cost": 222860,
+    "weapon": null
   },
   {
     "name": "C-Tak Interceptor System 1",
@@ -8472,7 +9426,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 78600
+    "cost": 78600,
+    "weapon": null
   },
   {
     "name": "C-Tak Interceptor System 2",
@@ -8497,7 +9452,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 139250
+    "cost": 139250,
+    "weapon": null
   },
   {
     "name": "C-Tak Interceptor System 3",
@@ -8522,7 +9478,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 233200
+    "cost": 233200,
+    "weapon": null
   },
   {
     "name": "C-Tak Interceptor System 4",
@@ -8547,7 +9504,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "combat",
-    "cost": 316800
+    "cost": 316800,
+    "weapon": null
   },
   {
     "name": "Boarding Assault System 1",
@@ -8572,7 +9530,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 13500
+    "cost": 13500,
+    "weapon": null
   },
   {
     "name": "Boarding Assault System 2",
@@ -8597,7 +9556,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 18820
+    "cost": 18820,
+    "weapon": null
   },
   {
     "name": "Boarding Assault System 3",
@@ -8622,7 +9582,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 28000
+    "cost": 28000,
+    "weapon": null
   },
   {
     "name": "Boarding Assault System 4",
@@ -8647,7 +9608,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 35920
+    "cost": 35920,
+    "weapon": null
   },
   {
     "name": "Targeting Matrix 1",
@@ -8672,7 +9634,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 22060
+    "cost": 22060,
+    "weapon": null
   },
   {
     "name": "Targeting Matrix 2",
@@ -8697,7 +9660,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 34420
+    "cost": 34420,
+    "weapon": null
   },
   {
     "name": "Targeting Matrix 3",
@@ -8722,7 +9686,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 56500
+    "cost": 56500,
+    "weapon": null
   },
   {
     "name": "Targeting Matrix 4",
@@ -8747,7 +9712,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 94000
+    "cost": 94000,
+    "weapon": null
   },
   {
     "name": "Targetlock Matrix 5",
@@ -8772,7 +9738,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 184000
+    "cost": 184000,
+    "weapon": null
   },
   {
     "name": "Interlocking Sensor Matrix 1",
@@ -8797,7 +9764,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 31120
+    "cost": 31120,
+    "weapon": null
   },
   {
     "name": "Interlocking Sensor Matrix 2",
@@ -8822,7 +9790,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 34420
+    "cost": 34420,
+    "weapon": null
   },
   {
     "name": "Interlocking Sensor Matrix 3",
@@ -8847,7 +9816,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 56500
+    "cost": 56500,
+    "weapon": null
   },
   {
     "name": "Interlocking Sensor Matrix 4",
@@ -8872,7 +9842,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 94000
+    "cost": 94000,
+    "weapon": null
   },
   {
     "name": "Interlocking Sensor Matrix 5",
@@ -8897,7 +9868,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 224820
+    "cost": 224820,
+    "weapon": null
   },
   {
     "name": "Interlock Matrix 5",
@@ -8922,7 +9894,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 184000
+    "cost": 184000,
+    "weapon": null
   },
   {
     "name": "Interlocking Sensor Matrix 6",
@@ -8947,7 +9920,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 224820
+    "cost": 224820,
+    "weapon": null
   },
   {
     "name": "Interlocking Sensor Matrix 7",
@@ -8972,7 +9946,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 268000
+    "cost": 268000,
+    "weapon": null
   },
   {
     "name": "Railtrak Guidance Matrix 1",
@@ -8997,7 +9972,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 68600
+    "cost": 68600,
+    "weapon": null
   },
   {
     "name": "Railtrak Guidance Matrix 2",
@@ -9022,7 +9998,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 125600
+    "cost": 125600,
+    "weapon": null
   },
   {
     "name": "Railtrak Guidance Matrix 3",
@@ -9047,7 +10024,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 225600
+    "cost": 225600,
+    "weapon": null
   },
   {
     "name": "Railtrak Guidance Matrix 4",
@@ -9072,7 +10050,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 298200
+    "cost": 298200,
+    "weapon": null
   },
   {
     "name": "Hangar Bay",
@@ -9097,7 +10076,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 205000
+    "cost": 205000,
+    "weapon": null
   },
   {
     "name": "Shielded Hangar Bay",
@@ -9122,7 +10102,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 235000
+    "cost": 235000,
+    "weapon": null
   },
   {
     "name": "Reinforced Hangar Bay",
@@ -9147,7 +10128,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 237000
+    "cost": 237000,
+    "weapon": null
   },
   {
     "name": "Reactive Hangar Bay",
@@ -9172,7 +10154,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 240000
+    "cost": 240000,
+    "weapon": null
   },
   {
     "name": "Fidelis Hangar Bay",
@@ -9197,7 +10180,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 350000
+    "cost": 350000,
+    "weapon": null
   },
   {
     "name": "Advanced Hangar Bay",
@@ -9222,7 +10206,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 665000
+    "cost": 665000,
+    "weapon": null
   },
   {
     "name": "Joint Precision Launch System 1",
@@ -9247,7 +10232,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 44480
+    "cost": 44480,
+    "weapon": null
   },
   {
     "name": "Joint Precision Launch System 2",
@@ -9272,7 +10258,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 116800
+    "cost": 116800,
+    "weapon": null
   },
   {
     "name": "Joint Precision Launch System 3",
@@ -9297,7 +10284,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 360000
+    "cost": 360000,
+    "weapon": null
   },
   {
     "name": "Quturaan Phase Inflector 1",
@@ -9322,7 +10310,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 92460
+    "cost": 92460,
+    "weapon": null
   },
   {
     "name": "Katteduun Phase Inflector 2",
@@ -9347,7 +10336,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 144840
+    "cost": 144840,
+    "weapon": null
   },
   {
     "name": "Quturaan Phase Inflector 3",
@@ -9372,7 +10362,8 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 216100
+    "cost": 216100,
+    "weapon": null
   },
   {
     "name": "Katteduun Phase Inflector 4",
@@ -9397,6 +10388,7 @@
     "prisoners": 0,
     "medical": 0,
     "category": "ship",
-    "cost": 334800
+    "cost": 334800,
+    "weapon": null
   }
 ]
