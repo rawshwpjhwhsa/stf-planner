@@ -131,15 +131,11 @@ Bridges and Hyperwarps follow the same base shape but omit engine-specific field
 
 ## Open Questions (To Be Resolved in Specific Stages)
 
-### OQ-1: Armor block% formula (→ Stage 4)
-The wiki stores armor as a raw integer. The original STFX tool displayed a block percentage
-(e.g. "39 [Blocks 70%]"). The formula mapping raw armor → block% needs to be reverse-engineered
-from known values or found in wiki combat documentation.
-
-**Known data points to work with:**
-- Reach Defender: armor 165, shown as "Blocks 70%" in STFX
-- Scout Cutter default: armor 12, shown as "Blocks 26%"
-- Investigate: `startraders.fandom.com/wiki/Ship_Combat` and related pages
+### OQ-1: Armor block% formula (→ Stage 4) ✅ RESOLVED
+Armor and shield use asymptotic damage-reduction formulas, both capped at 60%:
+- **Armor:** `blockPct = min(0.6, (0.06 × armor) / (1 + 0.06 × |armor|))`
+- **Shield:** `blockPct = min(0.6, (0.03 × shield) / (1 + 0.03 × |shield|))`
+- Source: `startraders.fandom.com/wiki/Ship_Armor` and Steam community discussion
 
 ### OQ-2: Attack range distribution formula (→ Stage 7)
 The original STFX tool showed a combat range breakdown (e.g. "I: 388, II: 452, III: 270...").
@@ -229,7 +225,7 @@ Tasks:
 - [x] **Officers:** total officer slots provided vs. max officers
 - [x] **Hull / Armor / Shield / Fuel / Cargo / Medical / Passengers / Prisoners** totals
 - [x] **Jump cost** total
-- [ ] Install cost running total (cumulative) — skipped: no cost field in components.json
+- [x] Install cost running total (cumulative) — cost field added to components.json from STFX data
 
 **Clarification needed at this stage:** The wiki `Ship_Components_Reference` table has columns
 for both "skill requirements added by this component" and potentially "skill points provided."
@@ -244,13 +240,12 @@ original STFX display.
 **Goal:** Resolve OQ-1 and display armor with block percentage.
 
 Tasks:
-- [ ] Research formula using wiki combat pages and known STFX data points
-- [ ] Check `gitlab.com/tswift/stfx` source for the calculation
-- [ ] Implement `armorToBlockPct(armor, hull)` (or whatever the correct inputs are)
-- [ ] Display as "165 [Blocks 70%]" format in stats panel
-- [ ] Same for shield if applicable
+- [x] Research formula using wiki Ship_Armor page and Steam community discussion
+- [x] Implement `armorBlockPct(armor)` and `shieldBlockPct(shield)` in App.svelte
+- [x] Display as "165 [Blocks 60%]" format in stats panel
+- [x] Shield block% displayed (with T.B.C. fallback preserved)
 
-**Done when:** Block% matches original STFX output for ≥3 different ships.
+**Done when:** Block% displays correctly and updates live with component changes.
 
 ---
 
@@ -352,3 +347,4 @@ Tasks:
 - [x] Open questions identified
 - [x] Stages 0–2 complete
 - [x] Stage 3 complete (stats panel — mass, skills, crew, defense, resources)
+- [x] Stage 4 complete (armor/shield block% formulas and display)

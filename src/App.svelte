@@ -77,6 +77,14 @@
     return list
   })
 
+  // --- Block% formulas ---
+  function armorBlockPct(armor) {
+    return Math.min(0.6, (0.06 * armor) / (1 + 0.06 * Math.abs(armor)))
+  }
+  function shieldBlockPct(shield) {
+    return Math.min(0.6, (0.03 * shield) / (1 + 0.03 * Math.abs(shield)))
+  }
+
   // --- Stats derivations ---
 
   const equippedComponents = $derived(
@@ -96,6 +104,8 @@
   const totalShield = $derived(
     (selectedShip?.shield ?? 0) + equippedComponents.reduce((sum, c) => sum + c.shield, 0)
   )
+  const armorBlock = $derived(Math.round(armorBlockPct(totalArmor) * 100))
+  const shieldBlock = $derived(Math.round(shieldBlockPct(totalShield) * 100))
   const totalFuel = $derived(
     (selectedShip?.fuelTank ?? 0) + equippedComponents.reduce((sum, c) => sum + c.fuel, 0)
   )
@@ -258,12 +268,12 @@
         </div>
         <div class="stat-row">
           <span class="stat-label">Armor</span>
-          <span class="stat-value">{totalArmor}</span>
+          <span class="stat-value">{totalArmor} [Blocks {armorBlock}%]</span>
         </div>
         <div class="stat-row">
           <span class="stat-label">Shield</span>
           <span class="stat-value">
-            {selectedShip.shield !== null ? totalShield : 'T.B.C.'}
+            {selectedShip.shield !== null ? `${totalShield} [Blocks ${shieldBlock}%]` : 'T.B.C.'}
           </span>
         </div>
 
