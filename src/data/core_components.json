@@ -144,6 +144,42 @@
     "cost": 1000000
   },
   {
+    "name": "Scout Bridge 6",
+    "type": "bridge",
+    "subtype": "scout",
+    "size": "small",
+    "mass": 100,
+    "skills": {
+      "pilot": 8,
+      "shipOps": 4,
+      "electronics": 6,
+      "navigation": 5
+    },
+    "officers": 3,
+    "armor": 4,
+    "shield": 4,
+    "jumpCost": 3,
+    "cost": 1047420
+  },
+  {
+    "name": "Scout Bridge 7",
+    "type": "bridge",
+    "subtype": "scout",
+    "size": "small",
+    "mass": 100,
+    "skills": {
+      "pilot": 8,
+      "shipOps": 5,
+      "electronics": 6,
+      "navigation": 6
+    },
+    "officers": 3,
+    "armor": 4,
+    "shield": 4,
+    "jumpCost": 3,
+    "cost": 1547420
+  },
+  {
     "name": "Bridge",
     "type": "bridge",
     "subtype": "standard",
@@ -466,6 +502,62 @@
     "shield": 0,
     "jumpCost": 4,
     "cost": 220000
+  },
+  {
+    "name": "Compact Capital Bridge 4",
+    "type": "bridge",
+    "subtype": "capital",
+    "size": "large",
+    "mass": 480,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 6,
+      "electronics": 10,
+      "navigation": 8
+    },
+    "officers": 1,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 0,
+    "cost": 438480
+  },
+  {
+    "name": "Capital Carrier Bridge 5",
+    "type": "bridge",
+    "subtype": "capital",
+    "size": "large",
+    "mass": 600,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 5,
+      "electronics": 11,
+      "navigation": 9
+    },
+    "officers": 1,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": 5,
+    "cost": 761120
+  },
+  {
+    "name": "Capital Freighter Bridge 5",
+    "type": "bridge",
+    "subtype": "capital",
+    "size": "large",
+    "mass": 600,
+    "skills": {
+      "pilot": 9,
+      "shipOps": 5,
+      "electronics": 9,
+      "navigation": 9
+    },
+    "officers": 1,
+    "armor": 0,
+    "shield": 0,
+    "jumpCost": -5,
+    "cargo": 25,
+    "fuel": 25,
+    "cost": 951120
   },
   {
     "name": "M2400 Void Engine: Balanced",

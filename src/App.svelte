@@ -1,6 +1,7 @@
 <script>
   import shipsData from './data/ships.json'
   import componentsData from './data/components.json'
+  import coreComponentsData from './data/core_components.json'
   import defaultLoadouts from './data/default_loadouts.json'
   import { buildInitialSlots } from './lib/loadout.js'
 
@@ -32,15 +33,30 @@
     componentsData.map(c => [`${c.name}::${c.faction ?? ''}`, c])
   )
 
+  const coreByType = {
+    bridge: coreComponentsData.filter(c => c.type === 'bridge'),
+    engine: coreComponentsData.filter(c => c.type === 'engine'),
+    hyperwarp: coreComponentsData.filter(c => c.type === 'hyperwarp'),
+  }
+
   // --- Reactive state ---
 
   let selectedShipName = $state(null)
   let slots = $state([])
+  let selectedBridge = $state(null)
+  let selectedEngine = $state(null)
+  let selectedHyperwarp = $state(null)
+  let bridgeSubtype = $state(null)
+
   let pickerOpen = $state(false)
   let pickerTargetIndex = $state(null)
   let pickerSearch = $state('')
   let pickerCategoryFilter = $state('all')
   let pickerFactionFilter = $state('all')
+
+  let corePickerOpen = $state(false)
+  let corePickerType = $state(null)
+  let corePickerSearch = $state('')
 
   // --- Derived values ---
 
@@ -77,6 +93,20 @@
     return list
   })
 
+  const corePickerCandidates = $derived.by(() => {
+    if (!corePickerType || !selectedShip) return []
+    let list = coreByType[corePickerType]
+    if (corePickerType === 'engine')
+      list = list.filter(c => c.massClass === selectedShip.massClass)
+    else if (corePickerType === 'hyperwarp')
+      list = list.filter(c => c.massClass === selectedShip.massClass)
+    else if (corePickerType === 'bridge' && bridgeSubtype)
+      list = list.filter(c => c.subtype === bridgeSubtype)
+    if (corePickerSearch.trim())
+      list = list.filter(c => c.name.toLowerCase().includes(corePickerSearch.trim().toLowerCase()))
+    return list
+  })
+
   // --- Block% formulas ---
   function armorBlockPct(armor) {
     return Math.min(0.6, (0.06 * armor) / (1 + 0.06 * Math.abs(armor)))
@@ -91,53 +121,83 @@
     slots.filter(s => s.component !== null).map(s => s.component)
   )
 
+  function normalizeCoreForStats(core) {
+    if (!core) return null
+    return {
+      ...core,
+      crew: core.crew ?? 0,
+      officers: core.officers ?? 0,
+      fuel: core.fuel ?? 0,
+      cargo: core.cargo ?? 0,
+      passengers: core.passengers ?? 0,
+      prisoners: core.prisoners ?? 0,
+      medical: core.medical ?? 0,
+      skills: {
+        pilot: core.skills?.pilot ?? 0,
+        shipOps: core.skills?.shipOps ?? 0,
+        gunnery: core.skills?.gunnery ?? 0,
+        electronics: core.skills?.electronics ?? 0,
+        navigation: core.skills?.navigation ?? 0,
+      },
+    }
+  }
+
+  const allEquippedComponents = $derived.by(() => {
+    const list = [...equippedComponents]
+    for (const core of [selectedBridge, selectedEngine, selectedHyperwarp]) {
+      const normalized = normalizeCoreForStats(core)
+      if (normalized) list.push(normalized)
+    }
+    return list
+  })
+
   const totalMass = $derived(
-    equippedComponents.reduce((sum, c) => sum + c.mass, 0)
+    allEquippedComponents.reduce((sum, c) => sum + c.mass, 0)
   )
   const massOverLimit = $derived(
     selectedShip ? totalMass > selectedShip.massCapacity : false
   )
 
   const totalArmor = $derived(
-    (selectedShip?.armor ?? 0) + equippedComponents.reduce((sum, c) => sum + c.armor, 0)
+    (selectedShip?.armor ?? 0) + allEquippedComponents.reduce((sum, c) => sum + c.armor, 0)
   )
   const totalShield = $derived(
-    (selectedShip?.shield ?? 0) + equippedComponents.reduce((sum, c) => sum + c.shield, 0)
+    (selectedShip?.shield ?? 0) + allEquippedComponents.reduce((sum, c) => sum + c.shield, 0)
   )
   const armorBlock = $derived(Math.round(armorBlockPct(totalArmor) * 100))
   const shieldBlock = $derived(Math.round(shieldBlockPct(totalShield) * 100))
   const totalFuel = $derived(
-    (selectedShip?.fuelTank ?? 0) + equippedComponents.reduce((sum, c) => sum + c.fuel, 0)
+    (selectedShip?.fuelTank ?? 0) + allEquippedComponents.reduce((sum, c) => sum + c.fuel, 0)
   )
   const totalCargo = $derived(
-    (selectedShip?.defaultCargo ?? 0) + equippedComponents.reduce((sum, c) => sum + c.cargo, 0)
+    (selectedShip?.defaultCargo ?? 0) + allEquippedComponents.reduce((sum, c) => sum + c.cargo, 0)
   )
   const totalJumpCost = $derived(
-    (selectedShip?.jumpCost ?? 0) + equippedComponents.reduce((sum, c) => sum + c.jumpCost, 0)
+    (selectedShip?.jumpCost ?? 0) + allEquippedComponents.reduce((sum, c) => sum + c.jumpCost, 0)
   )
   const totalCrew = $derived(
-    equippedComponents.reduce((sum, c) => sum + c.crew, 0)
+    allEquippedComponents.reduce((sum, c) => sum + c.crew, 0)
   )
   const totalOfficers = $derived(
-    equippedComponents.reduce((sum, c) => sum + c.officers, 0)
+    allEquippedComponents.reduce((sum, c) => sum + c.officers, 0)
   )
   const totalPassengers = $derived(
-    equippedComponents.reduce((sum, c) => sum + c.passengers, 0)
+    allEquippedComponents.reduce((sum, c) => sum + c.passengers, 0)
   )
   const totalPrisoners = $derived(
-    equippedComponents.reduce((sum, c) => sum + c.prisoners, 0)
+    allEquippedComponents.reduce((sum, c) => sum + c.prisoners, 0)
   )
   const totalMedical = $derived(
-    equippedComponents.reduce((sum, c) => sum + c.medical, 0)
+    allEquippedComponents.reduce((sum, c) => sum + c.medical, 0)
   )
 
   const totalCost = $derived(
-    equippedComponents.reduce((sum, c) => sum + (c.cost ?? 0), 0)
+    allEquippedComponents.reduce((sum, c) => sum + (c.cost ?? 0), 0)
   )
 
   const totalSkills = $derived.by(() => {
     const skills = { pilot: 0, shipOps: 0, gunnery: 0, electronics: 0, navigation: 0 }
-    for (const c of equippedComponents) {
+    for (const c of allEquippedComponents) {
       skills.pilot += c.skills.pilot
       skills.shipOps += c.skills.shipOps
       skills.gunnery += c.skills.gunnery
@@ -152,10 +212,19 @@
   function onShipChange() {
     if (!selectedShipName) {
       slots = []
+      selectedBridge = null
+      selectedEngine = null
+      selectedHyperwarp = null
+      bridgeSubtype = null
       return
     }
     const ship = shipsData.find(s => s.name === selectedShipName)
-    slots = buildInitialSlots(ship, componentsByName, defaultLoadouts)
+    const result = buildInitialSlots(ship, componentsByName, defaultLoadouts, coreComponentsData)
+    slots = result.slots
+    selectedBridge = result.bridge
+    selectedEngine = result.engine
+    selectedHyperwarp = result.hyperwarp
+    bridgeSubtype = result.bridge?.subtype ?? null
   }
 
   function openPicker(index) {
@@ -180,12 +249,45 @@
     if (e.target === e.currentTarget) closePicker()
   }
 
+  function openCorePicker(type) {
+    corePickerType = type
+    corePickerSearch = ''
+    corePickerOpen = true
+  }
+
+  function closeCorePicker() {
+    corePickerOpen = false
+    corePickerType = null
+  }
+
+  function assignCoreComponent(comp) {
+    if (corePickerType === 'bridge') selectedBridge = comp
+    else if (corePickerType === 'engine') selectedEngine = comp
+    else if (corePickerType === 'hyperwarp') selectedHyperwarp = comp
+    closeCorePicker()
+  }
+
+  function coreBackdropClose(e) {
+    if (e.target === e.currentTarget) closeCorePicker()
+  }
+
   // --- Dialog open/close effect ---
 
   $effect(() => {
     const d = document.getElementById('picker-dialog')
     if (!d) return
     if (pickerOpen) {
+      d.showModal()
+      d.querySelector('.picker-search')?.focus()
+    } else if (d.open) {
+      d.close()
+    }
+  })
+
+  $effect(() => {
+    const d = document.getElementById('core-picker-dialog')
+    if (!d) return
+    if (corePickerOpen) {
       d.showModal()
       d.querySelector('.picker-search')?.focus()
     } else if (d.open) {
@@ -215,6 +317,47 @@
 
   <main class="app-main">
     <section class="slots-panel">
+      {#if selectedShip}
+        <div class="slot-group core-group">
+          <h2 class="slot-group__heading">Core Components</h2>
+          <ul class="slot-list">
+            <li>
+              <button
+                class="slot-btn"
+                class:slot-btn--empty={!selectedBridge}
+                onclick={() => openCorePicker('bridge')}
+              >
+                <span class="slot-btn__label">
+                  Bridge: {selectedBridge?.name ?? 'Unassigned'}
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="slot-btn"
+                class:slot-btn--empty={!selectedEngine}
+                onclick={() => openCorePicker('engine')}
+              >
+                <span class="slot-btn__label">
+                  Engine: {selectedEngine?.name ?? 'Unassigned'}
+                </span>
+              </button>
+            </li>
+            <li>
+              <button
+                class="slot-btn"
+                class:slot-btn--empty={!selectedHyperwarp}
+                onclick={() => openCorePicker('hyperwarp')}
+              >
+                <span class="slot-btn__label">
+                  Hyperwarp: {selectedHyperwarp?.name ?? 'Unassigned'}
+                </span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      {/if}
+
       {#each ['large', 'medium', 'small'] as size}
         {#if slots.some(s => s.size === size)}
           <div class="slot-group">
@@ -259,6 +402,35 @@
           <span class="stat-label">Mass</span>
           <span class="stat-value">{totalMass} / {selectedShip.massCapacity}</span>
         </div>
+
+        {#if selectedEngine}
+          <hr class="stat-divider" />
+          <h3 class="stats-subheading">Engine</h3>
+          <div class="stat-row">
+            <span class="stat-label">Speed</span>
+            <span class="stat-value">{selectedEngine.speed}</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Agility</span>
+            <span class="stat-value">{selectedEngine.agility}</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Fuel / AU</span>
+            <span class="stat-value">{selectedEngine.fuelPerAU}</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Fuel / Combat</span>
+            <span class="stat-value">{selectedEngine.fuelPerCombat}</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Reactor Points</span>
+            <span class="stat-value">{selectedEngine.reactorPoints}</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Safety Rating</span>
+            <span class="stat-value">{selectedEngine.safetyRating}</span>
+          </div>
+        {/if}
 
         <hr class="stat-divider" />
 
@@ -405,6 +577,48 @@
 
   <footer class="picker-footer">
     <button class="picker-cancel" onclick={closePicker}>Cancel</button>
+  </footer>
+</dialog>
+
+<!-- Core component picker modal -->
+<dialog id="core-picker-dialog" class="picker-modal" onclick={coreBackdropClose}>
+  <div class="picker-header">
+    <h3 class="picker-title">
+      Select {corePickerType ?? ''}
+    </h3>
+    <button class="picker-close" onclick={closeCorePicker} aria-label="Close">×</button>
+  </div>
+
+  <div class="picker-filters">
+    <input
+      class="picker-search"
+      type="search"
+      bind:value={corePickerSearch}
+      placeholder="Search…"
+    />
+  </div>
+
+  {#if corePickerCandidates.length > 0}
+    <ul class="picker-list">
+      {#each corePickerCandidates as c (c.name + (c.massClass ?? '') + (c.subtype ?? ''))}
+        <li>
+          <button class="picker-item" onclick={() => assignCoreComponent(c)}>
+            <span class="picker-item__name">{c.name}</span>
+            {#if c.type === 'engine'}
+              <span class="picker-item__meta">Spd {c.speed} / Agi {c.agility}</span>
+            {:else if c.type === 'hyperwarp'}
+              <span class="picker-item__meta">Jump {c.jumpCost}</span>
+            {/if}
+          </button>
+        </li>
+      {/each}
+    </ul>
+  {:else}
+    <p class="picker-empty">No components match.</p>
+  {/if}
+
+  <footer class="picker-footer">
+    <button class="picker-cancel" onclick={closeCorePicker}>Cancel</button>
   </footer>
 </dialog>
 
@@ -735,6 +949,13 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+
+  .picker-item__meta {
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .picker-empty {
