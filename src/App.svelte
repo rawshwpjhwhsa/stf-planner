@@ -5,6 +5,7 @@
   import defaultLoadouts from './data/default_loadouts.json'
   import jobsData from './data/jobs.json'
   import { buildInitialSlots } from './lib/loadout.js'
+  import { serializeLoadout, deserializeLoadout } from './lib/serialize.js'
 
   // --- Module-level constants (computed once, not reactive) ---
 
@@ -76,6 +77,9 @@
 
   let officers = $state([])
   let crew = $state([])
+
+  let hashFeedback = $state('')
+  let _skipNextHashWrite = false
 
   // --- Derived values ---
 
@@ -461,6 +465,101 @@
       d.close()
     }
   })
+
+  // --- URL hash serialization ---
+
+  function restoreFromUrl() {
+    const data = deserializeLoadout(location.hash)
+    if (!data) return false
+
+    const ship = shipsData.find(s => s.name === data.s)
+    if (!ship) return false
+
+    selectedShipName = data.s
+
+    // Build base slot structure, then override components from hash
+    const base = buildInitialSlots(ship, componentsByName, defaultLoadouts, coreComponentsData)
+    if (Array.isArray(data.c)) {
+      for (let i = 0; i < base.slots.length && i < data.c.length; i++) {
+        base.slots[i].component = data.c[i]
+          ? (componentsByName.get(data.c[i]) ?? null)
+          : null
+      }
+    }
+    slots = base.slots
+
+    // Core components
+    selectedBridge = data.b
+      ? coreByType.bridge.find(b => b.name === data.b[0] && b.subtype === data.b[1]) ?? null
+      : null
+    bridgeSubtype = selectedBridge?.subtype ?? null
+
+    selectedEngine = data.e
+      ? coreByType.engine.find(e => e.name === data.e && e.massClass === ship.massClass) ?? null
+      : null
+
+    selectedHyperwarp = data.h
+      ? coreByType.hyperwarp.find(h => h.name === data.h && h.massClass === ship.massClass) ?? null
+      : null
+
+    // Officers
+    officers = (data.o ?? []).map(jobPairs => ({
+      jobs: jobPairs.map(([jid, lvl]) => ({ jobId: jid || null, level: lvl }))
+    }))
+
+    // Crew
+    crew = (data.r ?? []).map(([jid, lvl]) => ({ jobId: jid || null, level: lvl }))
+
+    return true
+  }
+
+  // Write hash on every state change
+  $effect(() => {
+    if (!selectedShipName) {
+      if (location.hash) history.replaceState(null, '', location.pathname)
+      return
+    }
+    if (_skipNextHashWrite) {
+      _skipNextHashWrite = false
+      return
+    }
+    const compressed = serializeLoadout({
+      ship: selectedShipName,
+      slots,
+      bridge: selectedBridge,
+      engine: selectedEngine,
+      hyperwarp: selectedHyperwarp,
+      officers,
+      crew,
+    })
+    history.replaceState(null, '', '#' + compressed)
+  })
+
+  // Handle browser back/forward
+  $effect(() => {
+    function onPopState() {
+      _skipNextHashWrite = true
+      restoreFromUrl()
+    }
+    window.addEventListener('popstate', onPopState)
+    return () => window.removeEventListener('popstate', onPopState)
+  })
+
+  // Restore from URL on initial load
+  if (location.hash.length > 1) {
+    _skipNextHashWrite = true
+    restoreFromUrl()
+  }
+
+  async function copyLink() {
+    try {
+      await navigator.clipboard.writeText(location.href)
+      hashFeedback = 'Copied!'
+    } catch {
+      hashFeedback = 'Failed'
+    }
+    setTimeout(() => { hashFeedback = '' }, 2000)
+  }
 </script>
 
 <div class="app-layout">
@@ -480,6 +579,11 @@
         </optgroup>
       {/each}
     </select>
+    {#if selectedShip}
+      <button class="copy-link-btn" onclick={copyLink}>
+        {hashFeedback || 'Copy Link'}
+      </button>
+    {/if}
   </header>
 
   <main class="app-main">
@@ -948,6 +1052,21 @@
   .ship-select:focus {
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
+  }
+
+  .copy-link-btn {
+    padding: var(--space-2) var(--space-3);
+    background: var(--color-accent);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-md);
+    font-size: var(--text-sm, 0.875rem);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .copy-link-btn:hover {
+    opacity: 0.85;
   }
 
   .app-main {

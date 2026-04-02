@@ -304,13 +304,18 @@ Tasks:
 **Goal:** Full loadout encoded in URL hash; shareable link works.
 
 Tasks:
-- [ ] Define serialization format: minimal representation of
-  `{ shipId, componentSlots[], coreSlots[], officers[] }`
-- [ ] JSON → LZ-compress (use `lz-string` or similar) → base64 → `#hash`
-- [ ] On page load: read hash → decompress → restore full state
-- [ ] "Copy link" button (copies `window.location.href`)
-- [ ] Graceful fallback if hash is malformed or refers to unknown components
-- [ ] Test round-trip: build a loadout → copy link → open in new tab → same loadout
+- [x] Define serialization format: versioned JSON with short keys (`v`, `s`, `c`, `b`, `e`, `h`, `o`, `r`)
+  - Components keyed as `"name::faction"` (matches `componentsByName` Map)
+  - Bridge stored as `[name, subtype]` tuple (names not unique across subtypes)
+  - Engine name alone (unique, embeds mass class)
+  - Hyperwarp name alone (mass class implied by ship)
+  - Officers/crew as `[jobId, level]` pairs (jobId 0 = unassigned)
+- [x] JSON → `lz-string` `compressToEncodedURIComponent` → `#hash`
+- [x] On page load: read hash → decompress → restore full state via `restoreFromUrl()`
+- [x] "Copy Link" button (copies `window.location.href`, "Copied!" feedback)
+- [x] Graceful fallback: unknown ships/components → null, malformed hash → empty state
+- [x] Live hash updates via `$effect` + `history.replaceState` (no hashchange circularity)
+- [x] Browser back/forward via `popstate` listener
 
 **Done when:** Any loadout can be shared via URL and perfectly restored.
 
@@ -357,3 +362,4 @@ Tasks:
 - [x] Stage 5 complete (core component management — bridge/engine/hyperwarp slots, pickers, engine stats)
 - [x] Stage 6 complete (officer & crew management — individual jobs/levels, all 17 skills tracked)
 - [x] Stage 7 complete (combat scores by range band — attack/defense/maneuver per game formulas)
+- [x] Stage 8 complete (URL hash serialization — lz-string compression, live hash updates, browser back/forward, copy link)

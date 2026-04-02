@@ -47,15 +47,23 @@ App.svelte
 
 **Lookup pattern:** Components are keyed as `"${name}::${faction ?? ''}"` for O(1) lookup.
 
+**URL serialization (`src/lib/serialize.js`):**
+- Full loadout state is compressed into `window.location.hash` via `lz-string`
+- Format is versioned (`v: 1`) JSON with short keys: `s` (ship name), `c` (slot component keys), `b` (bridge `[name, subtype]`), `e` (engine name), `h` (hyperwarp name), `o` (officers as `[jobId, level]` pairs), `r` (crew as `[jobId, level]` pairs)
+- Hash updates live via a `$effect` using `history.replaceState` (avoids `hashchange` circularity)
+- Browser back/forward handled via `popstate` listener
+- On page load, hash is read and state is restored before first render
+- Unknown ships/components fail gracefully (null slots, empty state)
+
 ## Development Stages (from PLAN.md)
 
 - ✅ 0–2: Scaffold, data pipeline, ship selector, component slots, picker modal
-- ⏳ 3: Stats panel (mass, skills, crew totals — partially implemented)
-- ⏹️ 4: Armor block% formula (OQ-1: reverse-engineer from STFX source)
-- ⏹️ 5: Core component slots (bridge/engine/hyperwarp)
-- ⏹️ 6: Officer management (OQ-3: per-job skill contribution model)
-- ⏹️ 7: Attack range distribution (OQ-2: formula to reverse-engineer)
-- ⏹️ 8: URL hash serialization for shareable loadouts
+- ✅ 3: Stats panel (mass, skills, crew totals)
+- ✅ 4: Armor block% formula
+- ✅ 5: Core component slots (bridge/engine/hyperwarp)
+- ✅ 6: Officer management (per-job skill contribution model)
+- ✅ 7: Combat scores by range band
+- ✅ 8: URL hash serialization for shareable loadouts
 - ⏹️ 9: Polish & QA
 
 STFX source (gitlab.com/tswift/stfx) is the reference for formulas and algorithms for the open questions above.
