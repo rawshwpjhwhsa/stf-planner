@@ -121,6 +121,10 @@
     equippedComponents.reduce((sum, c) => sum + c.medical, 0)
   )
 
+  const totalCost = $derived(
+    equippedComponents.reduce((sum, c) => sum + (c.cost ?? 0), 0)
+  )
+
   const totalSkills = $derived.by(() => {
     const skills = { pilot: 0, shipOps: 0, gunnery: 0, electronics: 0, navigation: 0 }
     for (const c of equippedComponents) {
@@ -306,6 +310,13 @@
             <span class="stat-value">{totalMedical}</span>
           </div>
         {/if}
+
+        <hr class="stat-divider" />
+
+        <div class="stat-row">
+          <span class="stat-label">Install Cost</span>
+          <span class="stat-value">{totalCost.toLocaleString()}</span>
+        </div>
 
         <hr class="stat-divider" />
 
