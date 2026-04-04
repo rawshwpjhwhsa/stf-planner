@@ -1,60 +1,16 @@
 <script>
-  import shipsData from './data/ships.json'
-  import componentsData from './data/components.json'
-  import coreComponentsData from './data/core_components.json'
+  import { shipsData, coreComponentsData, componentsByName, coreByType, massClassGroups, jobsById, MASS_CLASS_ORDER, SHIP_SKILL_KEYS, SECONDARY_SKILL_KEYS } from './lib/constants.js'
   import defaultLoadouts from './data/default_loadouts.json'
-  import jobsData from './data/jobs.json'
   import { buildInitialSlots } from './lib/loadout.js'
   import { serializeLoadout, deserializeLoadout } from './lib/serialize.js'
 
-  // --- Module-level constants (computed once, not reactive) ---
-
-  const MASS_CLASS_ORDER = [2400, 3400, 5000, 6000, 7000, 8000, 9000]
-  const RANGE_BAND_LABELS = ['I', 'II', 'III', 'IV', 'V']
-
-  const SHIP_SKILL_KEYS = ['pilot', 'shipOps', 'gunnery', 'electronics', 'navigation']
-  const SECONDARY_SKILL_KEYS = [
-    'command', 'doctor', 'evasion', 'explorer', 'heavy_firearms',
-    'intimidate', 'light_firearms', 'melee', 'negotiate', 'repair',
-    'stealth', 'tactics',
-  ]
-
-  const ALL_SKILL_LABELS = {
-    pilot: 'Pilot', shipOps: 'Ship Ops', gunnery: 'Gunnery',
-    electronics: 'Electronics', navigation: 'Navigation',
-    command: 'Command', doctor: 'Doctor', evasion: 'Evasion',
-    explorer: 'Explorer', heavy_firearms: 'Heavy Firearms',
-    intimidate: 'Intimidate', light_firearms: 'Light Firearms',
-    melee: 'Melee', negotiate: 'Negotiate', repair: 'Repair',
-    stealth: 'Stealth', tactics: 'Tactics',
-  }
-
-  const jobsById = new Map(jobsData.map(j => [j.id, j]))
-
-  const massClassGroups = MASS_CLASS_ORDER.map(mc => ({
-    massClass: mc,
-    ships: shipsData
-      .filter(s => s.massClass === mc)
-      .sort((a, b) => a.name.localeCompare(b.name)),
-  }))
-
-  const componentsBySize = {
-    large:  componentsData.filter(c => c.size === 'large'),
-    medium: componentsData.filter(c => c.size === 'medium'),
-    small:  componentsData.filter(c => c.size === 'small'),
-  }
-
-  // Key: "name::faction" to avoid silent overwrites for faction-variant duplicates
-  // (e.g. Adv. Mass Dampener 5 exists once per faction with identical stats)
-  const componentsByName = new Map(
-    componentsData.map(c => [`${c.name}::${c.faction ?? ''}`, c])
-  )
-
-  const coreByType = {
-    bridge: coreComponentsData.filter(c => c.type === 'bridge'),
-    engine: coreComponentsData.filter(c => c.type === 'engine'),
-    hyperwarp: coreComponentsData.filter(c => c.type === 'hyperwarp'),
-  }
+  import ComponentPicker from './components/ComponentPicker.svelte'
+  import CorePicker from './components/CorePicker.svelte'
+  import StatsPanel from './components/StatsPanel.svelte'
+  import OfficerList from './components/OfficerList.svelte'
+  import CrewList from './components/CrewList.svelte'
+  import SlotList from './components/SlotList.svelte'
+  import CoreSlots from './components/CoreSlots.svelte'
 
   // --- Reactive state ---
 
@@ -65,15 +21,8 @@
   let selectedHyperwarp = $state(null)
   let bridgeSubtype = $state(null)
 
-  let pickerOpen = $state(false)
   let pickerTargetIndex = $state(null)
-  let pickerSearch = $state('')
-  let pickerCategoryFilter = $state('all')
-  let pickerFactionFilter = $state('all')
-
-  let corePickerOpen = $state(false)
   let corePickerType = $state(null)
-  let corePickerSearch = $state('')
 
   let officers = $state([])
   let crew = $state([])
@@ -90,45 +39,6 @@
   const pickerTargetSlot = $derived(
     pickerTargetIndex !== null ? slots[pickerTargetIndex] : null
   )
-
-  const pickerAvailableFactions = $derived.by(() => {
-    if (!pickerTargetSlot) return []
-    return [
-      ...new Set(
-        componentsBySize[pickerTargetSlot.size]
-          .filter(c => c.faction)
-          .map(c => c.faction)
-      ),
-    ].sort()
-  })
-
-  const pickerCandidates = $derived.by(() => {
-    if (!pickerTargetSlot) return []
-    let list = componentsBySize[pickerTargetSlot.size]
-    if (pickerCategoryFilter !== 'all')
-      list = list.filter(c => c.category === pickerCategoryFilter)
-    if (pickerFactionFilter !== 'all')
-      list = list.filter(c => c.faction === pickerFactionFilter)
-    if (pickerSearch.trim())
-      list = list.filter(c =>
-        c.name.toLowerCase().includes(pickerSearch.trim().toLowerCase())
-      )
-    return list
-  })
-
-  const corePickerCandidates = $derived.by(() => {
-    if (!corePickerType || !selectedShip) return []
-    let list = coreByType[corePickerType]
-    if (corePickerType === 'engine')
-      list = list.filter(c => c.massClass === selectedShip.massClass)
-    else if (corePickerType === 'hyperwarp')
-      list = list.filter(c => c.massClass === selectedShip.massClass)
-    else if (corePickerType === 'bridge' && bridgeSubtype)
-      list = list.filter(c => c.subtype === bridgeSubtype)
-    if (corePickerSearch.trim())
-      list = list.filter(c => c.name.toLowerCase().includes(corePickerSearch.trim().toLowerCase()))
-    return list
-  })
 
   // --- Block% formulas ---
   function armorBlockPct(armor) {
@@ -213,7 +123,6 @@
   const totalMedical = $derived(
     allEquippedComponents.reduce((sum, c) => sum + c.medical, 0)
   )
-
   const totalCost = $derived(
     allEquippedComponents.reduce((sum, c) => sum + (c.cost ?? 0), 0)
   )
@@ -343,6 +252,17 @@
     return [short, short, short, long, long]
   })
 
+  // Grouped props for StatsPanel
+  const stats = $derived({
+    totalMass, massOverLimit, totalArmor, armorBlock, totalShield, shieldBlock,
+    totalFuel, totalCargo, totalJumpCost, totalCrew, totalOfficers,
+    totalPassengers, totalPrisoners, totalMedical, totalCost,
+  })
+
+  const combatScores = $derived({
+    attackScores, defenseScores, rangeChangeScores, boardScores, escapeScores, equippedWeapons,
+  })
+
   // --- Event handlers ---
 
   function onShipChange() {
@@ -365,14 +285,9 @@
 
   function openPicker(index) {
     pickerTargetIndex = index
-    pickerSearch = ''
-    pickerCategoryFilter = 'all'
-    pickerFactionFilter = 'all'
-    pickerOpen = true
   }
 
   function closePicker() {
-    pickerOpen = false
     pickerTargetIndex = null
   }
 
@@ -381,18 +296,11 @@
     closePicker()
   }
 
-  function backdropClose(e) {
-    if (e.target === e.currentTarget) closePicker()
-  }
-
   function openCorePicker(type) {
     corePickerType = type
-    corePickerSearch = ''
-    corePickerOpen = true
   }
 
   function closeCorePicker() {
-    corePickerOpen = false
     corePickerType = null
   }
 
@@ -402,69 +310,6 @@
     else if (corePickerType === 'hyperwarp') selectedHyperwarp = comp
     closeCorePicker()
   }
-
-  function coreBackdropClose(e) {
-    if (e.target === e.currentTarget) closeCorePicker()
-  }
-
-  // --- Officer / Crew handlers ---
-
-  function addOfficer() {
-    if (officers.length >= effectiveMaxOfficers) return
-    officers.push({ jobs: [{ jobId: null, level: 1 }] })
-  }
-
-  function removeOfficer(index) {
-    officers.splice(index, 1)
-  }
-
-  function addJobSlot(officerIndex) {
-    const officer = officers[officerIndex]
-    if (officer.jobs.length >= 3) return
-    officer.jobs.push({ jobId: null, level: 1 })
-  }
-
-  function removeJobSlot(officerIndex, jobIndex) {
-    const officer = officers[officerIndex]
-    if (officer.jobs.length <= 1) {
-      removeOfficer(officerIndex)
-    } else {
-      officer.jobs.splice(jobIndex, 1)
-    }
-  }
-
-  function addCrew() {
-    if (crew.length >= effectiveMaxCrew) return
-    crew.push({ jobId: null, level: 1 })
-  }
-
-  function removeCrew(index) {
-    crew.splice(index, 1)
-  }
-
-  // --- Dialog open/close effect ---
-
-  $effect(() => {
-    const d = document.getElementById('picker-dialog')
-    if (!d) return
-    if (pickerOpen) {
-      d.showModal()
-      d.querySelector('.picker-search')?.focus()
-    } else if (d.open) {
-      d.close()
-    }
-  })
-
-  $effect(() => {
-    const d = document.getElementById('core-picker-dialog')
-    if (!d) return
-    if (corePickerOpen) {
-      d.showModal()
-      d.querySelector('.picker-search')?.focus()
-    } else if (d.open) {
-      d.close()
-    }
-  })
 
   // --- URL hash serialization ---
 
@@ -477,7 +322,6 @@
 
     selectedShipName = data.s
 
-    // Build base slot structure, then override components from hash
     const base = buildInitialSlots(ship, componentsByName, defaultLoadouts, coreComponentsData)
     if (Array.isArray(data.c)) {
       for (let i = 0; i < base.slots.length && i < data.c.length; i++) {
@@ -488,7 +332,6 @@
     }
     slots = base.slots
 
-    // Core components
     selectedBridge = data.b
       ? coreByType.bridge.find(b => b.name === data.b[0] && b.subtype === data.b[1]) ?? null
       : null
@@ -502,18 +345,15 @@
       ? coreByType.hyperwarp.find(h => h.name === data.h && h.massClass === ship.massClass) ?? null
       : null
 
-    // Officers
     officers = (data.o ?? []).map(jobPairs => ({
       jobs: jobPairs.map(([jid, lvl]) => ({ jobId: jid || null, level: lvl }))
     }))
 
-    // Crew
     crew = (data.r ?? []).map(([jid, lvl]) => ({ jobId: jid || null, level: lvl }))
 
     return true
   }
 
-  // Write hash on every state change
   $effect(() => {
     if (!selectedShipName) {
       if (location.hash) history.replaceState(null, '', location.pathname)
@@ -535,7 +375,6 @@
     history.replaceState(null, '', '#' + compressed)
   })
 
-  // Handle browser back/forward
   $effect(() => {
     function onPopState() {
       _skipNextHashWrite = true
@@ -545,7 +384,6 @@
     return () => window.removeEventListener('popstate', onPopState)
   })
 
-  // Restore from URL on initial load
   if (location.hash.length > 1) {
     _skipNextHashWrite = true
     restoreFromUrl()
@@ -559,28 +397,6 @@
       hashFeedback = 'Failed'
     }
     setTimeout(() => { hashFeedback = '' }, 2000)
-  }
-
-  function getStatChips(c) {
-    const chips = []
-    chips.push({ label: 'Mass', value: c.mass })
-    if (c.weapon) {
-      chips.push({ label: 'Dmg', value: `${c.weapon.damage_min}–${c.weapon.damage_max}` })
-      chips.push({ label: 'Rng', value: c.weapon.range })
-      chips.push({ label: 'AP', value: c.weapon.ap })
-    } else {
-      if (c.cargo > 0)    chips.push({ label: 'Cargo', value: c.cargo })
-      if (c.fuel > 0)     chips.push({ label: 'Fuel', value: c.fuel })
-      if (c.armor > 0)    chips.push({ label: 'Armor', value: c.armor })
-      if (c.shield > 0)   chips.push({ label: 'Shield', value: c.shield })
-      if (c.crew > 0)     chips.push({ label: 'Crew', value: c.crew })
-      if (c.officers > 0) chips.push({ label: 'Officers', value: c.officers })
-      if (c.jumpCost > 0) chips.push({ label: 'Jump', value: c.jumpCost })
-      if (c.passengers > 0) chips.push({ label: 'Pax', value: c.passengers })
-      if (c.prisoners > 0)  chips.push({ label: 'Prisoners', value: c.prisoners })
-      if (c.medical > 0)    chips.push({ label: 'Medical', value: c.medical })
-    }
-    return chips
   }
 </script>
 
@@ -618,441 +434,30 @@
         </div>
       {/if}
       {#if selectedShip}
-        <div class="slot-group core-group">
-          <h2 class="slot-group__heading">Core Components</h2>
-          <ul class="slot-list">
-            <li>
-              <button
-                class="slot-btn"
-                class:slot-btn--empty={!selectedBridge}
-                onclick={() => openCorePicker('bridge')}
-              >
-                <span class="slot-btn__label">
-                  Bridge: {selectedBridge?.name ?? 'Unassigned'}
-                </span>
-              </button>
-            </li>
-            <li>
-              <button
-                class="slot-btn"
-                class:slot-btn--empty={!selectedEngine}
-                onclick={() => openCorePicker('engine')}
-              >
-                <span class="slot-btn__label">
-                  Engine: {selectedEngine?.name ?? 'Unassigned'}
-                </span>
-              </button>
-            </li>
-            <li>
-              <button
-                class="slot-btn"
-                class:slot-btn--empty={!selectedHyperwarp}
-                onclick={() => openCorePicker('hyperwarp')}
-              >
-                <span class="slot-btn__label">
-                  Hyperwarp: {selectedHyperwarp?.name ?? 'Unassigned'}
-                </span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      {/if}
+        <CoreSlots bridge={selectedBridge} engine={selectedEngine} hyperwarp={selectedHyperwarp} onopenPicker={openCorePicker} />
 
-      {#each ['large', 'medium', 'small'] as size}
-        {#if slots.some(s => s.size === size)}
-          <div class="slot-group">
-            <h2 class="slot-group__heading">{size} slots</h2>
-            <ul class="slot-list">
-              {#each slots as slot, i}
-                {#if slot.size === size}
-                  <li>
-                    <button
-                      class="slot-btn"
-                      class:slot-btn--empty={!slot.component}
-                      onclick={() => openPicker(i)}
-                    >
-                      <span class="slot-btn__label">
-                        {slot.component?.name ?? 'Unassigned'}
-                      </span>
-                      {#if slot.component?.faction}
-                        <span class="faction-tag">{slot.component.faction}</span>
-                      {/if}
-                    </button>
-                  </li>
-                {/if}
-              {/each}
-            </ul>
-          </div>
-        {/if}
-      {/each}
+        {#each ['large', 'medium', 'small'] as size}
+          <SlotList {slots} {size} onslotclick={openPicker} />
+        {/each}
 
-      {#if selectedShip}
         <div class="slot-group crafts-group">
           <h2 class="slot-group__heading">Crafts</h2>
           <p class="muted">Craft bay: {selectedShip.maxCrafts} max (Stage 9)</p>
         </div>
 
-        <div class="slot-group officers-group">
-          <h2 class="slot-group__heading" class:slot-group__heading--over={officers.length > effectiveMaxOfficers}>
-            Officers ({officers.length} / {effectiveMaxOfficers})
-          </h2>
-
-          {#each officers as officer, oi}
-            <div class="officer-card">
-              <div class="officer-card__header">
-                <span>Officer {oi + 1}</span>
-                <button class="remove-btn" onclick={() => removeOfficer(oi)} aria-label="Remove officer">&times;</button>
-              </div>
-              {#each officer.jobs as jobSlot, ji}
-                <div class="job-row">
-                  <select class="job-select" bind:value={jobSlot.jobId}>
-                    <option value={null}>— Job —</option>
-                    {#each jobsData as job}
-                      <option value={job.id}>{job.name}</option>
-                    {/each}
-                  </select>
-                  <input
-                    class="level-input"
-                    type="number"
-                    min="1"
-                    max="36"
-                    bind:value={jobSlot.level}
-                    aria-label="Officer {oi + 1} job {ji + 1} level"
-                  />
-                  <button class="remove-btn" onclick={() => removeJobSlot(oi, ji)} aria-label="Remove job">&times;</button>
-                </div>
-              {/each}
-              {#if officer.jobs.length < 3}
-                <button class="add-btn" onclick={() => addJobSlot(oi)}>+ Add Job</button>
-              {/if}
-            </div>
-          {/each}
-
-          {#if officers.length < effectiveMaxOfficers}
-            <button class="add-btn" onclick={addOfficer}>+ Add Officer</button>
-          {/if}
-        </div>
-
-        <div class="slot-group crew-group">
-          <h2 class="slot-group__heading" class:slot-group__heading--over={crew.length > effectiveMaxCrew}>
-            Crew ({crew.length} / {effectiveMaxCrew})
-          </h2>
-
-          {#each crew as member, ci}
-            <div class="job-row">
-              <select class="job-select" bind:value={member.jobId}>
-                <option value={null}>— Job —</option>
-                {#each jobsData as job}
-                  <option value={job.id}>{job.name}</option>
-                {/each}
-              </select>
-              <input
-                class="level-input"
-                type="number"
-                min="1"
-                max="36"
-                bind:value={member.level}
-                aria-label="Crew member {ci + 1} level"
-              />
-              <button class="remove-btn" onclick={() => removeCrew(ci)} aria-label="Remove crew">&times;</button>
-            </div>
-          {/each}
-
-          {#if crew.length < effectiveMaxCrew}
-            <button class="add-btn" onclick={addCrew}>+ Add Crew</button>
-          {/if}
-        </div>
+        <OfficerList bind:officers maxOfficers={effectiveMaxOfficers} />
+        <CrewList bind:crew maxCrew={effectiveMaxCrew} />
       {/if}
     </section>
 
-    <aside class="stats-panel">
-      {#if selectedShip}
-        <h2 class="stats-heading">{selectedShip.name}</h2>
-
-        <div class="stat-row" class:stat-row--danger={massOverLimit}>
-          <span class="stat-label">Mass</span>
-          <span class="stat-value">{totalMass} / {selectedShip.massCapacity}</span>
-        </div>
-
-        {#if selectedEngine}
-          <hr class="stat-divider" />
-          <h3 class="stats-subheading">Engine</h3>
-          <div class="stat-row">
-            <span class="stat-label">Speed</span>
-            <span class="stat-value">{selectedEngine.speed}</span>
-          </div>
-          <div class="stat-row">
-            <span class="stat-label">Agility</span>
-            <span class="stat-value">{selectedEngine.agility}</span>
-          </div>
-          <div class="stat-row">
-            <span class="stat-label">Fuel / AU</span>
-            <span class="stat-value">{selectedEngine.fuelPerAU}</span>
-          </div>
-          <div class="stat-row">
-            <span class="stat-label">Fuel / Combat</span>
-            <span class="stat-value">{selectedEngine.fuelPerCombat}</span>
-          </div>
-          <div class="stat-row">
-            <span class="stat-label">Reactor Points</span>
-            <span class="stat-value">{selectedEngine.reactorPoints}</span>
-          </div>
-          <div class="stat-row">
-            <span class="stat-label">Safety Rating</span>
-            <span class="stat-value">{selectedEngine.safetyRating}</span>
-          </div>
-        {/if}
-
-        <hr class="stat-divider" />
-
-        <div class="stat-row">
-          <span class="stat-label">Hull</span>
-          <span class="stat-value">{selectedShip.hull}</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Armor</span>
-          <span class="stat-value">{totalArmor} [Blocks {armorBlock}%]</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Shield</span>
-          <span class="stat-value">
-            {selectedShip.shield !== null ? `${totalShield} [Blocks ${shieldBlock}%]` : 'T.B.C.'}
-          </span>
-        </div>
-
-        <hr class="stat-divider" />
-
-        <div class="stat-row">
-          <span class="stat-label">Fuel</span>
-          <span class="stat-value">{totalFuel}</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Cargo</span>
-          <span class="stat-value">{totalCargo}</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Jump Cost</span>
-          <span class="stat-value">{totalJumpCost}</span>
-        </div>
-
-        <hr class="stat-divider" />
-
-        <div class="stat-row">
-          <span class="stat-label">Crew</span>
-          <span class="stat-value">{totalCrew} / {selectedShip.maxCrew}</span>
-        </div>
-        <div class="stat-row">
-          <span class="stat-label">Officers</span>
-          <span class="stat-value">{totalOfficers} / {selectedShip.maxOfficers}</span>
-        </div>
-        {#if totalPassengers > 0}
-          <div class="stat-row">
-            <span class="stat-label">Passengers</span>
-            <span class="stat-value">{totalPassengers}</span>
-          </div>
-        {/if}
-        {#if totalPrisoners > 0}
-          <div class="stat-row">
-            <span class="stat-label">Prisoners</span>
-            <span class="stat-value">{totalPrisoners}</span>
-          </div>
-        {/if}
-        {#if totalMedical > 0}
-          <div class="stat-row">
-            <span class="stat-label">Medical</span>
-            <span class="stat-value">{totalMedical}</span>
-          </div>
-        {/if}
-
-        <hr class="stat-divider" />
-
-        <div class="stat-row">
-          <span class="stat-label">Install Cost</span>
-          <span class="stat-value">{totalCost.toLocaleString()}</span>
-        </div>
-
-        <hr class="stat-divider" />
-
-        <h3 class="stats-subheading">Ship Skills</h3>
-        {#each SHIP_SKILL_KEYS as skill}
-          {@const req = requiredSkills[skill]}
-          {@const prov = providedSkills[skill]}
-          {@const deficit = req > 0 && prov < req}
-          <div class="stat-row" class:stat-row--danger={deficit} class:stat-row--met={req > 0 && prov >= req}>
-            <span class="stat-label">{ALL_SKILL_LABELS[skill]}</span>
-            <span class="stat-value">{prov} / {req}</span>
-          </div>
-        {/each}
-
-        {#if SECONDARY_SKILL_KEYS.some(s => providedSkills[s] > 0)}
-          <hr class="stat-divider" />
-          <h3 class="stats-subheading">Secondary Skills</h3>
-          {#each SECONDARY_SKILL_KEYS as skill}
-            {#if providedSkills[skill] > 0}
-              <div class="stat-row">
-                <span class="stat-label">{ALL_SKILL_LABELS[skill]}</span>
-                <span class="stat-value">{providedSkills[skill]}</span>
-              </div>
-            {/if}
-          {/each}
-        {/if}
-
-        <hr class="stat-divider" />
-        <h3 class="stats-subheading">Combat Scores</h3>
-
-        <div class="combat-grid">
-          <div class="combat-grid__header"></div>
-          {#each RANGE_BAND_LABELS as label}
-            <div class="combat-grid__header">{label}</div>
-          {/each}
-
-          <div class="combat-grid__label">Attack</div>
-          {#if equippedWeapons.length > 0}
-            {#each attackScores as score, i}
-              {@const best = Math.max(...attackScores)}
-              <div class="combat-grid__value" class:combat-grid__value--optimal={score === best && score > 0}>
-                {Math.round(score)}
-              </div>
-            {/each}
-          {:else}
-            <div class="combat-grid__empty" style="grid-column: span 5;">No weapons</div>
-          {/if}
-
-          <div class="combat-grid__label">Defense</div>
-          {#each defenseScores as score}
-            <div class="combat-grid__value">{Math.round(score)}</div>
-          {/each}
-
-          <div class="combat-grid__label">Rng Chg</div>
-          {#each rangeChangeScores as score}
-            <div class="combat-grid__value">{Math.round(score)}</div>
-          {/each}
-
-          <div class="combat-grid__label">Board</div>
-          {#each boardScores as score}
-            <div class="combat-grid__value">{Math.round(score)}</div>
-          {/each}
-
-          <div class="combat-grid__label">Escape</div>
-          {#each escapeScores as score}
-            <div class="combat-grid__value">{Math.round(score)}</div>
-          {/each}
-        </div>
-      {:else}
-        <p class="stats-placeholder">Select a ship to begin.</p>
-      {/if}
-    </aside>
+    <StatsPanel ship={selectedShip} engine={selectedEngine} {stats} {requiredSkills} {providedSkills} {combatScores} />
   </main>
 </div>
 
-<!-- Component picker modal -->
-<dialog id="picker-dialog" class="picker-modal" onclick={backdropClose}>
-  <div class="picker-header">
-    <h3 class="picker-title">
-      Select {pickerTargetSlot?.size} component
-    </h3>
-    <button class="picker-close" onclick={closePicker} aria-label="Close">×</button>
-  </div>
-
-  <div class="picker-filters">
-    <input
-      class="picker-search"
-      type="search"
-      bind:value={pickerSearch}
-      placeholder="Search…"
-    />
-    <div class="picker-tabs" role="tablist">
-      {#each ['all', 'cargo', 'combat', 'crew', 'operations', 'ship', 'weapons'] as cat}
-        <button
-          class="picker-tab"
-          class:picker-tab--active={pickerCategoryFilter === cat}
-          role="tab"
-          aria-selected={pickerCategoryFilter === cat}
-          onclick={() => (pickerCategoryFilter = cat)}
-        >
-          {cat}
-        </button>
-      {/each}
-    </div>
-    <select class="picker-faction-select" bind:value={pickerFactionFilter}>
-      <option value="all">All factions</option>
-      {#each pickerAvailableFactions as f}
-        <option value={f}>{f}</option>
-      {/each}
-    </select>
-  </div>
-
-  {#if pickerCandidates.length > 0}
-    <ul class="picker-list">
-      {#each pickerCandidates as c (c.name + (c.faction ?? ''))}
-        <li>
-          <button class="picker-item" onclick={() => assignComponent(c)}>
-            <span class="picker-item__name">{c.name}</span>
-            <span class="picker-item__chips">
-              {#each getStatChips(c) as chip}
-                <span class="picker-stat">{chip.label} {chip.value}</span>
-              {/each}
-            </span>
-            {#if c.faction}
-              <span class="faction-tag">{c.faction}</span>
-            {/if}
-          </button>
-        </li>
-      {/each}
-    </ul>
-  {:else}
-    <p class="picker-empty">No components match.</p>
-  {/if}
-
-  <footer class="picker-footer">
-    <button class="picker-cancel" onclick={closePicker}>Cancel</button>
-  </footer>
-</dialog>
-
-<!-- Core component picker modal -->
-<dialog id="core-picker-dialog" class="picker-modal" onclick={coreBackdropClose}>
-  <div class="picker-header">
-    <h3 class="picker-title">
-      Select {corePickerType ?? ''}
-    </h3>
-    <button class="picker-close" onclick={closeCorePicker} aria-label="Close">×</button>
-  </div>
-
-  <div class="picker-filters">
-    <input
-      class="picker-search"
-      type="search"
-      bind:value={corePickerSearch}
-      placeholder="Search…"
-    />
-  </div>
-
-  {#if corePickerCandidates.length > 0}
-    <ul class="picker-list">
-      {#each corePickerCandidates as c (c.name + (c.massClass ?? '') + (c.subtype ?? ''))}
-        <li>
-          <button class="picker-item" onclick={() => assignCoreComponent(c)}>
-            <span class="picker-item__name">{c.name}</span>
-            {#if c.type === 'engine'}
-              <span class="picker-item__meta">Spd {c.speed} / Agi {c.agility}</span>
-            {:else if c.type === 'hyperwarp'}
-              <span class="picker-item__meta">Jump {c.jumpCost}</span>
-            {/if}
-          </button>
-        </li>
-      {/each}
-    </ul>
-  {:else}
-    <p class="picker-empty">No components match.</p>
-  {/if}
-
-  <footer class="picker-footer">
-    <button class="picker-cancel" onclick={closeCorePicker}>Cancel</button>
-  </footer>
-</dialog>
+<ComponentPicker targetSlot={pickerTargetSlot} onselect={assignComponent} onclose={closePicker} />
+<CorePicker type={corePickerType} massClass={selectedShip?.massClass} {bridgeSubtype} onselect={assignCoreComponent} onclose={closeCorePicker} />
 
 <style>
-  /* Layout */
   .app-layout {
     max-width: 960px;
     margin: 0 auto;
@@ -1116,152 +521,10 @@
     align-items: start;
   }
 
-  /* Slots panel */
   .slots-panel {
     display: flex;
     flex-direction: column;
     gap: var(--space-4);
-  }
-
-  .slot-group {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-  }
-
-  .slot-group__heading {
-    font-size: var(--text-sm);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--color-text-muted);
-  }
-
-  .slot-group__heading--over {
-    color: var(--color-danger);
-  }
-
-  .slot-list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-1);
-  }
-
-  .slot-btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: var(--space-2) var(--space-3);
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    color: var(--color-text);
-    font-size: var(--text-sm);
-    cursor: pointer;
-    text-align: left;
-    gap: var(--space-2);
-    transition: background 0.15s, border-color 0.15s;
-  }
-
-  .slot-btn:hover {
-    border-color: var(--color-accent);
-    background: var(--color-surface-2);
-  }
-
-  .slot-btn:active {
-    background: var(--color-border);
-  }
-
-  .slot-btn--empty .slot-btn__label {
-    color: var(--color-text-muted);
-    font-style: italic;
-  }
-
-  .slot-btn__label {
-    flex: 1;
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  /* Faction badge */
-  .faction-tag {
-    font-size: 0.7rem;
-    padding: 1px 6px;
-    border-radius: var(--radius-sm);
-    background: var(--faction-bg);
-    color: var(--faction-text);
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-
-  /* Crafts placeholder */
-  .muted {
-    color: var(--color-text-muted);
-    font-style: italic;
-    font-size: var(--text-sm);
-  }
-
-  /* Stats panel */
-  .stats-panel {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-md);
-    padding: var(--space-3);
-    position: sticky;
-    top: var(--space-3);
-  }
-
-  .stats-heading {
-    font-size: var(--text-base);
-    font-weight: 600;
-    margin-bottom: var(--space-2);
-  }
-
-  .stats-subheading {
-    font-size: var(--text-sm);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--color-text-muted);
-    margin-bottom: var(--space-1);
-  }
-
-  .stat-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 2px 0;
-    font-size: var(--text-sm);
-  }
-
-  .stat-row--danger {
-    color: var(--color-danger);
-    font-weight: 600;
-  }
-
-  .stat-label {
-    color: var(--color-text-muted);
-  }
-
-  .stat-value {
-    font-variant-numeric: tabular-nums;
-    text-align: right;
-  }
-
-  .stat-divider {
-    border: none;
-    border-top: 1px solid var(--color-border);
-    margin: var(--space-2) 0;
-  }
-
-  .stats-placeholder {
-    color: var(--color-text-muted);
-    font-style: italic;
-    font-size: var(--text-sm);
   }
 
   .empty-state {
@@ -1291,364 +554,5 @@
     font-size: var(--text-sm);
     font-style: italic;
     opacity: 0.7;
-  }
-
-  /* Picker modal */
-  .picker-modal {
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-lg);
-    color: var(--color-text);
-    padding: 0;
-    max-width: 560px;
-    width: 95vw;
-    max-height: 90vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .picker-modal::backdrop {
-    background: rgba(0, 0, 0, 0.6);
-  }
-
-  .picker-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--space-3);
-    border-bottom: 1px solid var(--color-border);
-    flex-shrink: 0;
-  }
-
-  .picker-title {
-    font-size: var(--text-base);
-    font-weight: 600;
-    text-transform: capitalize;
-  }
-
-  .picker-close {
-    background: none;
-    border: none;
-    color: var(--color-text-muted);
-    font-size: 1.25rem;
-    cursor: pointer;
-    padding: 0 var(--space-1);
-    line-height: 1;
-  }
-
-  .picker-close:hover {
-    color: var(--color-text);
-  }
-
-  .picker-filters {
-    padding: var(--space-2) var(--space-3);
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-2);
-    border-bottom: 1px solid var(--color-border);
-    flex-shrink: 0;
-  }
-
-  .picker-search {
-    width: 100%;
-    padding: var(--space-2) var(--space-2);
-    background: var(--color-bg);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    color: var(--color-text);
-    font-size: var(--text-sm);
-  }
-
-  .picker-search:focus {
-    outline: 2px solid var(--color-accent);
-    outline-offset: 2px;
-  }
-
-  .picker-tabs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-1);
-  }
-
-  .picker-tab {
-    padding: 2px var(--space-2);
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--color-border);
-    background: transparent;
-    color: var(--color-text-muted);
-    cursor: pointer;
-    font-size: var(--text-sm);
-    text-transform: capitalize;
-  }
-
-  .picker-tab:hover {
-    color: var(--color-text);
-    border-color: var(--color-text-muted);
-  }
-
-  .picker-tab:active {
-    background: var(--color-surface-2);
-  }
-
-  .picker-tab--active {
-    border-color: var(--color-accent);
-    color: var(--color-accent);
-    background: rgba(78, 154, 241, 0.1);
-  }
-
-  .picker-faction-select {
-    padding: var(--space-1) var(--space-2);
-    background: var(--color-bg);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    color: var(--color-text);
-    font-size: var(--text-sm);
-    align-self: flex-start;
-  }
-
-  .picker-list {
-    list-style: none;
-    overflow-y: auto;
-    flex: 1;
-    padding: var(--space-1) var(--space-2);
-  }
-
-  .picker-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: var(--space-2) var(--space-2);
-    border-radius: var(--radius-sm);
-    border: none;
-    background: transparent;
-    color: var(--color-text);
-    cursor: pointer;
-    gap: var(--space-2);
-    text-align: left;
-  }
-
-  .picker-item:hover {
-    background: var(--color-surface-2);
-  }
-
-  .picker-item:active {
-    background: var(--color-border);
-  }
-
-  .picker-item__name {
-    font-size: var(--text-sm);
-    flex: 1;
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-
-  .picker-item__meta {
-    font-size: 0.7rem;
-    color: var(--color-text-muted);
-    white-space: nowrap;
-    flex-shrink: 0;
-  }
-
-  .picker-item__chips {
-    display: flex;
-    gap: 3px;
-    flex-shrink: 0;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-
-  .picker-stat {
-    font-size: 0.65rem;
-    padding: 1px 5px;
-    border-radius: 3px;
-    background: var(--color-bg);
-    color: var(--color-text-muted);
-    white-space: nowrap;
-    font-variant-numeric: tabular-nums;
-  }
-
-  .picker-empty {
-    padding: var(--space-4) var(--space-3);
-    color: var(--color-text-muted);
-    font-style: italic;
-    font-size: var(--text-sm);
-    text-align: center;
-  }
-
-  .picker-footer {
-    padding: var(--space-2) var(--space-3);
-    border-top: 1px solid var(--color-border);
-    display: flex;
-    justify-content: flex-end;
-    flex-shrink: 0;
-  }
-
-  .picker-cancel {
-    padding: var(--space-1) var(--space-3);
-    background: transparent;
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    color: var(--color-text-muted);
-    cursor: pointer;
-    font-size: var(--text-sm);
-  }
-
-  .picker-cancel:hover {
-    color: var(--color-text);
-    border-color: var(--color-text-muted);
-  }
-
-  /* Officer cards & crew rows */
-  .officer-card {
-    background: var(--color-surface-2);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    padding: var(--space-2);
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-1);
-  }
-
-  .officer-card__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: var(--text-sm);
-    font-weight: 600;
-  }
-
-  .job-row {
-    display: flex;
-    gap: var(--space-1);
-    align-items: center;
-  }
-
-  .job-select {
-    flex: 1;
-    min-width: 0;
-    padding: var(--space-1) var(--space-2);
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    color: var(--color-text);
-    font-size: var(--text-sm);
-  }
-
-  .level-input {
-    width: 56px;
-    padding: var(--space-1) var(--space-1);
-    background: var(--color-surface);
-    border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
-    color: var(--color-text);
-    font-size: var(--text-sm);
-    text-align: center;
-  }
-
-  .remove-btn {
-    background: none;
-    border: none;
-    color: var(--color-text-muted);
-    font-size: 1.1rem;
-    cursor: pointer;
-    padding: 0 var(--space-1);
-    line-height: 1;
-    flex-shrink: 0;
-  }
-
-  .remove-btn:hover {
-    color: var(--color-danger);
-  }
-
-  .add-btn {
-    padding: var(--space-1) var(--space-2);
-    background: transparent;
-    border: 1px dashed var(--color-border);
-    border-radius: var(--radius-sm);
-    color: var(--color-text-muted);
-    cursor: pointer;
-    font-size: var(--text-sm);
-    font-style: italic;
-  }
-
-  .add-btn:hover {
-    border-color: var(--color-accent);
-    color: var(--color-accent);
-  }
-
-  .add-btn:active {
-    background: rgba(78, 154, 241, 0.1);
-  }
-
-  .stat-row--met {
-    color: var(--color-accent);
-  }
-
-  /* Combat scores grid */
-  .combat-grid {
-    display: grid;
-    grid-template-columns: auto repeat(5, 1fr);
-    gap: 1px var(--space-1);
-    font-size: var(--text-sm);
-    align-items: center;
-  }
-
-  .combat-grid__header {
-    color: var(--color-text-muted);
-    font-weight: 600;
-    text-align: center;
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-
-  .combat-grid__label {
-    color: var(--color-text-muted);
-    padding: 2px 0;
-  }
-
-  .combat-grid__value {
-    text-align: center;
-    font-variant-numeric: tabular-nums;
-    padding: 2px 0;
-  }
-
-  .combat-grid__value--optimal {
-    color: var(--color-accent);
-    font-weight: 600;
-  }
-
-  .combat-grid__empty {
-    color: var(--color-text-muted);
-    font-style: italic;
-    text-align: center;
-    padding: 2px 0;
-  }
-
-  /* Mobile */
-  @media (max-width: 1024px) {
-    .app-main {
-      grid-template-columns: 1fr;
-    }
-
-    .stats-panel {
-      order: -1;
-      position: static;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .picker-tabs {
-      overflow-x: auto;
-      flex-wrap: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-
-    .picker-tab {
-      flex-shrink: 0;
-    }
   }
 </style>
