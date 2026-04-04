@@ -588,6 +588,13 @@
 
   <main class="app-main">
     <section class="slots-panel">
+      {#if !selectedShip}
+        <div class="empty-state">
+          <h2 class="empty-state__title">Build Your Loadout</h2>
+          <p class="empty-state__text">Pick a ship from the dropdown above to start fitting components, assigning officers, and calculating combat scores.</p>
+          <p class="empty-state__hint">{shipsData.length} ships across {MASS_CLASS_ORDER.length} mass classes available</p>
+        </div>
+      {/if}
       {#if selectedShip}
         <div class="slot-group core-group">
           <h2 class="slot-group__heading">Core Components</h2>
@@ -688,6 +695,7 @@
                     min="1"
                     max="36"
                     bind:value={jobSlot.level}
+                    aria-label="Officer {oi + 1} job {ji + 1} level"
                   />
                   <button class="remove-btn" onclick={() => removeJobSlot(oi, ji)} aria-label="Remove job">&times;</button>
                 </div>
@@ -722,6 +730,7 @@
                 min="1"
                 max="36"
                 bind:value={member.level}
+                aria-label="Crew member {ci + 1} level"
               />
               <button class="remove-btn" onclick={() => removeCrew(ci)} aria-label="Remove crew">&times;</button>
             </div>
@@ -1226,6 +1235,35 @@
     color: var(--color-text-muted);
     font-style: italic;
     font-size: var(--text-sm);
+  }
+
+  .empty-state {
+    background: var(--color-surface);
+    border: 1px dashed var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-5) var(--space-4);
+    text-align: center;
+  }
+
+  .empty-state__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+  }
+
+  .empty-state__text {
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    max-width: 36ch;
+    margin: 0 auto var(--space-3);
+  }
+
+  .empty-state__hint {
+    color: var(--color-text-muted);
+    font-size: var(--text-sm);
+    font-style: italic;
+    opacity: 0.7;
   }
 
   /* Picker modal */
