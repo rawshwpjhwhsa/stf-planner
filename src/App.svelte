@@ -560,6 +560,28 @@
     }
     setTimeout(() => { hashFeedback = '' }, 2000)
   }
+
+  function getStatChips(c) {
+    const chips = []
+    chips.push({ label: 'Mass', value: c.mass })
+    if (c.weapon) {
+      chips.push({ label: 'Dmg', value: `${c.weapon.damage_min}–${c.weapon.damage_max}` })
+      chips.push({ label: 'Rng', value: c.weapon.range })
+      chips.push({ label: 'AP', value: c.weapon.ap })
+    } else {
+      if (c.cargo > 0)    chips.push({ label: 'Cargo', value: c.cargo })
+      if (c.fuel > 0)     chips.push({ label: 'Fuel', value: c.fuel })
+      if (c.armor > 0)    chips.push({ label: 'Armor', value: c.armor })
+      if (c.shield > 0)   chips.push({ label: 'Shield', value: c.shield })
+      if (c.crew > 0)     chips.push({ label: 'Crew', value: c.crew })
+      if (c.officers > 0) chips.push({ label: 'Officers', value: c.officers })
+      if (c.jumpCost > 0) chips.push({ label: 'Jump', value: c.jumpCost })
+      if (c.passengers > 0) chips.push({ label: 'Pax', value: c.passengers })
+      if (c.prisoners > 0)  chips.push({ label: 'Prisoners', value: c.prisoners })
+      if (c.medical > 0)    chips.push({ label: 'Medical', value: c.medical })
+    }
+    return chips
+  }
 </script>
 
 <div class="app-layout">
@@ -966,6 +988,11 @@
         <li>
           <button class="picker-item" onclick={() => assignComponent(c)}>
             <span class="picker-item__name">{c.name}</span>
+            <span class="picker-item__chips">
+              {#each getStatChips(c) as chip}
+                <span class="picker-stat">{chip.label} {chip.value}</span>
+              {/each}
+            </span>
             {#if c.faction}
               <span class="faction-tag">{c.faction}</span>
             {/if}
@@ -1423,6 +1450,24 @@
     color: var(--color-text-muted);
     white-space: nowrap;
     flex-shrink: 0;
+  }
+
+  .picker-item__chips {
+    display: flex;
+    gap: 3px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .picker-stat {
+    font-size: 0.65rem;
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: var(--color-bg);
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
   }
 
   .picker-empty {
