@@ -1584,7 +1584,7 @@
   }
 
   /* Mobile */
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .app-main {
       grid-template-columns: 1fr;
     }
@@ -1592,6 +1592,18 @@
     .stats-panel {
       order: -1;
       position: static;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .picker-tabs {
+      overflow-x: auto;
+      flex-wrap: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .picker-tab {
+      flex-shrink: 0;
     }
   }
 </style>
