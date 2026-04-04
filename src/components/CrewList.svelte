@@ -20,7 +20,7 @@
 
   {#each crew as member, ci}
     <div class="job-row">
-      <select class="job-select" bind:value={member.jobId}>
+      <select class="job-select" bind:value={member.jobId} aria-label="Crew member {ci + 1} job">
         <option value={null}>— Job —</option>
         {#each jobsData as job}
           <option value={job.id}>{job.name}</option>

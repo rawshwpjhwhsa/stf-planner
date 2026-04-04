@@ -41,7 +41,7 @@
       </div>
       {#each officer.jobs as jobSlot, ji}
         <div class="job-row">
-          <select class="job-select" bind:value={jobSlot.jobId}>
+          <select class="job-select" bind:value={jobSlot.jobId} aria-label="Officer {oi + 1} job {ji + 1}">
             <option value={null}>— Job —</option>
             {#each jobsData as job}
               <option value={job.id}>{job.name}</option>

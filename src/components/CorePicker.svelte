@@ -50,6 +50,7 @@
       type="search"
       bind:value={search}
       placeholder="Search…"
+      aria-label="Search core components"
     />
   </div>
 

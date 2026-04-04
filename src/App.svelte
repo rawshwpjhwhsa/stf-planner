@@ -401,6 +401,7 @@
 </script>
 
 <div class="app-layout">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   <header class="app-header">
     <h1 class="app-title">STF Ship Planner</h1>
     <select
@@ -424,7 +425,7 @@
     {/if}
   </header>
 
-  <main class="app-main">
+  <main id="main-content" class="app-main">
     <section class="slots-panel">
       {#if !selectedShip}
         <div class="empty-state">
@@ -554,5 +555,22 @@
     font-size: var(--text-sm);
     font-style: italic;
     opacity: 0.7;
+  }
+
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    top: var(--space-2);
+    padding: var(--space-2) var(--space-3);
+    background: var(--color-accent);
+    color: #fff;
+    border-radius: var(--radius-sm);
+    font-size: var(--text-sm);
+    z-index: 100;
+    text-decoration: none;
+  }
+
+  .skip-link:focus {
+    left: var(--space-3);
   }
 </style>

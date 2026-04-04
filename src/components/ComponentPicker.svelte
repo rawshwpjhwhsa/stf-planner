@@ -87,6 +87,7 @@
       type="search"
       bind:value={search}
       placeholder="Search…"
+      aria-label="Search components"
     />
     <div class="picker-tabs" role="tablist">
       {#each ['all', 'cargo', 'combat', 'crew', 'operations', 'ship', 'weapons'] as cat}
@@ -101,7 +102,7 @@
         </button>
       {/each}
     </div>
-    <select class="picker-faction-select" bind:value={factionFilter}>
+    <select class="picker-faction-select" bind:value={factionFilter} aria-label="Filter by faction">
       <option value="all">All factions</option>
       {#each availableFactions as f}
         <option value={f}>{f}</option>

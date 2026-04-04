@@ -4,13 +4,13 @@
   let { ship, engine, stats, requiredSkills, providedSkills, combatScores } = $props()
 </script>
 
-<aside class="stats-panel">
+<aside class="stats-panel" aria-live="polite">
   {#if ship}
     <h2 class="stats-heading">{ship.name}</h2>
 
     <div class="stat-row" class:stat-row--danger={stats.massOverLimit}>
       <span class="stat-label">Mass</span>
-      <span class="stat-value">{stats.totalMass} / {ship.massCapacity}</span>
+      <span class="stat-value">{stats.totalMass} / {ship.massCapacity}{#if stats.massOverLimit} (over){/if}</span>
     </div>
 
     {#if engine}
@@ -119,7 +119,7 @@
       {@const deficit = req > 0 && prov < req}
       <div class="stat-row" class:stat-row--danger={deficit} class:stat-row--met={req > 0 && prov >= req}>
         <span class="stat-label">{ALL_SKILL_LABELS[skill]}</span>
-        <span class="stat-value">{prov} / {req}</span>
+        <span class="stat-value">{prov} / {req}{#if deficit} !!{:else if req > 0 && prov >= req} ok{/if}</span>
       </div>
     {/each}
 
